@@ -1,0 +1,73 @@
+phase,direction,term,coefficient
+I,success_association,screening,0.8973557025734813
+I,success_association,subjects,0.8770358416956934
+I,success_association,study drug,0.768386011718994
+I,success_association,drug,0.7024264290905909
+I,success_association,mellitus,0.6557793450932923
+I,success_association,diabetes mellitus,0.6522157284800072
+I,success_association,type,0.5951754084852554
+I,success_association,healthy,0.5171118222812859
+I,success_association,within 14,0.5164037843306958
+I,success_association,at screening,0.5132898378357614
+I,success_association,type diabetes,0.5126490298937102
+I,success_association,lymphoma,0.5038243936002067
+I,failure_association,concurrent,-0.6152802840268009
+I,failure_association,characteristics,-0.5961255942759192
+I,failure_association,greater,-0.5174299924165812
+I,failure_association,greater than,-0.5035965765987412
+I,failure_association,biopsy,-0.49492370181985706
+I,failure_association,patients,-0.4944084280694132
+I,failure_association,patients must,-0.473595291656258
+I,failure_association,since,-0.4732964312417405
+I,failure_association,pancreatic,-0.45877387277435544
+I,failure_association,disease characteristics,-0.4491912241186278
+I,failure_association,only,-0.44747671274353557
+I,failure_association,allergy to,-0.44360205761652305
+II,success_association,screening,1.0648262423504669
+II,success_association,of study,0.9529678595071644
+II,success_association,hepatitis virus,0.8949421389777874
+II,success_association,dose,0.8700948083291337
+II,success_association,type,0.8509603105598234
+II,success_association,body,0.8314110206371538
+II,success_association,key,0.8262972925518203
+II,success_association,psoriasis,0.8218162652821903
+II,success_association,clinically significant,0.8044104622599875
+II,success_association,neuropathy grade,0.80372414548326
+II,success_association,type diabetes,0.7508400281518828
+II,success_association,study drug,0.7411837258259354
+II,failure_association,must have,-1.207967043318513
+II,failure_association,patients,-1.0678196322679618
+II,failure_association,inhibitors,-0.9541556510834689
+II,failure_association,cell,-0.8894781420917695
+II,failure_association,cancer,-0.8844983561799097
+II,failure_association,least weeks,-0.867716268329056
+II,failure_association,must,-0.8069788569550033
+II,failure_association,other,-0.8047893801109374
+II,failure_association,at least,-0.7990258203889279
+II,failure_association,least,-0.7975742050286065
+II,failure_association,lung,-0.7886416535281283
+II,failure_association,colorectal,-0.7840280555476971
+III,success_association,visit,1.1480729925823117
+III,success_association,arthritis,1.0312582647595743
+III,success_association,metformin,0.8884294289209336
+III,success_association,ocular,0.8796771487132958
+III,success_association,females,0.8376927852084722
+III,success_association,psoriasis,0.8290181836646824
+III,success_association,who,0.8276738172159568
+III,success_association,mg,0.8226580716824371
+III,success_association,obstructive pulmonary,0.7739738163455457
+III,success_association,copd,0.7666499102907806
+III,success_association,subjects who,0.7400373440032804
+III,success_association,rheumatoid,0.709933026528909
+III,failure_association,no,-1.3380635158417382
+III,failure_association,stage,-1.0202062140810786
+III,failure_association,acute,-0.9505313620711495
+III,failure_association,chemotherapy,-0.9083617707787431
+III,failure_association,therapy,-0.9037535834888168
+III,failure_association,biopsy,-0.8988158672561947
+III,failure_association,lupus,-0.8911143783601322
+III,failure_association,pregnancy or,-0.8820139435706336
+III,failure_association,surgery,-0.8292896274743949
+III,failure_association,breast,-0.8033157758138793
+III,failure_association,recent,-0.7917898233534293
+III,failure_association,cancer,-0.7862102589317533

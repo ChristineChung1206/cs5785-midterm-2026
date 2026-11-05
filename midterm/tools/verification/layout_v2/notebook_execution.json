@@ -1,0 +1,47 @@
+{
+  "python": "3.12.16",
+  "no_training": true,
+  "all_successful": true,
+  "notebooks": [
+    {
+      "notebook": "notebooks/01_data_protocol.ipynb",
+      "sha256": "71494c8fdbc9f22e173bc1b8a0e8ccad40e0261d5b1f3a116abff3cf4e912909",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 5,
+      "errors": 0,
+      "training_enabled": false,
+      "elapsed_seconds": 0.98,
+      "success": true
+    },
+    {
+      "notebook": "notebooks/02_part1.ipynb",
+      "sha256": "ce72b2ac9b7da624aad5b772f7045a9a7874f923616c9908ad219985dce6d656",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 9,
+      "errors": 0,
+      "training_enabled": false,
+      "elapsed_seconds": 1.065,
+      "success": true
+    },
+    {
+      "notebook": "notebooks/03_part2.ipynb",
+      "sha256": "904b4fbb92c29f2d25e9e412be742e0e7a96d9596c112096b6990c72ce79a15c",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 6,
+      "errors": 0,
+      "training_enabled": false,
+      "elapsed_seconds": 1.447,
+      "success": true
+    },
+    {
+      "notebook": "notebooks/04_error_analysis.ipynb",
+      "sha256": "330c85538d57e55ad08c7748f92a1ff19db28e81042976d8b60ca6fcd877363d",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 6,
+      "errors": 0,
+      "training_enabled": false,
+      "elapsed_seconds": 0.949,
+      "success": true
+    }
+  ]
+}

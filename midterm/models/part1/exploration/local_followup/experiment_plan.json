@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "reference_public_score": 0.88568,
+  "reference_submission_sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+  "fixed_reference": {
+    "geometry": "global",
+    "family": "ridge",
+    "bandwidth": 0.5,
+    "strength": 0.1
+  },
+  "threshold": 0.5,
+  "outer_folds": 4,
+  "repeat_seeds": [
+    42,
+    137,
+    2026
+  ],
+  "inner_folds": 3,
+  "grouping": "same <=1e-4 raw-distance connected components as previous experiment",
+  "scope": "held groups excluded from gold and unlabeled feature scopes; test used only for parity and final prediction",
+  "calibration": "three grouped raw-score cross-fits, sigmoid C=1; matching seeds for all components",
+  "components": {
+    "baseline": {
+      "geometry": "global",
+      "family": "ridge",
+      "bandwidth": 0.5,
+      "strength": 0.1
+    },
+    "cosine": {
+      "geometry": "unit",
+      "family": "ridge",
+      "bandwidth": 0.5,
+      "strength": 0.1
+    },
+    "svm": {
+      "geometry": "global",
+      "family": "svm",
+      "bandwidth": 0.5,
+      "strength": 0.3
+    },
+    "other_narrow": {
+      "geometry": "global",
+      "family": "ridge",
+      "bandwidth": 2.0,
+      "strength": 0.1
+    },
+    "other_mixed": {
+      "geometry": "global",
+      "family": "mixed_ridge",
+      "bandwidth": [
+        0.5,
+        2.0
+      ],
+      "strength": 0.1
+    }
+  },
+  "equal_probability_ensembles": [
+    [
+      "baseline",
+      "cosine"
+    ],
+    [
+      "baseline",
+      "svm"
+    ],
+    [
+      "baseline",
+      "cosine",
+      "svm"
+    ]
+  ],
+  "component_eligibility": {
+    "improved_inner_groups_minimum": 2,
+    "F1_deficit_minimum": -0.02
+  },
+  "stage2": "replace ONLY Other with narrow or 50:50 mixed RBF kernel; four columns frozen",
+  "stage3": "threshold .5+argmax versus exact expected sample-F1 under independent Bernoulli marginals; 32 truth / 31 action states",
+  "selection": "best eligible candidate within each stage by inner OOF whole-sample F1, then require gain > .002 over incoming stage; ties keep first listed option",
+  "candidate_gate": {
+    "mean_oof_gain_minimum": 0.005,
+    "positive_repeats_minimum": 2,
+    "worst_repeat_gain_minimum": -0.005,
+    "source_gain_minimum": -0.01,
+    "late56_gain_minimum": -0.01,
+    "historical_validation_gain_minimum": -0.01
+  },
+  "export": "only final sequential procedure may be exported if all gates pass and final test decisions differ; no outer-selected stage fallback",
+  "caveat": "All 235 labels and prior experiment/public results informed this study. OOF is resampling evidence, not a fresh holdout."
+}

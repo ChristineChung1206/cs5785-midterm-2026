@@ -1,0 +1,14 @@
+{
+  "selected": null,
+  "eligible": [],
+  "thresholds": {
+    "residual": 0.85,
+    "text": 0.45
+  },
+  "no_new_model_if_failed": true,
+  "kaggle_uploaded": false,
+  "original_final_replaced": false,
+  "label_changes": 0,
+  "co_training_attempted": false,
+  "reason_for_no_co_training": "require evidence of complementary text errors before adding pseudo labels"
+}

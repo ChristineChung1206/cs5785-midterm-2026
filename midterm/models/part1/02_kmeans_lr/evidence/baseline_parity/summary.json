@@ -1,0 +1,812 @@
+{
+  "protocol": {
+    "seed": 42,
+    "folds": 4,
+    "unique_gold_embedding_groups": 150,
+    "oof_held_features_excluded_from_all_fits": true,
+    "temporal_fit": "train rows start_year <= 2006 only",
+    "temporal_primary": "2007-2009 observed labels in train CSV only",
+    "temporal_56_row_check": "includes previously inspected validation labels; diagnostic only",
+    "fallback": "argmax reason on every empty predicted set",
+    "historical_thresholds": {
+      "supervised": 0.5,
+      "semi": 0.35
+    },
+    "common_thresholds": [
+      0.35,
+      0.5
+    ],
+    "full_refit_max_absolute_validation_probability_gap": {
+      "supervised": 5.21249710061511e-14,
+      "semi": 0.0
+    }
+  },
+  "validation": {
+    "metrics": {
+      "supervised": {
+        "n": 78,
+        "sample_f1": 0.8782051282051284,
+        "exact_sets": 61,
+        "per_reason": {
+          "Safety": {
+            "support": 9,
+            "predicted": 12,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          "Funding": {
+            "support": 4,
+            "predicted": 3,
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857
+          },
+          "Efficacy": {
+            "support": 14,
+            "predicted": 18,
+            "precision": 0.7222222222222222,
+            "recall": 0.9285714285714286,
+            "f1": 0.8125
+          },
+          "Recruitment": {
+            "support": 50,
+            "predicted": 48,
+            "precision": 1.0,
+            "recall": 0.96,
+            "f1": 0.9795918367346939
+          },
+          "Other": {
+            "support": 10,
+            "predicted": 15,
+            "precision": 0.4666666666666667,
+            "recall": 0.7,
+            "f1": 0.56
+          }
+        }
+      },
+      "semi": {
+        "n": 78,
+        "sample_f1": 0.8782051282051282,
+        "exact_sets": 64,
+        "per_reason": {
+          "Safety": {
+            "support": 9,
+            "predicted": 10,
+            "precision": 0.8,
+            "recall": 0.8888888888888888,
+            "f1": 0.8421052631578947
+          },
+          "Funding": {
+            "support": 4,
+            "predicted": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Efficacy": {
+            "support": 14,
+            "predicted": 17,
+            "precision": 0.7647058823529411,
+            "recall": 0.9285714285714286,
+            "f1": 0.8387096774193549
+          },
+          "Recruitment": {
+            "support": 50,
+            "predicted": 56,
+            "precision": 0.8928571428571429,
+            "recall": 1.0,
+            "f1": 0.9433962264150944
+          },
+          "Other": {
+            "support": 10,
+            "predicted": 5,
+            "precision": 0.8,
+            "recall": 0.4,
+            "f1": 0.5333333333333333
+          }
+        }
+      }
+    },
+    "common_thresholds": {
+      "0.35": {
+        "supervised": 0.8547008547008548,
+        "semi": 0.8782051282051282
+      },
+      "0.5": {
+        "supervised": 0.8782051282051284,
+        "semi": 0.8461538461538461
+      }
+    },
+    "wins": {
+      "supervised": 7,
+      "semi": 9,
+      "tie": 62
+    },
+    "different_sets": 21,
+    "by_year": [
+      {
+        "split": "validation",
+        "start_year": 1999,
+        "n": 3,
+        "supervised_sample_f1": 1.0,
+        "semi_sample_f1": 1.0
+      },
+      {
+        "split": "validation",
+        "start_year": 2002,
+        "n": 3,
+        "supervised_sample_f1": 1.0,
+        "semi_sample_f1": 1.0
+      },
+      {
+        "split": "validation",
+        "start_year": 2003,
+        "n": 2,
+        "supervised_sample_f1": 0.8333333333333333,
+        "semi_sample_f1": 1.0
+      },
+      {
+        "split": "validation",
+        "start_year": 2004,
+        "n": 9,
+        "supervised_sample_f1": 0.9629629629629629,
+        "semi_sample_f1": 0.9259259259259258
+      },
+      {
+        "split": "validation",
+        "start_year": 2005,
+        "n": 7,
+        "supervised_sample_f1": 0.5714285714285714,
+        "semi_sample_f1": 0.5714285714285714
+      },
+      {
+        "split": "validation",
+        "start_year": 2006,
+        "n": 18,
+        "supervised_sample_f1": 0.8611111111111112,
+        "semi_sample_f1": 0.9074074074074073
+      },
+      {
+        "split": "validation",
+        "start_year": 2007,
+        "n": 12,
+        "supervised_sample_f1": 1.0,
+        "semi_sample_f1": 0.9722222222222222
+      },
+      {
+        "split": "validation",
+        "start_year": 2008,
+        "n": 16,
+        "supervised_sample_f1": 0.8125,
+        "semi_sample_f1": 0.7604166666666666
+      },
+      {
+        "split": "validation",
+        "start_year": 2009,
+        "n": 8,
+        "supervised_sample_f1": 0.9583333333333333,
+        "semi_sample_f1": 1.0
+      }
+    ]
+  },
+  "grouped_oof": {
+    "metrics": {
+      "supervised": {
+        "n": 157,
+        "sample_f1": 0.8399150743099788,
+        "exact_sets": 115,
+        "per_reason": {
+          "Safety": {
+            "support": 16,
+            "predicted": 26,
+            "precision": 0.5384615384615384,
+            "recall": 0.875,
+            "f1": 0.6666666666666666
+          },
+          "Funding": {
+            "support": 8,
+            "predicted": 17,
+            "precision": 0.4117647058823529,
+            "recall": 0.875,
+            "f1": 0.56
+          },
+          "Efficacy": {
+            "support": 17,
+            "predicted": 22,
+            "precision": 0.7272727272727273,
+            "recall": 0.9411764705882353,
+            "f1": 0.8205128205128205
+          },
+          "Recruitment": {
+            "support": 101,
+            "predicted": 97,
+            "precision": 0.9587628865979382,
+            "recall": 0.9207920792079208,
+            "f1": 0.9393939393939394
+          },
+          "Other": {
+            "support": 25,
+            "predicted": 31,
+            "precision": 0.5161290322580645,
+            "recall": 0.64,
+            "f1": 0.5714285714285714
+          }
+        }
+      },
+      "semi": {
+        "n": 157,
+        "sample_f1": 0.8874734607218683,
+        "exact_sets": 130,
+        "per_reason": {
+          "Safety": {
+            "support": 16,
+            "predicted": 18,
+            "precision": 0.7222222222222222,
+            "recall": 0.8125,
+            "f1": 0.7647058823529411
+          },
+          "Funding": {
+            "support": 8,
+            "predicted": 9,
+            "precision": 0.8888888888888888,
+            "recall": 1.0,
+            "f1": 0.9411764705882353
+          },
+          "Efficacy": {
+            "support": 17,
+            "predicted": 21,
+            "precision": 0.7619047619047619,
+            "recall": 0.9411764705882353,
+            "f1": 0.8421052631578947
+          },
+          "Recruitment": {
+            "support": 101,
+            "predicted": 102,
+            "precision": 0.9607843137254902,
+            "recall": 0.9702970297029703,
+            "f1": 0.9655172413793104
+          },
+          "Other": {
+            "support": 25,
+            "predicted": 19,
+            "precision": 0.6842105263157895,
+            "recall": 0.52,
+            "f1": 0.5909090909090909
+          }
+        }
+      }
+    },
+    "common_thresholds": {
+      "0.35": {
+        "supervised": 0.835456475583864,
+        "semi": 0.8874734607218683
+      },
+      "0.5": {
+        "supervised": 0.8399150743099788,
+        "semi": 0.89171974522293
+      }
+    },
+    "wins": {
+      "supervised": 7,
+      "semi": 22,
+      "tie": 128
+    },
+    "different_sets": 30,
+    "by_year": [
+      {
+        "split": "grouped_oof",
+        "start_year": 1993,
+        "n": 1,
+        "supervised_sample_f1": 0.6666666666666666,
+        "semi_sample_f1": 0.0
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 1995,
+        "n": 2,
+        "supervised_sample_f1": 1.0,
+        "semi_sample_f1": 1.0
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 1996,
+        "n": 7,
+        "supervised_sample_f1": 0.8095238095238094,
+        "semi_sample_f1": 0.8571428571428571
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 1997,
+        "n": 6,
+        "supervised_sample_f1": 0.611111111111111,
+        "semi_sample_f1": 0.7222222222222222
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 1998,
+        "n": 11,
+        "supervised_sample_f1": 0.9090909090909091,
+        "semi_sample_f1": 0.9090909090909091
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 1999,
+        "n": 15,
+        "supervised_sample_f1": 0.8666666666666666,
+        "semi_sample_f1": 0.9777777777777777
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2000,
+        "n": 15,
+        "supervised_sample_f1": 1.0,
+        "semi_sample_f1": 1.0
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2001,
+        "n": 28,
+        "supervised_sample_f1": 0.8976190476190478,
+        "semi_sample_f1": 0.9166666666666666
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2002,
+        "n": 30,
+        "supervised_sample_f1": 0.6944444444444444,
+        "semi_sample_f1": 0.8444444444444444
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2003,
+        "n": 3,
+        "supervised_sample_f1": 1.0,
+        "semi_sample_f1": 0.8888888888888888
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2004,
+        "n": 2,
+        "supervised_sample_f1": 0.7,
+        "semi_sample_f1": 0.5
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2005,
+        "n": 5,
+        "supervised_sample_f1": 0.6666666666666666,
+        "semi_sample_f1": 0.8
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2006,
+        "n": 9,
+        "supervised_sample_f1": 0.9074074074074073,
+        "semi_sample_f1": 0.8518518518518517
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2007,
+        "n": 10,
+        "supervised_sample_f1": 0.8333333333333333,
+        "semi_sample_f1": 0.9
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2008,
+        "n": 4,
+        "supervised_sample_f1": 0.75,
+        "semi_sample_f1": 0.75
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2009,
+        "n": 6,
+        "supervised_sample_f1": 0.9444444444444443,
+        "semi_sample_f1": 1.0
+      },
+      {
+        "split": "grouped_oof",
+        "start_year": 2010,
+        "n": 3,
+        "supervised_sample_f1": 1.0,
+        "semi_sample_f1": 1.0
+      }
+    ]
+  },
+  "late_train_only": {
+    "metrics": {
+      "supervised": {
+        "n": 20,
+        "sample_f1": 0.75,
+        "exact_sets": 11,
+        "per_reason": {
+          "Safety": {
+            "support": 6,
+            "predicted": 8,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          "Funding": {
+            "support": 3,
+            "predicted": 7,
+            "precision": 0.42857142857142855,
+            "recall": 1.0,
+            "f1": 0.6
+          },
+          "Efficacy": {
+            "support": 6,
+            "predicted": 8,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          "Recruitment": {
+            "support": 1,
+            "predicted": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Other": {
+            "support": 5,
+            "predicted": 3,
+            "precision": 0.6666666666666666,
+            "recall": 0.4,
+            "f1": 0.5
+          }
+        }
+      },
+      "semi": {
+        "n": 20,
+        "sample_f1": 0.8416666666666666,
+        "exact_sets": 15,
+        "per_reason": {
+          "Safety": {
+            "support": 6,
+            "predicted": 8,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          "Funding": {
+            "support": 3,
+            "predicted": 6,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "Efficacy": {
+            "support": 6,
+            "predicted": 6,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Recruitment": {
+            "support": 1,
+            "predicted": 2,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "Other": {
+            "support": 5,
+            "predicted": 4,
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "common_thresholds": {
+      "0.35": {
+        "supervised": 0.7416666666666666,
+        "semi": 0.8416666666666666
+      },
+      "0.5": {
+        "supervised": 0.75,
+        "semi": 0.8333333333333333
+      }
+    },
+    "wins": {
+      "supervised": 1,
+      "semi": 4,
+      "tie": 15
+    },
+    "different_sets": 6,
+    "by_year": [
+      {
+        "split": "late_train_only",
+        "start_year": 2007,
+        "n": 10,
+        "supervised_sample_f1": 0.7,
+        "semi_sample_f1": 0.8666666666666666
+      },
+      {
+        "split": "late_train_only",
+        "start_year": 2008,
+        "n": 4,
+        "supervised_sample_f1": 0.8333333333333333,
+        "semi_sample_f1": 0.9166666666666666
+      },
+      {
+        "split": "late_train_only",
+        "start_year": 2009,
+        "n": 6,
+        "supervised_sample_f1": 0.7777777777777777,
+        "semi_sample_f1": 0.75
+      }
+    ]
+  },
+  "late_train_no_exact_early_embedding": {
+    "metrics": {
+      "supervised": {
+        "n": 15,
+        "sample_f1": 0.6666666666666666,
+        "exact_sets": 6,
+        "per_reason": {
+          "Safety": {
+            "support": 6,
+            "predicted": 8,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          "Funding": {
+            "support": 3,
+            "predicted": 7,
+            "precision": 0.42857142857142855,
+            "recall": 1.0,
+            "f1": 0.6
+          },
+          "Efficacy": {
+            "support": 1,
+            "predicted": 3,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          },
+          "Recruitment": {
+            "support": 1,
+            "predicted": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Other": {
+            "support": 5,
+            "predicted": 3,
+            "precision": 0.6666666666666666,
+            "recall": 0.4,
+            "f1": 0.5
+          }
+        }
+      },
+      "semi": {
+        "n": 15,
+        "sample_f1": 0.7888888888888889,
+        "exact_sets": 10,
+        "per_reason": {
+          "Safety": {
+            "support": 6,
+            "predicted": 8,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          "Funding": {
+            "support": 3,
+            "predicted": 6,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "Efficacy": {
+            "support": 1,
+            "predicted": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Recruitment": {
+            "support": 1,
+            "predicted": 2,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "Other": {
+            "support": 5,
+            "predicted": 4,
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "common_thresholds": {
+      "0.35": {
+        "supervised": 0.6555555555555556,
+        "semi": 0.7888888888888889
+      },
+      "0.5": {
+        "supervised": 0.6666666666666666,
+        "semi": 0.7777777777777778
+      }
+    },
+    "wins": {
+      "supervised": 1,
+      "semi": 4,
+      "tie": 10
+    },
+    "different_sets": 6,
+    "by_year": [
+      {
+        "split": "late_train_no_exact_early_embedding",
+        "start_year": 2007,
+        "n": 7,
+        "supervised_sample_f1": 0.5714285714285714,
+        "semi_sample_f1": 0.8095238095238094
+      },
+      {
+        "split": "late_train_no_exact_early_embedding",
+        "start_year": 2008,
+        "n": 4,
+        "supervised_sample_f1": 0.8333333333333333,
+        "semi_sample_f1": 0.9166666666666666
+      },
+      {
+        "split": "late_train_no_exact_early_embedding",
+        "start_year": 2009,
+        "n": 4,
+        "supervised_sample_f1": 0.6666666666666666,
+        "semi_sample_f1": 0.625
+      }
+    ]
+  },
+  "late_2007_2009": {
+    "metrics": {
+      "supervised": {
+        "n": 56,
+        "sample_f1": 0.8285714285714285,
+        "exact_sets": 37,
+        "per_reason": {
+          "Safety": {
+            "support": 12,
+            "predicted": 17,
+            "precision": 0.7058823529411765,
+            "recall": 1.0,
+            "f1": 0.8275862068965517
+          },
+          "Funding": {
+            "support": 5,
+            "predicted": 9,
+            "precision": 0.4444444444444444,
+            "recall": 0.8,
+            "f1": 0.5714285714285714
+          },
+          "Efficacy": {
+            "support": 12,
+            "predicted": 15,
+            "precision": 0.7333333333333333,
+            "recall": 0.9166666666666666,
+            "f1": 0.8148148148148148
+          },
+          "Recruitment": {
+            "support": 22,
+            "predicted": 21,
+            "precision": 1.0,
+            "recall": 0.9545454545454546,
+            "f1": 0.9767441860465116
+          },
+          "Other": {
+            "support": 11,
+            "predicted": 15,
+            "precision": 0.5333333333333333,
+            "recall": 0.7272727272727273,
+            "f1": 0.6153846153846154
+          }
+        }
+      },
+      "semi": {
+        "n": 56,
+        "sample_f1": 0.869047619047619,
+        "exact_sets": 45,
+        "per_reason": {
+          "Safety": {
+            "support": 12,
+            "predicted": 14,
+            "precision": 0.7857142857142857,
+            "recall": 0.9166666666666666,
+            "f1": 0.8461538461538461
+          },
+          "Funding": {
+            "support": 5,
+            "predicted": 7,
+            "precision": 0.5714285714285714,
+            "recall": 0.8,
+            "f1": 0.6666666666666666
+          },
+          "Efficacy": {
+            "support": 12,
+            "predicted": 11,
+            "precision": 0.9090909090909091,
+            "recall": 0.8333333333333334,
+            "f1": 0.8695652173913043
+          },
+          "Recruitment": {
+            "support": 22,
+            "predicted": 26,
+            "precision": 0.8461538461538461,
+            "recall": 1.0,
+            "f1": 0.9166666666666666
+          },
+          "Other": {
+            "support": 11,
+            "predicted": 12,
+            "precision": 0.75,
+            "recall": 0.8181818181818182,
+            "f1": 0.782608695652174
+          }
+        }
+      }
+    },
+    "common_thresholds": {
+      "0.35": {
+        "supervised": 0.8279761904761905,
+        "semi": 0.869047619047619
+      },
+      "0.5": {
+        "supervised": 0.8285714285714285,
+        "semi": 0.8511904761904762
+      }
+    },
+    "wins": {
+      "supervised": 3,
+      "semi": 10,
+      "tie": 43
+    },
+    "different_sets": 15,
+    "by_year": [
+      {
+        "split": "late_2007_2009",
+        "start_year": 2007,
+        "n": 22,
+        "supervised_sample_f1": 0.8060606060606061,
+        "semi_sample_f1": 0.8787878787878788
+      },
+      {
+        "split": "late_2007_2009",
+        "start_year": 2008,
+        "n": 20,
+        "supervised_sample_f1": 0.7999999999999999,
+        "semi_sample_f1": 0.8416666666666666
+      },
+      {
+        "split": "late_2007_2009",
+        "start_year": 2009,
+        "n": 14,
+        "supervised_sample_f1": 0.9047619047619048,
+        "semi_sample_f1": 0.8928571428571429
+      }
+    ]
+  },
+  "supervised_minus_semi": {
+    "oof_sample_f1": -0.047558386411889475,
+    "strict_time_sample_f1": -0.09166666666666656,
+    "validation_sample_f1": 2.220446049250313e-16
+  },
+  "unlabeled_test_disagreements": 96,
+  "candidate_gate": {
+    "oof_gain_at_least_0_01": false,
+    "strict_time_gain_at_least_0_02": false,
+    "strict_time_at_least_two_net_row_wins": false,
+    "validation_nonworse": true
+  },
+  "candidate_approved_for_local_generation": false
+}

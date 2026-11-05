@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "threshold": 0.5,
+  "smoothing": 2.0,
+  "pseudo_weight": 0.1,
+  "clusterers": {
+    "kmeans": {
+      "n_clusters": 10,
+      "n_init": 20,
+      "max_iter": 500,
+      "tol": 0.0001,
+      "algorithm": "lloyd",
+      "init": "k-means++",
+      "random_state": 42
+    },
+    "gmm": {
+      "n_components": 10,
+      "covariance_type": "diag",
+      "n_init": 5,
+      "max_iter": 500,
+      "tol": 0.001,
+      "reg_covar": 0.0001,
+      "init_params": "kmeans",
+      "random_state": 42
+    }
+  },
+  "run_ids": {
+    "kmeans": "part1_kmeans_k10_lr_pseudo010_seed42_v1",
+    "gmm": "part1_gmm_k10_lr_pseudo010_seed42_v1"
+  },
+  "baseline_id": "part1_supervised_lr_embeddings_seed42_v1",
+  "training_code_sha256": "3196af0e00b3eac4e942f02c7ebbc9cd77fd0d901b34cdb38724a8f14d36ce80",
+  "augmentation_module_sha256": "f7baeffe67ea5115a24b6476dbce40a2ae68f066afaf0750ad23fc430f72fdca",
+  "runtime_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  }
+}

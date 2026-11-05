@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-11-05T02:39:29.797917+00:00",
+  "body_pages": 5,
+  "reference_pages": 1,
+  "total_pages": 6,
+  "body_page_limit": 5,
+  "all_pages_visually_reviewed": true,
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "review_notes": [
+    "Part 1 feature choice added to page 1, a controlled pathway ablation and targeted text-view result to page 2, and reasons why added features may not help to page 5.",
+    "All six pages rendered. Pages 1,2,5 visually reviewed. Pages 3,4,6 pixel-identical to the live PDF at the start of this edit.",
+    "Five body pages plus one reference page; no clipped text, overlapping elements, overfull boxes, missing glyphs or unresolved references.",
+    "Retains author spelling Pei-Chen Chung (pc786) and Yu-Jye Hu (yh2444) from the current live source, and the existing equal contribution statement.",
+    "Observed ablation scores are distinguished from plausible explanations and untested feature families."
+  ],
+  "overfull_boxes": 0,
+  "missing_glyph_warnings": 0,
+  "font_substitution_warnings": 0,
+  "undefined_reference_warnings": 0,
+  "compiler": "Tectonic 0.17.0 (XeTeX)",
+  "compile_success": true,
+  "compiled_with_cached_packages_only": true,
+  "compile_command": "tectonic --only-cached --keep-logs main.tex; rename main.pdf to final_report.pdf and main.log to verification/compile.log",
+  "fonts": [
+    "Times New Roman",
+    "Courier New",
+    "Computer Modern/AMS mathematics"
+  ],
+  "portability_note": "Tectonic resolves installed Times New Roman and Courier New font names. Source embeds no absolute font paths. The compiler reports platform font-file access; a new environment needs these fonts or the untested standard pdfLaTeX path.",
+  "pdf_path": "final_report.pdf",
+  "pdf_sha256": "2939cc7e8eb4d76c44cfa12038584c07fb92b4d3e5e18856dc319aaadb26c3e5",
+  "source_sha256": {
+    "README.md": "7281bd7a06bef1969e2539c7e16ac8ed9e7ef94c5f35cc9d80ba59537972503b",
+    "cvpr.sty": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153",
+    "main.tex": "ee628cc7fb860f8ec712ec473c949cbaf03dd5c054f9f6c7a94bd797fa2650ca",
+    "requirements.txt": "44ced86d39f383e9ca170570eff6107012013726459dcf6871597a840eae4753",
+    "scripts/generate_tables.py": "68e1cc96dbec1ddeea957089dcd3b75943a1c42b5b3dc6283f03795a57e5df14",
+    "scripts/report_analysis.py": "5d19b04101069df67c35123a1300b626be735129a9eda2e849bc3f0bc29e128c",
+    "sections/discussion.tex": "880d89e8089d493b9c5fd380f61eede1d7910de071f9cefa3a7b5a094ab5b90f",
+    "sections/methods.tex": "76ed426ee4e700ab58074a2dfcb8cbc3afc4977c5999e6bc0b1ee6f98906a277",
+    "sections/part1_results.tex": "99f3983381a2f46487a3b38bc411a2169c69f9a9004bbf315df5cc87296da4e5",
+    "sections/part2_results.tex": "49cf25ee0d3feea2193c70787b4bfb7650167328faedc4f108e2b971bed804be",
+    "sections/reason_analysis.tex": "a2cb612ddf9faacafac6353f3df75596e60d32de5f7b00b2880f6dee9193e754",
+    "sections/references.tex": "196783adf0cc7f186c20639d44f712669ae96d3a5cb172ad3c5f61d58aa45c32",
+    "tables/part1_validation.tex": "563636320aa623fbfcfe04aba42df480ba59c782eb9e2fcc8972e455e8871171",
+    "tables/part2_phase.tex": "c765f5236a619eaa5f2db63681fe86ddb6f59c4dd3a31855dc1ed9f171254498",
+    "tables/reason_errors.tex": "b55d6c0602c5cc3ebfbd6b7cceb6d15c655baeedf02c5cd7405633d2b59c8401",
+    "tables/reason_interpretation_text.tex": "2294c15e5b0af273f64a7c3706378be43b822cf57bb87c746e1c25d0295e6975",
+    "tables/reason_provenance_text.tex": "80fd8640de4c835c38dcaa72b6dc87fef7a1fc29da0aee2376a0be77c7d98def"
+  },
+  "figure_sha256": {
+    "figures/part1_reason_f1.png": "1a894427b708e283233fa1358e53321068d38fa5c8a7ee81ebc04a9a94d0683d",
+    "figures/part2_failure_reason_comparison.png": "451cb55da53ac91771141834367bc5f56b03cd48f30082b0731eecda841a21b8",
+    "figures/part2_phase_logloss.png": "63de8ddbd4f09b5f6b0e4323b55b5489ed3652628cd56254cf35a979728d4bbf"
+  },
+  "cvpr_style_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153",
+  "table_generator_sha256": "68e1cc96dbec1ddeea957089dcd3b75943a1c42b5b3dc6283f03795a57e5df14",
+  "metrics_sha256": "3c66664e90af51cbb9ebfabab2d1446beeaedee7bf72bfe257e97f30e9bf09de",
+  "compile_log_sha256": "4ee5b7307047401520e389b83a1ffa2946c7b1fd1b7302bd2a883488256b0af1",
+  "source_provenance_sha256": "481fa61c702fdb1c2192f0b73cd5b99df171bd3d574dacb6693245854685248c",
+  "main_tex_sha256": "ee628cc7fb860f8ec712ec473c949cbaf03dd5c054f9f6c7a94bd797fa2650ca",
+  "methods_tex_sha256": "76ed426ee4e700ab58074a2dfcb8cbc3afc4977c5999e6bc0b1ee6f98906a277"
+}

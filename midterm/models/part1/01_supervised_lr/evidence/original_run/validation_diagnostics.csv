@@ -1,0 +1,6 @@
+reason,n_positive,n_negative,f1,precision,recall,tp,fp,fn,tn,predicted_positives,observation
+Safety,9,69,0.8571428571428571,0.75,1.0,9,3,0,66,12,Some true positives recovered; inspect precision and recall
+Funding,4,74,0.2857142857142857,0.3333333333333333,0.25,1,2,3,72,3,Some true positives recovered; inspect precision and recall
+Efficacy,14,64,0.8275862068965517,0.8,0.8571428571428571,12,3,2,61,15,Some true positives recovered; inspect precision and recall
+Recruitment,50,28,0.9795918367346939,1.0,0.96,48,0,2,28,48,Some true positives recovered; inspect precision and recall
+Other,10,68,0.5833333333333334,0.5,0.7,7,7,3,61,14,Some true positives recovered; inspect precision and recall

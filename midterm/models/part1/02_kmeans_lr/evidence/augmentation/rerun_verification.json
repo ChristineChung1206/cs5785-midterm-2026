@@ -1,0 +1,12 @@
+{
+  "rerun_preserved_run_and_registry_files": 39,
+  "changed_immutable_files": 0,
+  "registry_runs": 3,
+  "notebook_code_cells_executed": 9,
+  "notebook_verification_checks_passed": 33,
+  "behavioral_tests_passed": 21,
+  "behavioral_tests_new_in_step4": 7,
+  "test_command": "python -m unittest discover -s tests -v (from project root)",
+  "all_new_instructional_content_is_English": true,
+  "project_artifacts_match_workspace_mirrors": true
+}

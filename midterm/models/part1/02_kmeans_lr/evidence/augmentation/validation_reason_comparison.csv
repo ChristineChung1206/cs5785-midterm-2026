@@ -1,0 +1,16 @@
+model,reason,n_positive,n_negative,f1,precision,recall
+supervised_baseline,Safety,9,69,0.8571428571428571,0.75,1.0
+supervised_baseline,Funding,4,74,0.2857142857142857,0.3333333333333333,0.25
+supervised_baseline,Efficacy,14,64,0.8275862068965517,0.8,0.8571428571428571
+supervised_baseline,Recruitment,50,28,0.9795918367346939,1.0,0.96
+supervised_baseline,Other,10,68,0.5833333333333334,0.5,0.7
+kmeans_augmented_lr,Safety,9,69,0.8235294117647058,0.875,0.7777777777777778
+kmeans_augmented_lr,Funding,4,74,0.4,1.0,0.25
+kmeans_augmented_lr,Efficacy,14,64,0.6923076923076923,0.75,0.6428571428571429
+kmeans_augmented_lr,Recruitment,50,28,0.9423076923076923,0.9074074074074074,0.98
+kmeans_augmented_lr,Other,10,68,0.3076923076923077,0.6666666666666666,0.2
+gmm_augmented_lr,Safety,9,69,0.2,1.0,0.1111111111111111
+gmm_augmented_lr,Funding,4,74,0.4,1.0,0.25
+gmm_augmented_lr,Efficacy,14,64,0.35294117647058826,1.0,0.21428571428571427
+gmm_augmented_lr,Recruitment,50,28,0.9583333333333334,1.0,0.92
+gmm_augmented_lr,Other,10,68,0.3333333333333333,1.0,0.2

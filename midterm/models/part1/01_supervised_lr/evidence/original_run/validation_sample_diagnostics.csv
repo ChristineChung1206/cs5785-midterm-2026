@@ -1,0 +1,79 @@
+ID,start_year,true_reasons,predicted_reasons,true_reason_count,predicted_reason_count,sample_f1
+TR03011,2006,Recruitment,Recruitment Other,1,2,0.6666666666666666
+TR06614,2006,Recruitment,Recruitment,1,1,1.0
+TR11226,2005,Other,,1,0,0.0
+TR01691,2006,Efficacy,Funding Efficacy Other,1,3,0.5
+TR07904,2008,Efficacy,Efficacy Other,1,2,0.6666666666666666
+TR05741,2003,Recruitment,Recruitment,1,1,1.0
+TR04611,2006,Recruitment,Recruitment,1,1,1.0
+TR10050,2008,Other,Safety Efficacy Other,1,3,0.5
+TR08862,2007,Safety,Safety,1,1,1.0
+TR07302,2006,Funding Recruitment,Recruitment,2,1,0.6666666666666666
+TR05146,2007,Recruitment,Recruitment,1,1,1.0
+TR06513,2005,Recruitment,Recruitment,1,1,1.0
+TR02758,2006,Recruitment,Recruitment,1,1,1.0
+TR08868,2008,Other,Other,1,1,1.0
+TR01574,2005,Recruitment,Recruitment,1,1,1.0
+TR06757,2005,Recruitment,Recruitment,1,1,1.0
+TR11267,2008,Recruitment,Recruitment,1,1,1.0
+TR04350,2007,Efficacy,Efficacy,1,1,1.0
+TR05197,2007,Recruitment,Recruitment,1,1,1.0
+TR09519,2008,Recruitment Other,Efficacy Other,2,2,0.5
+TR07141,2009,Recruitment,Recruitment,1,1,1.0
+TR07107,2006,Recruitment,Recruitment,1,1,1.0
+TR04055,2002,Recruitment,Recruitment,1,1,1.0
+TR09824,2008,Recruitment,Recruitment,1,1,1.0
+TR09218,2004,Safety Efficacy,Safety Efficacy,2,2,1.0
+TR07770,2006,Efficacy,Efficacy,1,1,1.0
+TR09219,2002,Recruitment,Recruitment,1,1,1.0
+TR01253,2006,Recruitment,Recruitment,1,1,1.0
+TR04114,2009,Recruitment,Recruitment,1,1,1.0
+TR07492,2004,Recruitment,Recruitment,1,1,1.0
+TR08642,2007,Recruitment,Recruitment,1,1,1.0
+TR07471,2007,Recruitment,Recruitment,1,1,1.0
+TR04012,2006,Recruitment,Recruitment,1,1,1.0
+TR11469,1999,Recruitment,Recruitment,1,1,1.0
+TR06424,1999,Recruitment,Recruitment,1,1,1.0
+TR04125,2008,Recruitment,Recruitment,1,1,1.0
+TR05236,2008,Recruitment,Recruitment,1,1,1.0
+TR03682,2006,Efficacy,,1,0,0.0
+TR08905,2008,Safety Efficacy,Safety,2,1,0.6666666666666666
+TR09449,2004,Recruitment,Recruitment,1,1,1.0
+TR07268,2007,Safety Efficacy,Safety Efficacy,2,2,1.0
+TR03536,2006,Recruitment Other,Recruitment,2,1,0.6666666666666666
+TR09853,1999,Recruitment,Recruitment,1,1,1.0
+TR03061,2009,Funding,Funding Other,1,2,0.6666666666666666
+TR08001,2007,Safety Efficacy,Safety Efficacy,2,2,1.0
+TR10284,2008,Efficacy,Safety Efficacy,1,2,0.6666666666666666
+TR07303,2007,Other,Other,1,1,1.0
+TR00640,2005,Funding,Other,1,1,0.0
+TR06983,2008,Recruitment,Recruitment,1,1,1.0
+TR00125,2009,Recruitment Other,Recruitment Other,2,2,1.0
+TR03088,2006,Recruitment,Recruitment,1,1,1.0
+TR06178,2004,Efficacy,Efficacy Other,1,2,0.6666666666666666
+TR04002,2008,Funding,,1,0,0.0
+TR03234,2006,Recruitment,Recruitment,1,1,1.0
+TR04696,2006,Recruitment,Recruitment,1,1,1.0
+TR10446,2004,Recruitment,Recruitment,1,1,1.0
+TR09074,2008,Recruitment,Recruitment,1,1,1.0
+TR08230,2009,Recruitment,Recruitment,1,1,1.0
+TR03382,2008,Recruitment,Recruitment,1,1,1.0
+TR03856,2008,Safety,Safety,1,1,1.0
+TR04981,2007,Recruitment,Recruitment,1,1,1.0
+TR08201,2004,Efficacy,Efficacy,1,1,1.0
+TR01577,2004,Safety,Safety,1,1,1.0
+TR02404,2006,Efficacy,Efficacy,1,1,1.0
+TR11372,2009,Recruitment,Recruitment,1,1,1.0
+TR11370,2004,Recruitment,Recruitment,1,1,1.0
+TR07665,2005,Other,Safety Funding Efficacy,1,3,0.0
+TR10775,2006,Recruitment,,1,0,0.0
+TR05696,2009,Recruitment,Recruitment,1,1,1.0
+TR07476,2004,Recruitment,Recruitment,1,1,1.0
+TR06608,2009,Recruitment,Recruitment,1,1,1.0
+TR11010,2006,Other,Other,1,1,1.0
+TR07902,2005,Safety Efficacy,Safety Efficacy,2,2,1.0
+TR04216,2007,Recruitment,Recruitment,1,1,1.0
+TR10091,2007,Safety,Safety,1,1,1.0
+TR02087,2002,Recruitment,Recruitment,1,1,1.0
+TR02583,2003,Recruitment,Recruitment Other,1,2,0.6666666666666666
+TR08431,2008,Other,Other,1,1,1.0

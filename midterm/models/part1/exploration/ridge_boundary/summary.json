@@ -1,0 +1,181 @@
+{
+  "overall": {
+    "baseline": {
+      "sample_f1": 0.9026004728132389,
+      "exact_set_rate": 0.8581560283687943
+    },
+    "tuned": {
+      "sample_f1": 0.8983451536643025,
+      "exact_set_rate": 0.8539007092198582
+    },
+    "final": {
+      "sample_f1": 0.8983451536643025,
+      "exact_set_rate": 0.8539007092198582
+    }
+  },
+  "by_repeat": {
+    "0": {
+      "baseline": {
+        "sample_f1": 0.8978723404255319,
+        "exact_set_rate": 0.8468085106382979
+      },
+      "tuned": {
+        "sample_f1": 0.8936170212765957,
+        "exact_set_rate": 0.8425531914893617
+      },
+      "final": {
+        "sample_f1": 0.8936170212765957,
+        "exact_set_rate": 0.8425531914893617
+      }
+    },
+    "1": {
+      "baseline": {
+        "sample_f1": 0.899290780141844,
+        "exact_set_rate": 0.8595744680851064
+      },
+      "tuned": {
+        "sample_f1": 0.8964539007092199,
+        "exact_set_rate": 0.8595744680851064
+      },
+      "final": {
+        "sample_f1": 0.8964539007092199,
+        "exact_set_rate": 0.8595744680851064
+      }
+    },
+    "2": {
+      "baseline": {
+        "sample_f1": 0.9106382978723404,
+        "exact_set_rate": 0.8680851063829788
+      },
+      "tuned": {
+        "sample_f1": 0.9049645390070922,
+        "exact_set_rate": 0.8595744680851064
+      },
+      "final": {
+        "sample_f1": 0.9049645390070922,
+        "exact_set_rate": 0.8595744680851064
+      }
+    }
+  },
+  "by_source": {
+    "train": {
+      "baseline": {
+        "sample_f1": 0.9129511677282378,
+        "exact_set_rate": 0.8704883227176221
+      },
+      "tuned": {
+        "sample_f1": 0.9101203113941968,
+        "exact_set_rate": 0.8662420382165605
+      },
+      "final": {
+        "sample_f1": 0.9101203113941968,
+        "exact_set_rate": 0.8662420382165605
+      }
+    },
+    "validation": {
+      "baseline": {
+        "sample_f1": 0.8817663817663817,
+        "exact_set_rate": 0.8333333333333334
+      },
+      "tuned": {
+        "sample_f1": 0.8746438746438746,
+        "exact_set_rate": 0.8290598290598291
+      },
+      "final": {
+        "sample_f1": 0.8746438746438746,
+        "exact_set_rate": 0.8290598290598291
+      }
+    }
+  },
+  "repeat_gains": [
+    -0.004255319148936176,
+    -0.0028368794326241176,
+    -0.005673758865248235
+  ],
+  "mean_gain": -0.004255319148936398,
+  "group_bootstrap_95_percent": [
+    -0.010785100593163335,
+    0.0019031228791502736
+  ],
+  "diagnostic_metrics": {
+    "historical_validation": {
+      "baseline": {
+        "sample_f1": 0.8931623931623932,
+        "exact_set_rate": 0.8333333333333334
+      },
+      "tuned": {
+        "sample_f1": 0.8888888888888891,
+        "exact_set_rate": 0.8461538461538461
+      },
+      "final": {
+        "sample_f1": 0.8888888888888891,
+        "exact_set_rate": 0.8461538461538461
+      }
+    },
+    "late_train_20": {
+      "baseline": {
+        "sample_f1": 0.9,
+        "exact_set_rate": 0.9
+      },
+      "tuned": {
+        "sample_f1": 0.8833333333333332,
+        "exact_set_rate": 0.85
+      },
+      "final": {
+        "sample_f1": 0.8833333333333332,
+        "exact_set_rate": 0.85
+      }
+    },
+    "late_combined_56": {
+      "baseline": {
+        "sample_f1": 0.8511904761904763,
+        "exact_set_rate": 0.8035714285714286
+      },
+      "tuned": {
+        "sample_f1": 0.8333333333333333,
+        "exact_set_rate": 0.7857142857142857
+      },
+      "final": {
+        "sample_f1": 0.8333333333333333,
+        "exact_set_rate": 0.7857142857142857
+      }
+    }
+  },
+  "candidate_gate": {
+    "mean_oof_gain": false,
+    "positive_repeats": false,
+    "worst_repeat": false,
+    "both_sources": true,
+    "late56": false,
+    "historical_validation": true
+  },
+  "candidate_allowed": false,
+  "candidate": null,
+  "selection_counts": {
+    "baseline": {
+      "{\"bandwidth\": 0.5, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.1, \"threshold\": 0.5}": 12
+    },
+    "tuned": {
+      "{\"bandwidth\": 0.125, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.1, \"threshold\": 0.5}": 3,
+      "{\"bandwidth\": 0.125, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.3, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 0.25, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.1, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 0.25, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.3, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 0.5, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.03, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 1.0, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.01, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 1.0, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.1, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 1.0, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.3, \"threshold\": 0.5}": 3
+    },
+    "final": {
+      "{\"bandwidth\": 0.125, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.1, \"threshold\": 0.5}": 3,
+      "{\"bandwidth\": 0.125, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.3, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 0.25, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.1, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 0.25, \"beta\": 1.0, \"decoder\": \"threshold\", \"strength\": 0.3, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 0.5, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.03, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 1.0, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.01, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 1.0, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.1, \"threshold\": 0.5}": 1,
+      "{\"bandwidth\": 1.0, \"beta\": 0.0, \"decoder\": \"threshold\", \"strength\": 0.3, \"threshold\": 0.5}": 3
+    }
+  },
+  "elapsed_seconds": 8.418434858322144,
+  "caveat": "All 235 labels and prior experiment/public results informed this study. OOF is resampling evidence, not a fresh holdout."
+}

@@ -1,0 +1,11 @@
+method,reason,observed_positive_rows,observed_rows,pseudo_positive_rows,pseudo_rows,pseudo_positive_fraction
+kmeans,Safety,16,157,98,1014,0.09664694280078895
+kmeans,Funding,8,157,0,1014,0.0
+kmeans,Efficacy,17,157,128,1014,0.126232741617357
+kmeans,Recruitment,101,157,749,1014,0.7386587771203156
+kmeans,Other,25,157,39,1014,0.038461538461538464
+gmm,Safety,16,157,0,1014,0.0
+gmm,Funding,8,157,0,1014,0.0
+gmm,Efficacy,17,157,0,1014,0.0
+gmm,Recruitment,101,157,622,1014,0.6134122287968442
+gmm,Other,25,157,29,1014,0.028599605522682446

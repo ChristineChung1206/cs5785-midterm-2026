@@ -1,0 +1,4 @@
+phase,reason_group,source_type,n_trials,n_predicted_success,false_success_rate,wilson_95_lower,wilson_95_upper,n_observed_reasons,n_predicted_reasons,n_unmatched,n_training_resubstitution_reasons,label_evidence,small_support,rate_status
+I,all_failed_trials,all,64,34,0.53125,0.41072087051471007,0.6482401257482395,4,32,28,25,mixed,False,ok
+II,all_failed_trials,all,265,73,0.27547169811320754,0.22518062527075686,0.3321793127313355,16,105,144,78,mixed,False,ok
+III,all_failed_trials,all,123,80,0.6504065040650406,0.5627429700102609,0.728959761446841,7,34,82,28,mixed,False,ok

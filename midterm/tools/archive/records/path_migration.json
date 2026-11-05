@@ -1,0 +1,42 @@
+{
+  "exact": {
+    "part1_final/selected_model.joblib": "models/part1_kmeans.joblib",
+    "part2_final/selected_model.joblib": "models/part2_text_blend.joblib",
+    "refinement/part1_local_consensus_2026_11_02/candidate_model.joblib": "models/part1_ridge.joblib",
+    "refinement/rank_improvement_2026_11_02/part2/selected_phase_shared_model.joblib": "models/part2_phase_shared.joblib",
+    "experiments/runs/part1_supervised_lr_embeddings_seed42_v1/model.joblib": "models/part1_supervised_lr.joblib",
+    "experiments/runs/part2_tfidf_lr_by_phase_seed42_v1/model.joblib": "models/part2_baseline.joblib",
+    "refinement/part1_local_consensus_2026_11_02/part1_local_consensus_6a6949390a85.csv": "submissions/part1_best_public_6a6949390a85.csv",
+    "refinement/submissions/part1_graph_candidate.csv": "submissions/history/part1_graph_candidate.csv",
+    "refinement/submissions/part2_candidate.csv": "submissions/history/part2_word_field.csv",
+    "submissions/part1_submission.csv": "submissions/history/part1_kmeans.csv",
+    "submissions/part2_submission.csv": "submissions/history/part2_text_blend.csv",
+    "final_selection.json": "results/history/final_selection_nov01.json"
+  },
+  "directories": {
+    "cs-5785-midterm-2026-clinical-trial-reason-prediction": "data/cs-5785-midterm-2026-clinical-trial-reason-prediction",
+    "cs-5785-midterm-2026-part-2-trial-outcome-prediction": "data/cs-5785-midterm-2026-part-2-trial-outcome-prediction",
+    "data_audit": "results/data_audit",
+    "evaluation_protocol": "results/evaluation_protocol",
+    "experiments": "results/experiments",
+    "label_augmentation": "results/augmentation",
+    "part1_final": "results/part1_kmeans",
+    "part2_baseline": "results/part2_baseline",
+    "part2_final": "results/part2_text_blend",
+    "refinement/part1_baseline_parity_2026_11_02": "results/part1_parity",
+    "refinement/part1_local_consensus_2026_11_02": "results/part1_local",
+    "refinement/rank_improvement_2026_11_02/part2": "results/part2_phase_shared",
+    "refinement/part1_structure_geometry_2026_11_02": "results/exploration/structure_geometry",
+    "refinement/part1_label_shift_2026_11_02": "results/exploration/label_shift",
+    "refinement/part1_other_views_2026_11_02": "results/exploration/other_views",
+    "refinement/part1_local_followup_2026_11_02": "results/exploration/local_followup",
+    "refinement/part1_ridge_boundary_2026_11_02": "results/exploration/ridge_boundary"
+  },
+  "aliases": {
+    "part1_final/part1_submission.csv": "submissions/history/part1_kmeans.csv",
+    "part2_final/part2_submission.csv": "submissions/history/part2_text_blend.csv",
+    "refinement/rank_improvement_2026_11_02/part2/part2_phase_shared_candidate.csv": "submissions/part2_best_public.csv",
+    "experiments/runs/part2_word_character_blend_seed42_v1/model.joblib": "models/part2_text_blend.joblib",
+    "part1_final/part1_train_augmented.csv": "results/experiments/runs/part1_kmeans_k10_lr_pseudo010_seed42_v1/part1_train_augmented.csv"
+  }
+}

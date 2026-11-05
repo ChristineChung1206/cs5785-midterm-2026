@@ -1,0 +1,16 @@
+{
+  "selected_model": "supervised_baseline",
+  "selected_run_id": "part1_supervised_lr_embeddings_seed42_v1",
+  "selection_metric": "f1_samples",
+  "selection_value": 0.8653846153846155,
+  "tie_policy": "Retain the earlier baseline",
+  "no_additional_tuning": true,
+  "findings": [
+    "**Best observed sample-wise F1:** supervised_baseline (0.865385).",
+    "Both augmentation methods recovered every masked row and preserved all 157 observed label vectors.",
+    "**KMEANS:** sample-wise F1 0.820513 (change -0.044872); macro F1 0.633167. Funding: TP=1, FP=0, FN=3; empty pseudo-label sets=0.",
+    "**GMM:** sample-wise F1 0.666667 (change -0.198718); macro F1 0.448922. Funding: TP=1, FP=0, FN=3; empty pseudo-label sets=363.",
+    "**Current decision:** retain the supervised baseline as the strongest observed primary-metric control. The unsupervised recovery stage is implemented and documented, but this fixed augmentation did not improve the primary score.",
+    "**Limits:** nonrandom visible seeds, hard pseudo-label errors, only 78 validation rows, and uncalibrated confidence diagnostics."
+  ]
+}

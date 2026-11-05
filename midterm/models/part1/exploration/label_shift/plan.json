@@ -1,0 +1,27 @@
+{
+  "source_year_max": 2006,
+  "target_years": [
+    2007,
+    2008,
+    2009
+  ],
+  "source_rows": 667,
+  "target_unlabeled_rows": 556,
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "reason_applied": "Recruitment",
+  "other_reasons_unchanged": true,
+  "source_prior": "observed source-gold prevalence, with all-source mean model probability diagnostic",
+  "target_prior": "binary EM on all 556 unlabeled target embeddings",
+  "cross_check": "BBSE from four-fold source-gold OOF hard decisions at 0.35",
+  "pass_gate": "EM converged, BBSE feasible with TPR-FPR >= 0.1, prior disagreement <= 0.10, sample F1 gain >= 0.01 over source-model alpha0 and train-only baseline, >=3 positive rows",
+  "input_sha256": {
+    "train": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "val": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "test": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a"
+  }
+}

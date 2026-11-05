@@ -1,0 +1,5 @@
+model,threshold,gold_fit_rows,decision_policy,n_rows,f1_samples,f1_macro,n_empty_set_fallbacks,exact_sets,subset_accuracy
+supervised_lr,0.5,157,threshold_then_argmax_if_empty,78,0.8782051282051284,0.6989897959183673,4,61,0.782051282051282
+initial_kmeans_lr,0.5,157,threshold_then_argmax_if_empty,78,0.8547008547008548,0.6690445066915655,3,62,0.7948717948717948
+retained_kmeans_lr,0.35,157,threshold_then_argmax_if_empty,78,0.8782051282051282,0.7648422333984687,0,64,0.8205128205128205
+fixed_ridge_157_gold,0.5,157,threshold_then_argmax_if_empty,78,0.8931623931623932,0.7829102167182663,7,65,0.8333333333333334

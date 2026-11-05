@@ -1,0 +1,45 @@
+{
+  "selected_run_id": "part1_s5_kmeans_threshold035_seed42_v1",
+  "selected_model": "K-Means + LR, threshold=0.35",
+  "selected_feature_setting": "embeddings",
+  "selected_C": 0.1,
+  "thresholds": {
+    "Safety": 0.35,
+    "Funding": 0.35,
+    "Efficacy": 0.35,
+    "Recruitment": 0.35,
+    "Other": 0.35
+  },
+  "selected_sample_f1": 0.8782051282051282,
+  "selected_macro_f1": 0.7648422333984687,
+  "best_overall_run_id": "part1_s5_kmeans_threshold035_seed42_v1",
+  "best_overall_sample_f1": 0.8782051282051282,
+  "selection_policy": "Best augmented candidate for main outputs; report supervised control separately",
+  "tie_policy": "First prespecified candidate",
+  "selection_metric": "f1_samples",
+  "candidate_run_ids": [
+    "part1_supervised_lr_embeddings_seed42_v1",
+    "part1_kmeans_k10_lr_pseudo010_seed42_v1",
+    "part1_gmm_k10_lr_pseudo010_seed42_v1",
+    "part1_s5_kmeans_broadpath_c1_t050_seed42_v1",
+    "part1_s5_kmeans_reg_c01_t050_seed42_v1",
+    "part1_s5_kmeans_reg_c10_t050_seed42_v1",
+    "part1_s5_kmeans_threshold035_seed42_v1",
+    "part1_s5_kmeans_threshold065_seed42_v1"
+  ],
+  "new_settings": 5,
+  "training_code_sha256": "b581289ee82bc1a55eb7a049e8569fcabe76604aae148beb3585ef2017b95782",
+  "finalization_module_sha256": "e5c1c2b2731cb9471743f95ccc8b3e70b67a31c6aac7d0228e50c10db863a85e",
+  "runtime_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "train_sha256": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+  "validation_sha256": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+  "selected_model_file_sha256": "cadf3559c0e6c0069ec1f58f8f99aea4660684cb021b1727cb53914e7a054fdf",
+  "refit_with_validation": false
+}

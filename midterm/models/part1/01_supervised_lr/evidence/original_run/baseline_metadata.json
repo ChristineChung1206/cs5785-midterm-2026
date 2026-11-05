@@ -1,0 +1,34 @@
+{
+  "run_id": "part1_supervised_lr_embeddings_seed42_v1",
+  "runtime_versions": {
+    "numpy": "2.2.5",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.7",
+    "joblib": "1.5.3"
+  },
+  "training_code_sha256": "b4f65fe224711681c108f1716052183fe3407de7ff49f3b91cd088e4186103dc",
+  "scaler_training_rows": 1171,
+  "classifier_training_rows": 157,
+  "validation_rows": 78,
+  "seed": 42,
+  "threshold": 0.5,
+  "reason_order": [
+    "Safety",
+    "Funding",
+    "Efficacy",
+    "Recruitment",
+    "Other"
+  ],
+  "regularization": "L2",
+  "training_warnings": [
+    "l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)",
+    "l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)",
+    "l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)",
+    "l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)",
+    "l1_ratio parameter is only used when penalty is 'elasticnet'. Got (penalty=l2)"
+  ],
+  "empty_validation_predictions": 4,
+  "zero_f1_validation_trials": 6,
+  "raw_sources_and_prior_notebooks_unchanged": true
+}

@@ -1,0 +1,27 @@
+{
+  "oof_ranked": [
+    "primary_secondary",
+    "control",
+    "primary_only",
+    "geometry_30",
+    "geometry_60",
+    "centroid_30",
+    "geometry_100",
+    "centroid_100",
+    "centroid_60"
+  ],
+  "oof_sample_f1": {
+    "control": 0.8895966029723991,
+    "primary_only": 0.8768577494692146,
+    "primary_secondary": 0.8959660297239914,
+    "geometry_30": 0.8598726114649682,
+    "geometry_60": 0.8513800424628449,
+    "geometry_100": 0.8152866242038217,
+    "centroid_30": 0.8195329087048832,
+    "centroid_60": 0.7876857749469214,
+    "centroid_100": 0.7940552016985137
+  },
+  "secondary_threshold": 0.55,
+  "validation_labels_seen": false,
+  "selection_rule": "highest pooled OOF sample F1; time backtest and validation are directional checks"
+}

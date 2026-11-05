@@ -1,0 +1,52 @@
+{
+  "thresholds": {
+    "residual": 0.85,
+    "text": 0.45
+  },
+  "oof_baseline_f1": 0.8895966029723991,
+  "oof_grid": [
+    {
+      "method": "residual",
+      "threshold": 0.65,
+      "sample_f1": 0.8842887473460721,
+      "fixed_rows": 3,
+      "new_error_rows": 8
+    },
+    {
+      "method": "residual",
+      "threshold": 0.75,
+      "sample_f1": 0.8874734607218683,
+      "fixed_rows": 1,
+      "new_error_rows": 3
+    },
+    {
+      "method": "residual",
+      "threshold": 0.85,
+      "sample_f1": 0.89171974522293,
+      "fixed_rows": 1,
+      "new_error_rows": 1
+    },
+    {
+      "method": "text",
+      "threshold": 0.25,
+      "sample_f1": 0.8874734607218683,
+      "fixed_rows": 0,
+      "new_error_rows": 1
+    },
+    {
+      "method": "text",
+      "threshold": 0.35,
+      "sample_f1": 0.8895966029723991,
+      "fixed_rows": 0,
+      "new_error_rows": 0
+    },
+    {
+      "method": "text",
+      "threshold": 0.45,
+      "sample_f1": 0.8895966029723991,
+      "fixed_rows": 0,
+      "new_error_rows": 0
+    }
+  ],
+  "time_and_validation_labels_used_for_threshold_selection": false
+}

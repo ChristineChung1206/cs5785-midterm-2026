@@ -1,0 +1,13 @@
+{
+  "fixed_model": "up to two diagonal Gaussians per single-label class (one if fewer than four seeds), empirical class prior",
+  "geometry": "Ledoit-Wolf covariance whitening",
+  "dimensions": [
+    30,
+    60,
+    100
+  ],
+  "selection_status": "exploratory_after_round2_validation_inspection",
+  "validation_is_independent_for_this_comparison": false,
+  "selected_model_changed": false,
+  "test_prediction_written": false
+}

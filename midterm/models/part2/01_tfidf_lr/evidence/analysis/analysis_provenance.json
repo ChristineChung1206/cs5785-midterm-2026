@@ -1,0 +1,15 @@
+{
+  "failed_trial_phase_rows": 452,
+  "lookup_rows": 1561,
+  "matched_empty_reason_trial_phase_rows": 0,
+  "matched_trial_phase_rows": 198,
+  "observed_reason_trial_phase_rows": 27,
+  "outcome_model_run_id": "part2_tfidf_lr_by_phase_seed42_v1",
+  "part1_model_run_id": "part1_s5_kmeans_threshold035_seed42_v1",
+  "predicted_reason_trial_phase_rows": 171,
+  "predicted_training_resubstitution_rows": 131,
+  "reason_lookup_sha256": "170b9feafeb4118405911c116c226af9b2b7272085d462d695e7610f755aca0a",
+  "reasons_used_as_predictors": false,
+  "unique_failed_trials": 398,
+  "unmatched_trial_phase_rows": 254
+}

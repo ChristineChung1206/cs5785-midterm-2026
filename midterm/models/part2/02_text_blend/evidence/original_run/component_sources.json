@@ -1,0 +1,29 @@
+{
+  "kind": "word_character_probability_blend",
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "flat_weights": {
+    "concatenated_word": 0.25,
+    "separate_field_word": 0.25,
+    "character": 0.5
+  },
+  "positive_class": 1,
+  "refit_performed": false,
+  "input_sha256": {
+    "part2_train": "7dabba85cc71515741efdb3a75ff7f1e87deb93b8fac410033ed962a6a314719",
+    "part2_val": "a49da3fbb168a18b776346c84f3b2d0bd137f6282935a260f811e47329d80a1b"
+  },
+  "components": {
+    "word_blend": {
+      "run_id": "part2_equal_probability_blend_seed42_v1",
+      "model_sha256": "37ecbed9986a2cc75e9c7c9fa52fb86bf4c36c2ebfbaf19cfd1b4c3beefab6b7"
+    },
+    "character": {
+      "study": "refinement/oof_weight_char",
+      "candidate_sha256": "95423c00978cb689a336aa376d98ae40075248f9ea532a5a9033435936635817"
+    }
+  },
+  "selection": "Fixed candidate selected on grouped training OOF and confirmed on validation before public submission"
+}

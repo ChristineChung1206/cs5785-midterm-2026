@@ -1,0 +1,31 @@
+{
+  "models": [
+    "control",
+    "primary",
+    "geometry_30",
+    "geometry_60",
+    "geometry_100",
+    "centroid_30",
+    "centroid_60",
+    "centroid_100"
+  ],
+  "secondary_thresholds": [
+    0.35,
+    0.45,
+    0.55,
+    0.65
+  ],
+  "folds": 4,
+  "seed": 42,
+  "primary_training": "single-label gold only",
+  "secondary_training": "existing K-Means augmented binary reason model",
+  "geometry": "Ledoit-Wolf shrunk covariance eigenvectors, top 30/60/100, inverse-square-root scaling",
+  "temporal_fit": "train rows start_year <= 2006, held-out train gold 2007-2009",
+  "validation_in_selection": false,
+  "test_labels_used": false,
+  "input_sha256": {
+    "train": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "val": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "test": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a"
+  }
+}

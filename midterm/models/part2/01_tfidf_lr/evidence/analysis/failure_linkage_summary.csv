@@ -1,0 +1,10 @@
+phase,reason_group,source_type,trial_phase_rows,unique_trials
+I,assigned_reasons,observed,4,4
+I,assigned_reasons,predicted,32,32
+I,no_recorded_stopping_reason,unmatched,28,28
+II,assigned_reasons,observed,16,16
+II,assigned_reasons,predicted,105,105
+II,no_recorded_stopping_reason,unmatched,144,144
+III,assigned_reasons,observed,7,7
+III,assigned_reasons,predicted,34,34
+III,no_recorded_stopping_reason,unmatched,82,82

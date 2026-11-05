@@ -1,0 +1,20 @@
+{
+  "setting_id": 4,
+  "setting": {
+    "alpha": 0.35,
+    "half_life": 6
+  },
+  "blend_weight": 0.5,
+  "temporal_current_final_control_loss": 0.58425087205792,
+  "temporal_phase_shared_loss": 0.5694314219026171,
+  "temporal_selected_blend_loss": 0.5728800009817229,
+  "oof_current_final_loss": 0.5964861595292898,
+  "oof_candidate_loss": 0.5915460014326781,
+  "validation_current_final_loss": 0.5808998112673002,
+  "validation_candidate_loss": 0.5683928480796635,
+  "validation_reproduction_max_abs_error": 0.0,
+  "passes_local_gate": true,
+  "final_replaced": false,
+  "kaggle_uploaded": false,
+  "candidate_submission": "refinement/rank_improvement_2026_11_02/part2/part2_phase_shared_candidate.csv"
+}

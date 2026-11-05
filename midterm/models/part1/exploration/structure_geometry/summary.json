@@ -1,0 +1,14 @@
+{
+  "selected": "control",
+  "oof_f1": 0.8895966029723991,
+  "time_f1": 0.8416666666666666,
+  "pre_refit_validation_f1": 0.8782051282051282,
+  "frozen_validation_f1": 0.8782051282051282,
+  "refit_gold_count": 235,
+  "test_predicted_multi": 66,
+  "candidate_path": "refinement/part1_structure_geometry_2026_11_02/part1_refit_235_candidate.csv",
+  "candidate_sha256": "94b4a22eb2aa5a1b6c956184f55f223803b06ccaeb426911eb5621b6cae981f1",
+  "original_final_replaced": false,
+  "kaggle_uploaded": false,
+  "warning": "Validation labels entered final refit; validation score is no longer an independent estimate for that fitted model."
+}

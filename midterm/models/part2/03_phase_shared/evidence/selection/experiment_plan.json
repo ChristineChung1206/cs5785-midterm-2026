@@ -1,0 +1,50 @@
+{
+  "settings": [
+    {
+      "alpha": 0.0,
+      "half_life": null
+    },
+    {
+      "alpha": 0.35,
+      "half_life": null
+    },
+    {
+      "alpha": 1.0,
+      "half_life": null
+    },
+    {
+      "alpha": 0.35,
+      "half_life": 12
+    },
+    {
+      "alpha": 0.35,
+      "half_life": 6
+    }
+  ],
+  "blend_weights": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "word_tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 3,
+    "lowercase": true,
+    "strip_accents": "unicode",
+    "sublinear_tf": true,
+    "smooth_idf": true,
+    "use_idf": true,
+    "norm": "l2",
+    "stop_words": null,
+    "max_features": 30000,
+    "dtype": "<class 'numpy.float32'>"
+  },
+  "temporal_cutoff": 2009,
+  "selection_order": "temporal setting, then grouped OOF blend weight, then one official validation check",
+  "reason_features_used": false,
+  "test_labels_used": false
+}

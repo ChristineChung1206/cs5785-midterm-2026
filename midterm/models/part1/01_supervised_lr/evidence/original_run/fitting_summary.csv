@@ -1,0 +1,6 @@
+reason,train_positives,train_negatives,iterations,converged
+Safety,16,141,8,True
+Funding,8,149,7,True
+Efficacy,17,140,7,True
+Recruitment,101,56,8,True
+Other,25,132,7,True

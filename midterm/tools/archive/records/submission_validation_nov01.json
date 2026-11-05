@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "part": 1,
+      "rows": 312,
+      "unique_ids": 312,
+      "columns": [
+        "ID",
+        "Predicted"
+      ],
+      "status": "PASS"
+    },
+    {
+      "part": 2,
+      "rows": 1500,
+      "unique_ids": 1500,
+      "columns": [
+        "ID",
+        "label"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "part1_sha256": "88e5a1d700e7167b04d7add58164227dafaf2cb59a5ebb156cf06323a6b520e6",
+  "part2_sha256": "3a5bfa9d8011a3bb674ba4ab228838ca170014173daca1e508c669c4418a7c52",
+  "part2_selected_model": "part2_word_character_blend_seed42_v1",
+  "user_reported_public_scores": {
+    "part1": 0.85405,
+    "part2": 0.59696
+  },
+  "uploads_performed_by_this_integration": false
+}

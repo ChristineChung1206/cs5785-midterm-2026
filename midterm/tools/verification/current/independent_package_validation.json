@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "extracted_to": "/private/tmp/midterm-independent-final-kbh9ffpb/midterm",
+  "source_archive_sha256": "d89629cbbc0640e6544de628cf7c3031ffe010b751eb572059f2a4aff15a08e6",
+  "package_inventory": {
+    "status": "PASS",
+    "verified_files": 351
+  },
+  "reproduction": {
+    "part1": {
+      "rows": 312,
+      "model": "models/part1/02_kmeans_lr/model.joblib",
+      "submission": "models/part1/02_kmeans_lr/submission.csv",
+      "submission_sha256": "88e5a1d700e7167b04d7add58164227dafaf2cb59a5ebb156cf06323a6b520e6"
+    },
+    "part1_best_public": {
+      "rows": 312,
+      "model": "models/part1/03_kernel_ridge/model.joblib",
+      "submission": "models/part1/03_kernel_ridge/submission.csv",
+      "submission_sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c"
+    },
+    "part2": {
+      "submitted_original": {
+        "rows": 1500,
+        "submission": "models/part2/02_text_blend/submission.csv",
+        "submission_sha256": "3a5bfa9d8011a3bb674ba4ab228838ca170014173daca1e508c669c4418a7c52",
+        "max_absolute_probability_gap": 0.0
+      },
+      "best_public": {
+        "rows": 1500,
+        "submission": "models/part2/03_phase_shared/submission.csv",
+        "submission_sha256": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990",
+        "max_absolute_probability_gap": 0.0
+      }
+    },
+    "registry": {
+      "status": "PASS",
+      "recorded_submissions": 6
+    },
+    "status": "PASS",
+    "exported_best": {
+      "part1": {
+        "filename": "part1.csv",
+        "sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c"
+      },
+      "part2": {
+        "filename": "part2.csv",
+        "sha256": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990"
+      }
+    }
+  },
+  "unit_tests_exit_code": 0,
+  "notebook_execution": {
+    "python": "3.12.16",
+    "no_training": true,
+    "all_successful": true,
+    "notebooks": [
+      {
+        "notebook": "tools/notebooks/01_data_protocol.ipynb",
+        "sha256": "da3159fe50c6f2f3f2cb5b1b93e1c9b4e3f8ea52fe69b4d08c98080d54338144",
+        "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+        "code_cells_executed": 5,
+        "errors": 0,
+        "training_enabled": false,
+        "elapsed_seconds": 0.761,
+        "success": true
+      },
+      {
+        "notebook": "tools/notebooks/02_part1.ipynb",
+        "sha256": "49ba5984fbf09b0a3bdf0025c08cf7cc382f76a08fa37ec40ea73dc5dd585076",
+        "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+        "code_cells_executed": 9,
+        "errors": 0,
+        "training_enabled": false,
+        "elapsed_seconds": 1.126,
+        "success": true
+      },
+      {
+        "notebook": "tools/notebooks/03_part2.ipynb",
+        "sha256": "be118df19743ba45b4a5b4a13bb294cc784396927f1529c0e6a0e6f021304a53",
+        "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+        "code_cells_executed": 6,
+        "errors": 0,
+        "training_enabled": false,
+        "elapsed_seconds": 1.588,
+        "success": true
+      },
+      {
+        "notebook": "tools/notebooks/04_error_analysis.ipynb",
+        "sha256": "04fb46ef9627ad148f3f14e45d0e8710dfc8799db6ba18e4f2335242f8d901dc",
+        "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+        "code_cells_executed": 6,
+        "errors": 0,
+        "training_enabled": false,
+        "elapsed_seconds": 1.05,
+        "success": true
+      }
+    ]
+  },
+  "report_provenance_still_valid_after_notebooks": true,
+  "exported_csv_sha256": {
+    "part1.csv": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+    "part2.csv": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990"
+  },
+  "python_path_environment": "empty",
+  "cwd": "extracted midterm directory",
+  "training_performed": false,
+  "original_project_or_sibling_deliverables_required": false
+}

@@ -1,0 +1,9 @@
+{
+  "graph_cv_winner": "p1geo_graph_lr_k15_v1",
+  "knn_cv_winner": "p1geo_knn_k5_v1",
+  "graph_validation_f1": 0.8931623931623932,
+  "current_validation_f1": 0.8782051282051282,
+  "improved_official_validation": true,
+  "selected_submission": "p1geo_graph_lr_k15_v1",
+  "test_used": false
+}

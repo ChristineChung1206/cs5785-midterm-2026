@@ -1,0 +1,237 @@
+{
+  "overall": {
+    "current_fixed": {
+      "sample_f1": 0.8877068557919621,
+      "exact_set_rate": 0.8141843971631205
+    },
+    "current_retuned": {
+      "sample_f1": 0.8847281323877069,
+      "exact_set_rate": 0.8241134751773049
+    },
+    "local": {
+      "sample_f1": 0.8964539007092198,
+      "exact_set_rate": 0.8425531914893617
+    },
+    "after_consensus": {
+      "sample_f1": 0.8964539007092198,
+      "exact_set_rate": 0.8425531914893617
+    },
+    "final": {
+      "sample_f1": 0.8983451536643027,
+      "exact_set_rate": 0.8453900709219858
+    }
+  },
+  "by_repeat": {
+    "0": {
+      "current_fixed": {
+        "sample_f1": 0.8794326241134751,
+        "exact_set_rate": 0.8
+      },
+      "current_retuned": {
+        "sample_f1": 0.8836879432624113,
+        "exact_set_rate": 0.8382978723404255
+      },
+      "local": {
+        "sample_f1": 0.8822695035460993,
+        "exact_set_rate": 0.8170212765957446
+      },
+      "after_consensus": {
+        "sample_f1": 0.8822695035460993,
+        "exact_set_rate": 0.8170212765957446
+      },
+      "final": {
+        "sample_f1": 0.8822695035460993,
+        "exact_set_rate": 0.8170212765957446
+      }
+    },
+    "1": {
+      "current_fixed": {
+        "sample_f1": 0.8985815602836879,
+        "exact_set_rate": 0.825531914893617
+      },
+      "current_retuned": {
+        "sample_f1": 0.892482269503546,
+        "exact_set_rate": 0.8127659574468085
+      },
+      "local": {
+        "sample_f1": 0.899290780141844,
+        "exact_set_rate": 0.851063829787234
+      },
+      "after_consensus": {
+        "sample_f1": 0.899290780141844,
+        "exact_set_rate": 0.851063829787234
+      },
+      "final": {
+        "sample_f1": 0.9035460992907802,
+        "exact_set_rate": 0.8553191489361702
+      }
+    },
+    "2": {
+      "current_fixed": {
+        "sample_f1": 0.8851063829787233,
+        "exact_set_rate": 0.8170212765957446
+      },
+      "current_retuned": {
+        "sample_f1": 0.8780141843971631,
+        "exact_set_rate": 0.8212765957446808
+      },
+      "local": {
+        "sample_f1": 0.9078014184397162,
+        "exact_set_rate": 0.8595744680851064
+      },
+      "after_consensus": {
+        "sample_f1": 0.9078014184397162,
+        "exact_set_rate": 0.8595744680851064
+      },
+      "final": {
+        "sample_f1": 0.9092198581560283,
+        "exact_set_rate": 0.8638297872340426
+      }
+    }
+  },
+  "by_source": {
+    "train": {
+      "current_fixed": {
+        "sample_f1": 0.9033970276008493,
+        "exact_set_rate": 0.8301486199575372
+      },
+      "current_retuned": {
+        "sample_f1": 0.9021231422505307,
+        "exact_set_rate": 0.8407643312101911
+      },
+      "local": {
+        "sample_f1": 0.9115357395612174,
+        "exact_set_rate": 0.8577494692144374
+      },
+      "after_consensus": {
+        "sample_f1": 0.9115357395612174,
+        "exact_set_rate": 0.8577494692144374
+      },
+      "final": {
+        "sample_f1": 0.9122434536447275,
+        "exact_set_rate": 0.8598726114649682
+      }
+    },
+    "validation": {
+      "current_fixed": {
+        "sample_f1": 0.856125356125356,
+        "exact_set_rate": 0.782051282051282
+      },
+      "current_retuned": {
+        "sample_f1": 0.8497150997150996,
+        "exact_set_rate": 0.7905982905982906
+      },
+      "local": {
+        "sample_f1": 0.8660968660968661,
+        "exact_set_rate": 0.811965811965812
+      },
+      "after_consensus": {
+        "sample_f1": 0.8660968660968661,
+        "exact_set_rate": 0.811965811965812
+      },
+      "final": {
+        "sample_f1": 0.8703703703703703,
+        "exact_set_rate": 0.8162393162393162
+      }
+    }
+  },
+  "repeat_gains": [
+    -0.0014184397163119478,
+    0.011063829787234192,
+    0.031205673758865293
+  ],
+  "mean_gain": 0.013617021276595809,
+  "group_bootstrap_95_percent": [
+    -0.006901098757699132,
+    0.03493562096788685
+  ],
+  "group_wins": 26,
+  "group_losses": 18,
+  "diagnostic_metrics": {
+    "historical_validation": {
+      "current_fixed": {
+        "sample_f1": 0.8782051282051282,
+        "exact_set_rate": 0.8205128205128205
+      },
+      "current_retuned": {
+        "sample_f1": 0.8782051282051282,
+        "exact_set_rate": 0.8205128205128205
+      },
+      "local": {
+        "sample_f1": 0.8803418803418804,
+        "exact_set_rate": 0.8205128205128205
+      },
+      "after_consensus": {
+        "sample_f1": 0.8803418803418804,
+        "exact_set_rate": 0.8205128205128205
+      },
+      "final": {
+        "sample_f1": 0.8803418803418804,
+        "exact_set_rate": 0.8205128205128205
+      }
+    },
+    "late_train_20": {
+      "current_fixed": {
+        "sample_f1": 0.8416666666666666,
+        "exact_set_rate": 0.75
+      },
+      "current_retuned": {
+        "sample_f1": 0.8416666666666666,
+        "exact_set_rate": 0.75
+      },
+      "local": {
+        "sample_f1": 0.9333333333333332,
+        "exact_set_rate": 0.9
+      },
+      "after_consensus": {
+        "sample_f1": 0.9333333333333332,
+        "exact_set_rate": 0.9
+      },
+      "final": {
+        "sample_f1": 0.8833333333333332,
+        "exact_set_rate": 0.85
+      }
+    },
+    "late_combined_56": {
+      "current_fixed": {
+        "sample_f1": 0.8392857142857143,
+        "exact_set_rate": 0.6785714285714286
+      },
+      "current_retuned": {
+        "sample_f1": 0.8303571428571429,
+        "exact_set_rate": 0.7857142857142857
+      },
+      "local": {
+        "sample_f1": 0.886904761904762,
+        "exact_set_rate": 0.8392857142857143
+      },
+      "after_consensus": {
+        "sample_f1": 0.886904761904762,
+        "exact_set_rate": 0.8392857142857143
+      },
+      "final": {
+        "sample_f1": 0.886904761904762,
+        "exact_set_rate": 0.8392857142857143
+      }
+    }
+  },
+  "consensus_enabled_folds": 12,
+  "candidate_gate": {
+    "mean_oof_gain": true,
+    "positive_at_least_two_repeats": true,
+    "worst_repeat": true,
+    "both_sources": true,
+    "late_56_no_large_regression": true
+  },
+  "candidate_allowed": true,
+  "elapsed_seconds": 23.27763795852661,
+  "caveat": "All 235 labels were previously inspected. Nested resampling is selection evidence, not a fresh external test.",
+  "candidate": {
+    "filename": "part1_local_consensus_6a6949390a85.csv",
+    "sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+    "rows": 312,
+    "changed_vs_public_best": 61,
+    "model_sha256": "ac7e9071da7a309ded2fa32c14eb7bf9010bafffb9773d7383b88d767cb82a46",
+    "kaggle_uploaded": false
+  }
+}

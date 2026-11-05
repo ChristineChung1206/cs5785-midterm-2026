@@ -1,0 +1,59 @@
+{
+  "project_root": "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm",
+  "python_version": "3.12.16",
+  "packages": {
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "ipython": "9.18.0"
+  },
+  "source_sha256": {
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-clinical-trial-reason-prediction/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-part-2-trial-outcome-prediction/outcome_train.csv": "7dabba85cc71515741efdb3a75ff7f1e87deb93b8fac410033ed962a6a314719",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-clinical-trial-reason-prediction/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-part-2-trial-outcome-prediction/outcome_val.csv": "a49da3fbb168a18b776346c84f3b2d0bd137f6282935a260f811e47329d80a1b",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-clinical-trial-reason-prediction/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-part-2-trial-outcome-prediction/outcome_test.csv": "39fef81bb60e084e75f4cc0947c31e8400dace18fe9b6a0ea0e266240b9f679f",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-clinical-trial-reason-prediction/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-part-2-trial-outcome-prediction/part2_sample_submission.csv": "15c38fd743cdaac694f0e9fff34f0060c97b11cf682cd22bd3434ad2111f74a8",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-clinical-trial-reason-prediction/pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-part-2-trial-outcome-prediction/pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/CS5785_Midterm_Starter.ipynb": "6cb3df30ebe090963187c3d0597af7ea67cf104d2a05dd2bee30bc9569b97320"
+  },
+  "source_files_unchanged": true,
+  "checks_passed": 71,
+  "checks_failed": 0,
+  "tables": [
+    "column_groups",
+    "column_schema",
+    "cross_part_trial_overlap",
+    "dataset_overview",
+    "drug_match_coverage",
+    "embedding_by_dimension",
+    "embedding_summary",
+    "integrity_checks",
+    "missing_values_all_columns",
+    "missing_values_nonzero",
+    "part1_label_cardinality",
+    "part1_label_status",
+    "part1_reason_distribution",
+    "part2_failed_validation_reason_sources",
+    "part2_phase_outcomes",
+    "part2_validation_linkage_summary",
+    "part2_validation_reason_linkage",
+    "pathway_levels",
+    "pathway_reference_coverage",
+    "source_manifest",
+    "within_part_split_overlap",
+    "year_counts",
+    "year_summary"
+  ],
+  "figures": [
+    "01_missing_features.png",
+    "02_part1_labels.png",
+    "03_part2_phase_outcomes.png",
+    "04_year_distributions.png",
+    "05_validation_reason_coverage.png"
+  ],
+  "scope": "Descriptive data audit only; no model fitting, label imputation or submissions."
+}

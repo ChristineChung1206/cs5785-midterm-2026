@@ -1,0 +1,31 @@
+{
+  "baseline_f1": 0.8392857142857143,
+  "train_only_early_baseline_f1": 0.869047619047619,
+  "best": {
+    "alpha": 1.0,
+    "sample_f1": 0.8452380952380951,
+    "gain_vs_alpha0": 0.00595238095238082,
+    "recruitment_f1": 0.9767441860465116,
+    "changed_decision_rows": 1,
+    "positive_row_deltas": 1,
+    "negative_row_deltas": 0,
+    "predicted_multi": 20
+  },
+  "recruitment_source_prior": 0.7329545454545454,
+  "recruitment_em_target_prior": 0.5479472360959892,
+  "recruitment_bbse_target_prior": 0.6071672362169077,
+  "em_bbse_difference": 0.05922000012091855,
+  "gates": {
+    "em_converged": true,
+    "bbse_identifiable": true,
+    "bbse_raw_feasible": true,
+    "em_bbse_agree_within_0p10": true,
+    "f1_gain_at_least_0p01": false,
+    "beats_train_only_baseline_by_0p01": false,
+    "at_least_three_positive_rows": false,
+    "nonzero_alpha_wins": true
+  },
+  "passed": false,
+  "test_predictions_touched": false,
+  "note": "56 hidden labels were read only after priors and target probabilities were saved."
+}

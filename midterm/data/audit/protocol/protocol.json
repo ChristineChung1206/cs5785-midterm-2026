@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "seed": 42,
+  "selection_split": "provided_validation",
+  "part1": {
+    "primary_metric": "f1_samples",
+    "higher_is_better": true,
+    "report": [
+      "f1_samples",
+      "f1_macro",
+      "f1_per_reason",
+      "positive_support_per_reason"
+    ]
+  },
+  "part2": {
+    "primary_metric": "log_loss_equal_phase",
+    "higher_is_better": false,
+    "report_per_phase": [
+      "f1",
+      "roc_auc",
+      "average_precision",
+      "log_loss",
+      "positive_support",
+      "negative_support"
+    ],
+    "positive_class": 1,
+    "PR_AUC_definition": "sklearn average_precision_score; no trapezoidal PR integration"
+  },
+  "decision_rule": "probability >= threshold",
+  "initial_threshold": 0.5,
+  "f1_zero_division": 0,
+  "log_loss_clipping_epsilon": 1e-15,
+  "undefined_auc_policy": "ROC-AUC: missing for single-class/no-row phases; AP: missing for no-positive/no-row phases; JSON uses null.",
+  "preprocessing": "Fit each model, scaler, vocabulary, clusterer, and imputer using training data only; transform validation/test.",
+  "part2_forbidden_inputs": [
+    "ID",
+    "trial_id",
+    "label",
+    "Safety",
+    "Funding",
+    "Efficacy",
+    "Recruitment",
+    "Other",
+    "emb_0 through emb_149"
+  ],
+  "hyperparameter_search": "Start with a small prespecified set. Record a hypothesis and every tried setting, including thresholds and unsuccessful runs. No automatic search is performed here.",
+  "part2_optional_cv": {
+    "n_splits": 5,
+    "group": "trial_id",
+    "strata": "phase + outcome label",
+    "method": "StratifiedGroupKFold",
+    "fit_preprocessing_inside_each_training_fold": true
+  }
+}

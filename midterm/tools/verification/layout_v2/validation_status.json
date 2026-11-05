@@ -1,0 +1,31 @@
+{
+  "unit_tests": {
+    "exit_code": 0
+  },
+  "reproduce": {
+    "exit_code": 0
+  },
+  "train_help": {
+    "exit_code": 0
+  },
+  "midterm_refinement": {
+    "exit_code": 1,
+    "guarded": true
+  },
+  "midterm_next_round": {
+    "exit_code": 1,
+    "guarded": true
+  },
+  "midterm_rank_part2": {
+    "exit_code": 1,
+    "guarded": true
+  },
+  "model_sha256": {
+    "part2_text_blend.joblib": "13a209483a7b2a4f2917f896f81a1e8044cfc7f359ccfc2ef25afec8ed52ff51",
+    "part2_phase_shared.joblib": "c35022aad1940654ff25a546e254b3a2ce4ae871c3dde01c9d4eb81929956f0b",
+    "part1_supervised_lr.joblib": "201ed1355b1969c259fa98e02dbc8b3c015776f95421c19045e44a0861792fe8",
+    "part2_baseline.joblib": "c3d79d753376013990202189686c5dfd6d0251d2b92e10f97e04394e30681a5d",
+    "part1_ridge.joblib": "ac7e9071da7a309ded2fa32c14eb7bf9010bafffb9773d7383b88d767cb82a46",
+    "part1_kmeans.joblib": "cadf3559c0e6c0069ec1f58f8f99aea4660684cb021b1727cb53914e7a054fdf"
+  }
+}

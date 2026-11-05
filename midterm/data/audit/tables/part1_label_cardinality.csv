@@ -1,0 +1,13 @@
+group,positive_reasons_per_trial,trials,trial_rate
+train_visible,0,0,0.0
+train_visible,1,147,0.9363057324840764
+train_visible,2,10,0.06369426751592357
+train_visible,3,0,0.0
+train_visible,4,0,0.0
+train_visible,5,0,0.0
+validation,0,0,0.0
+validation,1,69,0.8846153846153846
+validation,2,9,0.11538461538461539
+validation,3,0,0.0
+validation,4,0,0.0
+validation,5,0,0.0

@@ -1,0 +1,10 @@
+{
+  "delta": -0.0013704450497393772,
+  "descriptive_95_percentile_interval": [
+    -0.005221142578613029,
+    0.0024923572215246716
+  ],
+  "bootstrap_draws": 2000,
+  "bootstrap_unit": "trial_id, preserving all phase rows",
+  "limitation": "Descriptive only; repeated validation use, model selection, and nonrandom label sampling are not accounted for."
+}

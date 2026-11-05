@@ -1,0 +1,81 @@
+{
+  "as_of": "2026-11-02 public screenshots; layout updated 2026-11-04",
+  "public_score_source": "User-provided Kaggle submission screenshots; private scores unknown",
+  "part1": {
+    "best_public": {
+      "submission": "models/part1/03_kernel_ridge/submission.csv",
+      "sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+      "score_type": "sample_f1",
+      "public_score": 0.88568,
+      "public_score_source": "User-provided latest Kaggle screenshot in this conversation, November 2, 2026",
+      "model": "models/part1/03_kernel_ridge/model.joblib",
+      "model_sha256": {
+        "models/part1/03_kernel_ridge/model.joblib": "ac7e9071da7a309ded2fa32c14eb7bf9010bafffb9773d7383b88d767cb82a46"
+      }
+    },
+    "rejected_uploaded_graph": {
+      "submission": "models/part1/exploration/graph/submission.csv",
+      "sha256": "020e1c4bb3d97879cc566e238b0e9ab2fcfb9b2cf7e110a0754fdd71b860754b",
+      "public_score": 0.84081
+    },
+    "previous_best_public": {
+      "submission": "models/part1/02_kmeans_lr/submission.csv",
+      "sha256": "88e5a1d700e7167b04d7add58164227dafaf2cb59a5ebb156cf06323a6b520e6",
+      "score_type": "sample_f1",
+      "public_score": 0.85405,
+      "model": "models/part1/02_kmeans_lr/model.joblib",
+      "model_sha256": {
+        "models/part1/02_kmeans_lr/model.joblib": "cadf3559c0e6c0069ec1f58f8f99aea4660684cb021b1727cb53914e7a054fdf"
+      }
+    }
+  },
+  "part2": {
+    "best_public": {
+      "submission": "models/part2/03_phase_shared/submission.csv",
+      "sha256": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990",
+      "score_type": "log_loss",
+      "public_score": 0.59011,
+      "blend_weight": 0.5,
+      "components": [
+        "models/part2/02_text_blend/model.joblib",
+        "models/part2/03_phase_shared/component.joblib"
+      ],
+      "model_sha256": {
+        "models/part2/02_text_blend/model.joblib": "13a209483a7b2a4f2917f896f81a1e8044cfc7f359ccfc2ef25afec8ed52ff51",
+        "models/part2/03_phase_shared/component.joblib": "c35022aad1940654ff25a546e254b3a2ce4ae871c3dde01c9d4eb81929956f0b"
+      },
+      "component_weights": [
+        0.5,
+        0.5
+      ]
+    },
+    "frozen_november_1_delivery": {
+      "submission": "models/part2/02_text_blend/submission.csv",
+      "sha256": "3a5bfa9d8011a3bb674ba4ab228838ca170014173daca1e508c669c4418a7c52",
+      "public_score": 0.59696,
+      "model_sha256": {
+        "models/part2/02_text_blend/model.joblib": "13a209483a7b2a4f2917f896f81a1e8044cfc7f359ccfc2ef25afec8ed52ff51"
+      }
+    },
+    "earlier_word_field_candidate": {
+      "submission": "models/part2/exploration/word_field/submission.csv",
+      "sha256": "6d8bff0fb5bde14fa708adb04a770b1a83ae032946368f0980b0a4eef41d63c4",
+      "public_score": 0.59962
+    },
+    "baseline_public_score": 0.60149
+  },
+  "frozen_delivery_selection": "tools/archive/records/final_selection_nov01.json",
+  "frozen_delivery_changed": false,
+  "manual_kaggle_selection_shown_in_screenshots": {
+    "part1": "0/2",
+    "part2": "0/2"
+  },
+  "layout_version": 3,
+  "layout_updated_at": "2026-11-04",
+  "delivery_files": {
+    "part1": "part1.csv",
+    "part2": "part2.csv",
+    "report": "final_report.pdf",
+    "code": "midterm_code.zip"
+  }
+}

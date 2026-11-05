@@ -1,0 +1,36 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[pagenumbers]{cvpr}
+% Tectonic/XeTeX uses TU encoding; map CVPR Times to installed Times New Roman.
+% Standard pdfLaTeX keeps cvpr.sty's normal Times configuration.
+\ifdefined\XeTeXversion
+\DeclareFontFamily{TU}{ptm}{}
+\DeclareFontShape{TU}{ptm}{m}{n}{<-> "TimesNewRomanPSMT"}{}
+\DeclareFontShape{TU}{ptm}{b}{n}{<-> "TimesNewRomanPS-BoldMT"}{}
+\DeclareFontShape{TU}{ptm}{m}{it}{<-> "TimesNewRomanPS-ItalicMT"}{}
+\DeclareFontShape{TU}{ptm}{b}{it}{<-> "TimesNewRomanPS-BoldItalicMT"}{}
+\DeclareFontFamily{TU}{pcr}{}
+\DeclareFontShape{TU}{pcr}{m}{n}{<-> "CourierNewPSMT"}{}
+\fi
+\usepackage{amsmath,amssymb,booktabs}
+\usepackage[breaklinks,colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
+\captionsetup{hypcap=false}
+\urlstyle{same}
+\title{Clinical Trial Stopping Reasons and Outcome Prediction\\
+\large CS5785 / ORIE5750 / ECE5414: Fall 2026 Midterm Project}
+\hypersetup{pdfauthor={Pei-Chen Chung (pc786) and Yu-Jye Hu (yh2444)}}
+\author{Pei-Chen Chung (NetID: pc786)\qquad Yu-Jye Hu (NetID: yh2444)\\Cornell University\\
+\small Both authors contributed equally to data preparation, analysis, modeling, evaluation, and writing.}
+\begin{document}
+\maketitle
+\input{sections/methods}
+\clearpage
+\input{sections/part1_results}
+\clearpage
+\input{sections/part2_results}
+\clearpage
+\input{sections/reason_analysis}
+\clearpage
+\input{sections/discussion}
+\clearpage
+\input{sections/references}
+\end{document}

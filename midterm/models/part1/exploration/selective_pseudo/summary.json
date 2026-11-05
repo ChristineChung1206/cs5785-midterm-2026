@@ -1,0 +1,33 @@
+{
+  "selective_pseudo": {
+    "winner": 2,
+    "setting": {
+      "positive_cutoff": 0.5,
+      "negative_cutoff": 0.2,
+      "pseudo_weight": 0.03
+    },
+    "oof_control_f1": 0.8895966029723991,
+    "oof_candidate_f1": 0.8337579617834393,
+    "validation_control_f1": 0.8782051282051282,
+    "validation_candidate_f1": 0.8021367521367521,
+    "passes_local_gate": false,
+    "final_replaced": false,
+    "kaggle_uploaded": false
+  },
+  "thresholds": {
+    "selected_thresholds": {
+      "Safety": 0.25,
+      "Funding": 0.35,
+      "Efficacy": 0.3,
+      "Recruitment": 0.35,
+      "Other": 0.3
+    },
+    "oof_control_f1": 0.8895966029723991,
+    "oof_candidate_f1": 0.8874734607218684,
+    "validation_control_f1": 0.8782051282051282,
+    "validation_candidate_f1": 0.856837606837607,
+    "passes_local_gate": false,
+    "final_replaced": false,
+    "kaggle_uploaded": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "validation": "JSON notebook v4.5 shape + all code compile + output MIME checks; nbformat package unavailable in both existing runtimes",
+  "notebooks": [
+    {
+      "notebook": "01_data_protocol.ipynb",
+      "code_cells": 5,
+      "image_outputs": 0,
+      "compiled": true,
+      "no_error_outputs": true
+    },
+    {
+      "notebook": "02_part1.ipynb",
+      "code_cells": 9,
+      "image_outputs": 1,
+      "compiled": true,
+      "no_error_outputs": true
+    },
+    {
+      "notebook": "03_part2.ipynb",
+      "code_cells": 6,
+      "image_outputs": 1,
+      "compiled": true,
+      "no_error_outputs": true
+    },
+    {
+      "notebook": "04_error_analysis.ipynb",
+      "code_cells": 6,
+      "image_outputs": 1,
+      "compiled": true,
+      "no_error_outputs": true
+    }
+  ]
+}

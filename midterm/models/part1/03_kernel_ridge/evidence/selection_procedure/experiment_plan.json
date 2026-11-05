@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "gold_rows": 235,
+  "unlabeled_rows": 1014,
+  "outer_folds": 4,
+  "repeat_seeds": [
+    42,
+    137,
+    2026
+  ],
+  "inner_folds": 3,
+  "calibration": "three grouped cross-fits within each fitting partition; regularized sigmoid",
+  "grouping": "connected components at raw Euclidean distance <= 1e-4 across gold and unlabeled",
+  "fit_scope": "remove entire held group, including unlabeled counterparts; no test features in any fit",
+  "bandwidth": "gamma = multiplier / median nonzero squared distance among training gold vectors",
+  "local_configs": [
+    {
+      "geometry": "column",
+      "family": "svm",
+      "bandwidth": 0.5,
+      "strength": 0.3
+    },
+    {
+      "geometry": "column",
+      "family": "svm",
+      "bandwidth": 0.5,
+      "strength": 3.0
+    },
+    {
+      "geometry": "column",
+      "family": "ridge",
+      "bandwidth": 0.5,
+      "strength": 0.1
+    },
+    {
+      "geometry": "column",
+      "family": "ridge",
+      "bandwidth": 0.5,
+      "strength": 1.0
+    },
+    {
+      "geometry": "column",
+      "family": "svm",
+      "bandwidth": 2.0,
+      "strength": 0.3
+    },
+    {
+      "geometry": "column",
+      "family": "svm",
+      "bandwidth": 2.0,
+      "strength": 3.0
+    },
+    {
+      "geometry": "column",
+      "family": "ridge",
+      "bandwidth": 2.0,
+      "strength": 0.1
+    },
+    {
+      "geometry": "column",
+      "family": "ridge",
+      "bandwidth": 2.0,
+      "strength": 1.0
+    },
+    {
+      "geometry": "global",
+      "family": "svm",
+      "bandwidth": 0.5,
+      "strength": 0.3
+    },
+    {
+      "geometry": "global",
+      "family": "svm",
+      "bandwidth": 0.5,
+      "strength": 3.0
+    },
+    {
+      "geometry": "global",
+      "family": "ridge",
+      "bandwidth": 0.5,
+      "strength": 0.1
+    },
+    {
+      "geometry": "global",
+      "family": "ridge",
+      "bandwidth": 0.5,
+      "strength": 1.0
+    },
+    {
+      "geometry": "global",
+      "family": "svm",
+      "bandwidth": 2.0,
+      "strength": 0.3
+    },
+    {
+      "geometry": "global",
+      "family": "svm",
+      "bandwidth": 2.0,
+      "strength": 3.0
+    },
+    {
+      "geometry": "global",
+      "family": "ridge",
+      "bandwidth": 2.0,
+      "strength": 0.1
+    },
+    {
+      "geometry": "global",
+      "family": "ridge",
+      "bandwidth": 2.0,
+      "strength": 1.0
+    },
+    {
+      "geometry": "unit",
+      "family": "svm",
+      "bandwidth": 0.5,
+      "strength": 0.3
+    },
+    {
+      "geometry": "unit",
+      "family": "svm",
+      "bandwidth": 0.5,
+      "strength": 3.0
+    },
+    {
+      "geometry": "unit",
+      "family": "ridge",
+      "bandwidth": 0.5,
+      "strength": 0.1
+    },
+    {
+      "geometry": "unit",
+      "family": "ridge",
+      "bandwidth": 0.5,
+      "strength": 1.0
+    },
+    {
+      "geometry": "unit",
+      "family": "svm",
+      "bandwidth": 2.0,
+      "strength": 0.3
+    },
+    {
+      "geometry": "unit",
+      "family": "svm",
+      "bandwidth": 2.0,
+      "strength": 3.0
+    },
+    {
+      "geometry": "unit",
+      "family": "ridge",
+      "bandwidth": 2.0,
+      "strength": 0.1
+    },
+    {
+      "geometry": "unit",
+      "family": "ridge",
+      "bandwidth": 2.0,
+      "strength": 1.0
+    }
+  ],
+  "shared_thresholds": [
+    0.35,
+    0.5,
+    0.25
+  ],
+  "controls": [
+    "current KMeans+LR threshold .35",
+    "same model with threshold selected by inner OOF"
+  ],
+  "inner_complementarity_gate": {
+    "minimum_better_groups": 3,
+    "minimum_oracle_gain": 0.01,
+    "maximum_local_F1_deficit": 0.04
+  },
+  "consensus": {
+    "teachers": "gold-only linear and selected local model, three calibrated committee members each",
+    "positive_minimum_across_all_six": 0.8,
+    "negative_maximum_across_all_six": 0.1,
+    "otherwise": "abstain independently for each reason",
+    "target": "mean committee probability",
+    "base_pseudo_weight": 0.1,
+    "positive_weight_cap": ".5 * gold positive count",
+    "negative_weight_cap": "min(.25 * gold negative count, 2 * gold positive count)",
+    "student": "five LR C=1 with exact soft cross-entropy via weighted positive/negative copies",
+    "rounds": 1
+  },
+  "blends": "current model + best eligible local/consensus source; source weights .25/.5/.75, inner only",
+  "candidate_gate": {
+    "mean_OOF_gain_vs_retuned_control": 0.01,
+    "positive_repeats_at_least": 2,
+    "worst_repeat_gain_minimum": -0.01,
+    "each_source_gain_minimum": -0.01,
+    "late_56_gain_minimum": -0.02
+  },
+  "caveat": "All 235 labels were previously inspected. Nested resampling is selection evidence, not a fresh external test."
+}

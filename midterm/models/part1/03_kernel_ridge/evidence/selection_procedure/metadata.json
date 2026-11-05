@@ -1,0 +1,17 @@
+{
+  "data_hashes": {
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-clinical-trial-reason-prediction/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-clinical-trial-reason-prediction/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/cs-5785-midterm-2026-clinical-trial-reason-prediction/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a"
+  },
+  "source_sha256": "750c5839344930383199d6a3d4acb06d5bb0b26fc17c102f87866884e0c01b47",
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "gold_near_groups": 166,
+  "all_near_groups": 834,
+  "preflight_current_validation_probability_gap": 1.3877787807814457e-15
+}

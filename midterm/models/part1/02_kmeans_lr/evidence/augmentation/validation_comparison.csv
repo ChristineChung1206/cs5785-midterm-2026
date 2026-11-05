@@ -1,0 +1,4 @@
+model,run_id,n_rows,f1_samples,f1_macro,delta_f1_samples,delta_f1_macro
+supervised_baseline,part1_supervised_lr_embeddings_seed42_v1,78,0.8653846153846155,0.7066737039643443,0.0,0.0
+kmeans_augmented_lr,part1_kmeans_k10_lr_pseudo010_seed42_v1,78,0.8205128205128205,0.6331674208144797,-0.044871794871795045,-0.07350628314986452
+gmm_augmented_lr,part1_gmm_k10_lr_pseudo010_seed42_v1,78,0.6666666666666666,0.4489215686274511,-0.1987179487179489,-0.2577521353368932

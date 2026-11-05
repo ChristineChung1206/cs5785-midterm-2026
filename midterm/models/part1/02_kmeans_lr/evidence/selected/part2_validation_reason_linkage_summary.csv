@@ -1,0 +1,16 @@
+phase,reason_group,reason_source,trial_phase_rows,unique_trials
+I,assigned_reasons,model_prediction_test,7,7
+I,assigned_reasons,model_prediction_train,25,25
+I,assigned_reasons,observed_train,2,2
+I,assigned_reasons,observed_val,2,2
+I,no_recorded_stopping_reason,,28,28
+II,assigned_reasons,model_prediction_test,27,27
+II,assigned_reasons,model_prediction_train,78,78
+II,assigned_reasons,observed_train,13,13
+II,assigned_reasons,observed_val,3,3
+II,no_recorded_stopping_reason,,144,144
+III,assigned_reasons,model_prediction_test,6,6
+III,assigned_reasons,model_prediction_train,28,28
+III,assigned_reasons,observed_train,6,6
+III,assigned_reasons,observed_val,1,1
+III,no_recorded_stopping_reason,,82,82

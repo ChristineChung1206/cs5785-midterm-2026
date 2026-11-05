@@ -1,0 +1,7 @@
+dataset,rows,columns,unique_IDs,unique_trials,duplicate_ID_rows,duplicate_full_rows,year_min,year_max,year_missing
+part1_train,1171,166,1171,1171,0,0,1993,2010,0
+part1_val,78,166,78,78,0,0,1999,2009,0
+part1_test,312,161,312,312,0,0,2010,2016,0
+outcome_train,8037,15,8037,7535,0,0,1993,2013,21
+outcome_val,1013,15,1013,901,0,0,1995,2013,6
+outcome_test,1500,14,1500,1442,0,0,2014,2021,0

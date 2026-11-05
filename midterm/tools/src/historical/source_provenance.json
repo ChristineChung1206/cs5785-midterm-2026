@@ -1,0 +1,133 @@
+{
+  "format_version": 1,
+  "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+  "outer_archive_sha256": "bb426f498a967f790bc3a92c91bf982e53dafd30af5d9ff7ea3cf6c386da9662",
+  "source_files": {
+    "midterm_graph_refinement": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_graph_refinement.py",
+      "original_sha256": "e91a5c403fb9d8dc6d9fec3a98949044135e9b49a99597fcf5f7fef97a7308da",
+      "ported_path": "tools/src/historical/midterm_graph_refinement.py",
+      "ported_sha256": "0cf800ef7722898f4ae6a5b1e1654ce3f0e0cabb4820f50ca70394a361379230"
+    },
+    "midterm_rank_part1": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_rank_part1.py",
+      "original_sha256": "151f2c2cba72a8a834191e92764caf663bb988eb2fa4f357b6a072fc324370ed",
+      "ported_path": "tools/src/historical/midterm_rank_part1.py",
+      "ported_sha256": "972b59415afd73c0d0caf5ecd3851367fff3becd628793c5586f8ee86fb9297b"
+    },
+    "midterm_part1_round2": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_part1_round2.py",
+      "original_sha256": "3cf21506640e06895a2442c8732f460d08d75fb3482b70c6b2bdab02db505462",
+      "ported_path": "tools/src/historical/midterm_part1_round2.py",
+      "ported_sha256": "c8550d6744e7cbdb02f287dc8443b08888413f092d3afbc3e211e5c4e6a7069c"
+    },
+    "midterm_part1_label_shift": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_part1_label_shift.py",
+      "original_sha256": "e1c8a5d7d787e225ddd73a9e002dcc52cbf879d7bdd027feaa8e410054ffe51e",
+      "ported_path": "tools/src/historical/midterm_part1_label_shift.py",
+      "ported_sha256": "ce8df2a12be4349d812047955423ba071ad9b3a8555f32e215b5f999e4d11373"
+    },
+    "midterm_part1_other_views": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_part1_other_views.py",
+      "original_sha256": "11eaa037a272c2f88e0864420ba9e4d4d97916281eed4b1aa404af4a96c4920b",
+      "ported_path": "tools/src/historical/midterm_part1_other_views.py",
+      "ported_sha256": "c7dd870cdcec879a1f86311c5b51e499fd4b7e076d291801fe7006ac8c0af4b2"
+    },
+    "midterm_part1_mixture_followup": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_part1_mixture_followup.py",
+      "original_sha256": "7dd18ac24c2bb1e3a60ada09db9d93cc21fa55665496e851018829a84db08425",
+      "ported_path": "tools/src/historical/midterm_part1_mixture_followup.py",
+      "ported_sha256": "d4d6ce1092b788292d287dd157d31b419b74b5079f36b56c2f51298e5fac68b9"
+    },
+    "midterm_part1_val_refit_weight": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_part1_val_refit_weight.py",
+      "original_sha256": "c794e8982181d2b529fb2146a85788e8b6225bf26e1f406cda84bbaeb43f8505",
+      "ported_path": "tools/src/historical/midterm_part1_val_refit_weight.py",
+      "ported_sha256": "0f83e26ec643f2ac3b86ee075cec8db657fabfd8e609ba66c3d57b9de307a920"
+    },
+    "midterm_part1_parity": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_report_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_part1_parity.py",
+      "original_sha256": "eaec41010ec6834b831e2457e029f84b0e1ee6548be0929d36163b22bbd35877",
+      "ported_path": "tools/src/historical/midterm_part1_parity.py",
+      "ported_sha256": "a6c7eb905172acebcba8aa781979ab43d72ebb97e1191d88df65eba8d3f67552"
+    },
+    "midterm_part1_local_followup": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_report_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_part1_local_followup.py",
+      "original_sha256": "03652f39d3f9bbaee479028f1a96438197dc4d0c0737abb12b7dbcfe0db8c68a",
+      "ported_path": "tools/src/historical/midterm_part1_local_followup.py",
+      "ported_sha256": "b4580da93ade55cf8fd96f126a96638ac9122b847d4506a318b2049509feb4af"
+    },
+    "midterm_part1_ridge_boundary": {
+      "outer_archive": "tools/archive/before_layout_2026-11-04.zip",
+      "nested_archive": "archive/midterm_before_report_cleanup_2026-11-02.zip",
+      "member": "midterm/midterm_part1_ridge_boundary.py",
+      "original_sha256": "f8d8e3b45528e71906613b84d18a2bc3d4cf102a66f6dde8944fbfdb1f58187d",
+      "ported_path": "tools/src/historical/midterm_part1_ridge_boundary.py",
+      "ported_sha256": "6e167a7196f9086db7ade215b3806d524fed7601a87947d3809ac2162ec39166"
+    }
+  },
+  "restored_evidence": [
+    {
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/refinement/oof_weight_char/part1/fold_assignments.csv",
+      "path": "models/part1/exploration/replay_inputs/oof_weight_char/fold_assignments.csv",
+      "original_sha256": "a77b3801bfe9da7cbbbbd415f341229f5dddd397213c3a4e72b081f36d97a52b",
+      "bytes": 1578
+    },
+    {
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/refinement/oof_weight_char/part1/oof_weight_010.csv",
+      "path": "models/part1/exploration/replay_inputs/oof_weight_char/oof_weight_010.csv",
+      "original_sha256": "1b79f54c182d25839cda790f89c1064028cbfcfc56de8c6f72222099fb62b091",
+      "bytes": 21382
+    },
+    {
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/refinement/local_geometry/summary.json",
+      "path": "models/part1/exploration/graph/summary.json",
+      "original_sha256": "f189c3123590a28756d51f908a21200e53cc898905f07e7dbebb099db0d14503",
+      "bytes": 291
+    },
+    {
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/refinement/rank_improvement_2026_11_02/part1/summary.json",
+      "path": "models/part1/exploration/selective_pseudo/summary.json",
+      "original_sha256": "ca818d8dbf46a6f6bdbb7f902c9cf95af8c6a7974171d8efa6d7c0820d8ad44d",
+      "bytes": 885
+    },
+    {
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/refinement/part1_structure_geometry_2026_11_02/mixture_followup/status.json",
+      "path": "models/part1/exploration/structure_geometry/mixture_followup/status.json",
+      "original_sha256": "325bc67b71de2ce351a9be71ff7cabf05131844a8e51ede3acd87135b144f835",
+      "bytes": 427
+    },
+    {
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "member": "midterm/refinement/part1_structure_geometry_2026_11_02/validation_refit_weight/summary.json",
+      "path": "models/part1/exploration/structure_geometry/validation_refit_weight/summary.json",
+      "original_sha256": "912d763be5a0a2a005aa9145fa7cfe0659b8a10d97cdad0015977e11fc068d83",
+      "bytes": 329
+    }
+  ],
+  "migration_scope": "Path/import and explicit-new-output adaptation only; original estimator, thresholds, split and selection logic retained. No model training performed.",
+  "l2_geometry_dependency_check": "No restored module imports midterm_l2_geometry. Reported normalization study uses the included midterm_part1_local_consensus.Geometry unit mode; the older standalone L2 runner is not a missing dependency of the reported studies."
+}

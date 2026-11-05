@@ -1,0 +1,2 @@
+# Optional PDF inspection dependencies. TeX compilation requires Tectonic or a LaTeX installation.
+pypdf==6.21.4

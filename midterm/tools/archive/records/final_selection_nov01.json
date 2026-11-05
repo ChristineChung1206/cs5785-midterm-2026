@@ -1,0 +1,95 @@
+{
+  "part1": {
+    "model": "part1_s5_kmeans_threshold035_seed42_v1",
+    "sample_f1": 0.8782051282051282,
+    "macro_f1": 0.7648422333984687,
+    "public_score": 0.85405,
+    "decision": "Retain original after graph, weight, SVM, L2, and policy follow-ups"
+  },
+  "part2": {
+    "model": "part2_word_character_blend_seed42_v1",
+    "n_rows": 1013,
+    "n_unique_trials": 901,
+    "log_loss_pooled": 0.5811523039048908,
+    "log_loss_equal_phase": 0.5808998112673002,
+    "public_score": 0.59696,
+    "previous_public_score": 0.59962,
+    "baseline_public_score": 0.60149,
+    "baseline_equal_phase_log_loss": 0.5837734660941997,
+    "previous_equal_phase_log_loss": 0.5822702563170395,
+    "flat_weights": {
+      "concatenated_word": 0.25,
+      "separate_field_word": 0.25,
+      "character": 0.5
+    },
+    "selected_phase_metrics": [
+      {
+        "phase": "I",
+        "n_rows": 149,
+        "n_unique_trials": 149,
+        "n_positive": 85,
+        "n_negative": 64,
+        "f1": 0.7643979057591623,
+        "roc_auc": 0.7718750000000001,
+        "average_precision": 0.8163467590188956,
+        "log_loss": 0.5955510718123819,
+        "roc_auc_status": "ok",
+        "average_precision_status": "ok",
+        "tn": 31,
+        "fp": 33,
+        "fn": 12,
+        "tp": 73
+      },
+      {
+        "phase": "II",
+        "n_rows": 501,
+        "n_unique_trials": 501,
+        "n_positive": 236,
+        "n_negative": 265,
+        "f1": 0.6349206349206349,
+        "roc_auc": 0.7261752478413814,
+        "average_precision": 0.7152163214653355,
+        "log_loss": 0.6054733243001038,
+        "roc_auc_status": "ok",
+        "average_precision_status": "ok",
+        "tn": 200,
+        "fp": 65,
+        "fn": 96,
+        "tp": 140
+      },
+      {
+        "phase": "III",
+        "n_rows": 363,
+        "n_unique_trials": 363,
+        "n_positive": 240,
+        "n_negative": 123,
+        "f1": 0.8081936685288641,
+        "roc_auc": 0.771239837398374,
+        "average_precision": 0.8709226304685715,
+        "log_loss": 0.5416750376894146,
+        "roc_auc_status": "ok",
+        "average_precision_status": "ok",
+        "tn": 43,
+        "fp": 80,
+        "fn": 23,
+        "tp": 217
+      }
+    ]
+  },
+  "reason_provenance": {
+    "reason_model_source": "part1_s5_kmeans_threshold035_seed42_v1",
+    "reason_lookup_sha256": "170b9feafeb4118405911c116c226af9b2b7272085d462d695e7610f755aca0a",
+    "reason_features_used": false,
+    "failure_trial_phase_rows": 452,
+    "observed_reason_rows": 27,
+    "predicted_reason_rows": 171,
+    "unmatched_rows": 254,
+    "training_resubstitution_reason_rows": 131
+  },
+  "component_refitting_performed": false,
+  "private_scores_known": false,
+  "public_scores_source": "User-provided submission screenshots",
+  "agent_uploads_performed": false,
+  "notebooks_in_workflow": 15,
+  "registered_runs": 16
+}

@@ -1,0 +1,6 @@
+split,method,ID,start_year,truth,before,after,row_f1_before,row_f1_after,delta,outcome
+oof,residual_other,TR03354,2006,Safety,Safety,Safety Other,1.0,0.6666666666666666,-0.33333333333333337,new_error
+oof,residual_other,TR08398,2009,Other,Funding,Funding Other,0.0,0.6666666666666666,0.6666666666666666,fixed
+temporal_56,residual_other,TR03856,2008,Safety,Safety,Safety Other,1.0,0.6666666666666666,-0.33333333333333337,new_error
+validation_78,residual_other,TR07904,2008,Efficacy,Efficacy,Efficacy Other,1.0,0.6666666666666666,-0.33333333333333337,new_error
+validation_78,residual_other,TR08868,2008,Other,Safety,Safety Other,0.0,0.6666666666666666,0.6666666666666666,fixed

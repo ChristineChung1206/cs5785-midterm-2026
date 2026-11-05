@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "training_performed": false,
+  "uploads_performed": false,
+  "public_scores": {
+    "part1": 0.88568,
+    "part2": 0.59011
+  },
+  "submission_identity": "Exact bytes copied from checksum-verified best-public artifacts.",
+  "saved_model_verification": {
+    "part1": {
+      "rows": 312,
+      "model": "models/part1/02_kmeans_lr/model.joblib",
+      "submission": "models/part1/02_kmeans_lr/submission.csv",
+      "submission_sha256": "88e5a1d700e7167b04d7add58164227dafaf2cb59a5ebb156cf06323a6b520e6"
+    },
+    "part1_best_public": {
+      "rows": 312,
+      "model": "models/part1/03_kernel_ridge/model.joblib",
+      "submission": "models/part1/03_kernel_ridge/submission.csv",
+      "submission_sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c"
+    },
+    "part2": {
+      "submitted_original": {
+        "rows": 1500,
+        "submission": "models/part2/02_text_blend/submission.csv",
+        "submission_sha256": "3a5bfa9d8011a3bb674ba4ab228838ca170014173daca1e508c669c4418a7c52",
+        "max_absolute_probability_gap": 0.0
+      },
+      "best_public": {
+        "rows": 1500,
+        "submission": "models/part2/03_phase_shared/submission.csv",
+        "submission_sha256": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990",
+        "max_absolute_probability_gap": 0.0
+      }
+    },
+    "registry": {
+      "status": "PASS",
+      "recorded_submissions": 6
+    },
+    "status": "PASS"
+  },
+  "source_checks": {
+    "historical_sources": {
+      "status": "PASS",
+      "ported_runners": 10,
+      "replay_studies": 11,
+      "training_performed": false,
+      "check_scope": "compile/import, source hashes, required saved inputs; no experimental refits"
+    },
+    "notebook_source_appendix": {
+      "status": "PASS",
+      "core_and_report_source_files": 15,
+      "historical_source": "Included separately above, with migration hashes.",
+      "training_performed": false
+    }
+  },
+  "package_files": 378,
+  "full_historical_snapshots_included": false,
+  "files": {
+    "final_report.pdf": {
+      "sha256": "2939cc7e8eb4d76c44cfa12038584c07fb92b4d3e5e18856dc319aaadb26c3e5",
+      "bytes": 152035
+    },
+    "part1.csv": {
+      "sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+      "bytes": 5846
+    },
+    "part2.csv": {
+      "sha256": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990",
+      "bytes": 44959
+    },
+    "midterm_code.zip": {
+      "sha256": "694a9315664006b6ef87494a22a5ba2306fddd7c7ca0d4e59b66f5089ec589aa",
+      "bytes": 27928762
+    }
+  },
+  "team": [
+    {
+      "name": "Pei-Chen Chung",
+      "netid": "pc786"
+    },
+    {
+      "name": "Yu-Jye Hu",
+      "netid": "yh2444"
+    }
+  ],
+  "contributions": "Equal contributions; author spelling follows the existing live report source.",
+  "report_revision": "Part 1 feature-selection rationale, controlled pathway ablation and limits, targeted text-view result.",
+  "independent_zip_verification": {
+    "status": "PASS",
+    "verified_files": 377,
+    "archive_crc_and_hashes": "PASS",
+    "embedded_pdf_equals_delivery": true,
+    "report_source_and_evidence_hashes": "PASS",
+    "training_performed": false,
+    "checks_rerun_this_revision": [
+      "saved-model reproduction via release builder",
+      "historical source/import verification",
+      "notebook source-appendix verification",
+      "fresh ZIP manifest and report provenance"
+    ],
+    "prior_full_test_suite": {
+      "unit_tests_passed": 98,
+      "notebooks_passed": 5,
+      "scope_note": "Performed on previous release; core Python/model/data unchanged. Notebook 05 prose attribution was updated."
+    }
+  }
+}

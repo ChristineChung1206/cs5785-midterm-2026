@@ -1,0 +1,213 @@
+{
+  "overall": {
+    "baseline": {
+      "sample_f1": 0.9026004728132389,
+      "exact_set_rate": 0.8581560283687943
+    },
+    "ensemble": {
+      "sample_f1": 0.9026004728132389,
+      "exact_set_rate": 0.8609929078014185
+    },
+    "other": {
+      "sample_f1": 0.9026004728132389,
+      "exact_set_rate": 0.8609929078014185
+    },
+    "final": {
+      "sample_f1": 0.9002364066193853,
+      "exact_set_rate": 0.8482269503546099
+    }
+  },
+  "by_repeat": {
+    "0": {
+      "baseline": {
+        "sample_f1": 0.8978723404255319,
+        "exact_set_rate": 0.8468085106382979
+      },
+      "ensemble": {
+        "sample_f1": 0.8907801418439716,
+        "exact_set_rate": 0.8425531914893617
+      },
+      "other": {
+        "sample_f1": 0.8907801418439716,
+        "exact_set_rate": 0.8425531914893617
+      },
+      "final": {
+        "sample_f1": 0.8879432624113475,
+        "exact_set_rate": 0.825531914893617
+      }
+    },
+    "1": {
+      "baseline": {
+        "sample_f1": 0.899290780141844,
+        "exact_set_rate": 0.8595744680851064
+      },
+      "ensemble": {
+        "sample_f1": 0.902127659574468,
+        "exact_set_rate": 0.8595744680851064
+      },
+      "other": {
+        "sample_f1": 0.902127659574468,
+        "exact_set_rate": 0.8595744680851064
+      },
+      "final": {
+        "sample_f1": 0.9063829787234042,
+        "exact_set_rate": 0.8638297872340426
+      }
+    },
+    "2": {
+      "baseline": {
+        "sample_f1": 0.9106382978723404,
+        "exact_set_rate": 0.8680851063829788
+      },
+      "ensemble": {
+        "sample_f1": 0.9148936170212766,
+        "exact_set_rate": 0.8808510638297873
+      },
+      "other": {
+        "sample_f1": 0.9148936170212766,
+        "exact_set_rate": 0.8808510638297873
+      },
+      "final": {
+        "sample_f1": 0.9063829787234042,
+        "exact_set_rate": 0.8553191489361702
+      }
+    }
+  },
+  "by_source": {
+    "train": {
+      "baseline": {
+        "sample_f1": 0.9129511677282378,
+        "exact_set_rate": 0.8704883227176221
+      },
+      "ensemble": {
+        "sample_f1": 0.9136588818117481,
+        "exact_set_rate": 0.8726114649681529
+      },
+      "other": {
+        "sample_f1": 0.913658881811748,
+        "exact_set_rate": 0.8726114649681529
+      },
+      "final": {
+        "sample_f1": 0.9101203113941967,
+        "exact_set_rate": 0.8577494692144374
+      }
+    },
+    "validation": {
+      "baseline": {
+        "sample_f1": 0.8817663817663817,
+        "exact_set_rate": 0.8333333333333334
+      },
+      "ensemble": {
+        "sample_f1": 0.8803418803418803,
+        "exact_set_rate": 0.8376068376068376
+      },
+      "other": {
+        "sample_f1": 0.8803418803418803,
+        "exact_set_rate": 0.8376068376068376
+      },
+      "final": {
+        "sample_f1": 0.8803418803418803,
+        "exact_set_rate": 0.8290598290598291
+      }
+    }
+  },
+  "repeat_gains": [
+    -0.009929078014184411,
+    0.007092198581560183,
+    -0.004255319148936176
+  ],
+  "mean_gain": -0.0023640661938535423,
+  "group_bootstrap_95_percent": [
+    -0.007977286678944139,
+    0.0026890505306065033
+  ],
+  "diagnostic_metrics": {
+    "historical_validation": {
+      "baseline": {
+        "sample_f1": 0.8931623931623932,
+        "exact_set_rate": 0.8333333333333334
+      },
+      "ensemble": {
+        "sample_f1": 0.8888888888888888,
+        "exact_set_rate": 0.8461538461538461
+      },
+      "other": {
+        "sample_f1": 0.8760683760683762,
+        "exact_set_rate": 0.8076923076923077
+      },
+      "final": {
+        "sample_f1": 0.8760683760683762,
+        "exact_set_rate": 0.8076923076923077
+      }
+    },
+    "late_train_20": {
+      "baseline": {
+        "sample_f1": 0.9,
+        "exact_set_rate": 0.9
+      },
+      "ensemble": {
+        "sample_f1": 0.9,
+        "exact_set_rate": 0.9
+      },
+      "other": {
+        "sample_f1": 0.9,
+        "exact_set_rate": 0.9
+      },
+      "final": {
+        "sample_f1": 0.9083333333333332,
+        "exact_set_rate": 0.85
+      }
+    },
+    "late_combined_56": {
+      "baseline": {
+        "sample_f1": 0.8511904761904763,
+        "exact_set_rate": 0.8035714285714286
+      },
+      "ensemble": {
+        "sample_f1": 0.8511904761904763,
+        "exact_set_rate": 0.8035714285714286
+      },
+      "other": {
+        "sample_f1": 0.8511904761904763,
+        "exact_set_rate": 0.8035714285714286
+      },
+      "final": {
+        "sample_f1": 0.8511904761904763,
+        "exact_set_rate": 0.8035714285714286
+      }
+    }
+  },
+  "candidate_gate": {
+    "mean_oof_gain": false,
+    "positive_repeats": false,
+    "worst_repeat": false,
+    "both_sources": true,
+    "late56": true,
+    "historical_validation": false
+  },
+  "candidate_allowed": false,
+  "candidate": null,
+  "selection_counts": {
+    "baseline": {
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\"], \"other\": null}": 12
+    },
+    "ensemble": {
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\", \"svm\"], \"other\": null}": 9,
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\"], \"other\": null}": 3
+    },
+    "other": {
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\", \"svm\"], \"other\": \"other_narrow\"}": 1,
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\", \"svm\"], \"other\": null}": 8,
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\"], \"other\": null}": 3
+    },
+    "final": {
+      "{\"decoder\": \"expected_f1\", \"members\": [\"baseline\", \"svm\"], \"other\": null}": 3,
+      "{\"decoder\": \"expected_f1\", \"members\": [\"baseline\"], \"other\": null}": 1,
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\", \"svm\"], \"other\": \"other_narrow\"}": 1,
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\", \"svm\"], \"other\": null}": 5,
+      "{\"decoder\": \"threshold\", \"members\": [\"baseline\"], \"other\": null}": 2
+    }
+  },
+  "elapsed_seconds": 3.5141167640686035,
+  "caveat": "All 235 labels and prior experiment/public results informed this study. OOF is resampling evidence, not a fresh holdout."
+}

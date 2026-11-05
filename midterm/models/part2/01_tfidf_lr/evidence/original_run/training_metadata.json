@@ -1,0 +1,20 @@
+{
+  "phase_training_rows": {
+    "I": 1012,
+    "II": 3950,
+    "III": 3075
+  },
+  "reason_features_used": false,
+  "runtime_versions": {
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "seed": 42,
+  "training_code_sha256": "7d1ccf04264a478e02b72e02b614b516e36f1fb977cbd7f6f5c9c45fc1546dea",
+  "training_helper_sha256": "24151b5bcec30681d59f63f673eef4a544b8cfbdc590e81a46a93afef907f379",
+  "training_warnings": []
+}

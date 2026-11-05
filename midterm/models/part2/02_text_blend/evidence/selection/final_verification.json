@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "selected_run_artifacts_verified": true,
+  "models_refitted": 0,
+  "component_models_verified": true,
+  "reason_group_support_unchanged": true,
+  "test_submission_matches_candidate_byte_for_byte": true,
+  "part1_submission_unchanged": true,
+  "final_submission_sha256": "3a5bfa9d8011a3bb674ba4ab228838ca170014173daca1e508c669c4418a7c52",
+  "selected_model_sha256": "13a209483a7b2a4f2917f896f81a1e8044cfc7f359ccfc2ef25afec8ed52ff51",
+  "checks": [
+    {
+      "part": 1,
+      "rows": 312,
+      "unique_ids": 312,
+      "columns": [
+        "ID",
+        "Predicted"
+      ],
+      "status": "PASS"
+    },
+    {
+      "part": 2,
+      "rows": 1500,
+      "unique_ids": 1500,
+      "columns": [
+        "ID",
+        "label"
+      ],
+      "status": "PASS"
+    }
+  ]
+}

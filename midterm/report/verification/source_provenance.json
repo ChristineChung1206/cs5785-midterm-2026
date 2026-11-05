@@ -1,0 +1,229 @@
+{
+  "report_version": "2026-11-04-part1-feature-selection-discussion",
+  "author": "Pei-Chen Chung and Yu-Jye Hu",
+  "body_page_limit": 5,
+  "style_modified": false,
+  "author_kit_commit": "12909ae437f6dbc7435069cfdb4ca44c18e6a02f",
+  "style_source": "https://raw.githubusercontent.com/cvpr-org/author-kit/12909ae437f6dbc7435069cfdb4ca44c18e6a02f/cvpr.sty",
+  "cvpr_style_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153",
+  "current_selection": {
+    "path": "models/selection.json",
+    "sha256": "4dd42f8c292a8524974072abfa4cde107c41a9556dc4e0c1e615bc5f256a9948"
+  },
+  "current_public_models": {
+    "part1": {
+      "submission": "models/part1/03_kernel_ridge/submission.csv",
+      "sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+      "score_type": "sample_f1",
+      "public_score": 0.88568,
+      "public_score_source": "User-provided latest Kaggle screenshot in this conversation, November 2, 2026",
+      "model": "models/part1/03_kernel_ridge/model.joblib",
+      "model_sha256": {
+        "models/part1/03_kernel_ridge/model.joblib": "ac7e9071da7a309ded2fa32c14eb7bf9010bafffb9773d7383b88d767cb82a46"
+      }
+    },
+    "part2": {
+      "submission": "models/part2/03_phase_shared/submission.csv",
+      "sha256": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990",
+      "score_type": "log_loss",
+      "public_score": 0.59011,
+      "blend_weight": 0.5,
+      "components": [
+        "models/part2/02_text_blend/model.joblib",
+        "models/part2/03_phase_shared/component.joblib"
+      ],
+      "model_sha256": {
+        "models/part2/02_text_blend/model.joblib": "13a209483a7b2a4f2917f896f81a1e8044cfc7f359ccfc2ef25afec8ed52ff51",
+        "models/part2/03_phase_shared/component.joblib": "c35022aad1940654ff25a546e254b3a2ce4ae871c3dde01c9d4eb81929956f0b"
+      },
+      "component_weights": [
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "report_metrics": {
+    "path": "report/analysis/report_metrics.json",
+    "sha256": "3c66664e90af51cbb9ebfabab2d1446beeaedee7bf72bfe257e97f30e9bf09de"
+  },
+  "saved_prediction_sources": {
+    "p1_supervised": {
+      "path": "models/part1/01_supervised_lr/evidence/original_run/validation_predictions.csv",
+      "sha256": "ce6c08a84bf7f92c343d776b6d06f776e23e6f0175d7662fbde3c2ac644f6c48"
+    },
+    "p1_initial_kmeans": {
+      "path": "models/part1/02_kmeans_lr/evidence/initial_run/validation_predictions.csv",
+      "sha256": "767ef377cfd8eb830202a5146af245d8ca690878abd5b3e8ee99431a5a170037"
+    },
+    "p1_retained_kmeans": {
+      "path": "models/part1/02_kmeans_lr/evidence/selected/selected_validation/validation_predictions.csv",
+      "sha256": "ff7b39763a559881bf3160b8d6e8874e7aac666a9b7adc0ef11d539fd4204dd2"
+    },
+    "p1_fixed_ridge": {
+      "path": "models/part1/exploration/local_followup/historical_validation_predictions.csv",
+      "sha256": "d39d555fd9d738b7241c7cbbdd5a276597e4547bd4a12cb674fe4c2987b0ca89"
+    },
+    "p2_baseline": {
+      "path": "models/part2/01_tfidf_lr/evidence/analysis/validation_predictions.csv",
+      "sha256": "b5ce9d5f1fbfb355b007e52b8d683c4eb6eebfce0e3d75d81a1f3b7a7caa0a86"
+    },
+    "p2_phase_shared": {
+      "path": "models/part2/03_phase_shared/evidence/selection/validation_candidate/validation_predictions.csv",
+      "sha256": "6b1b96a9899207cc379be50a0697157f07e3b5e7ecdce8c0199eb2684ae4dd2d"
+    },
+    "historical_reason_lookup": {
+      "path": "models/part1/02_kmeans_lr/evidence/selected/reason_lookup.csv",
+      "sha256": "170b9feafeb4118405911c116c226af9b2b7272085d462d695e7610f755aca0a"
+    }
+  },
+  "supplementary_evidence": [
+    {
+      "path": "models/part1/03_kernel_ridge/evidence/selection_procedure/summary.json",
+      "sha256": "fc25b10ea916146a7755313790ad8e696ee3c84116a58af40197729f24aba4ff"
+    },
+    {
+      "path": "models/part1/03_kernel_ridge/evidence/selection_procedure/final_selection.json",
+      "sha256": "04597ea921cddb8ebe25f12ef0ac3b222173bda94652f92c1f63dfd99bf1f1e1"
+    },
+    {
+      "path": "models/part1/02_kmeans_lr/evidence/baseline_parity/summary.json",
+      "sha256": "e993bee01d11150a78bfecba8ce3b812f8cfde3a50c2e8e94dcd8ff422d71934"
+    },
+    {
+      "path": "models/part1/02_kmeans_lr/evidence/augmentation/selection_summary.json",
+      "sha256": "cc98b56edf3ba08812a0e77f02afd64d714095c53e57a088adee47bd14d73d44"
+    },
+    {
+      "path": "models/part1/02_kmeans_lr/evidence/selected/results_summary.json",
+      "sha256": "8458a2275e06ce10bc561e91541908ed4724b7345ebcb26f3d1273807642e9e1"
+    },
+    {
+      "path": "models/part2/02_text_blend/evidence/selection/results_summary.json",
+      "sha256": "f40d9efbace9234446ac456dd9771fe478e913130d38a80a8a0f527ad8096901"
+    },
+    {
+      "path": "models/part2/03_phase_shared/evidence/selection/summary.json",
+      "sha256": "a7650436c236762b98b3661bfb0c90baf21a7545f50c5e65ce760f3487260faf"
+    },
+    {
+      "path": "models/part1/exploration/local_followup/summary.json",
+      "sha256": "1de0072fd0a7271a0fbdf23686b60b2a1e7367c9c34bf6960138632ceddc4e3c"
+    },
+    {
+      "path": "models/part1/exploration/ridge_boundary/summary.json",
+      "sha256": "547a5a5f966a3f86b5d4407ebd80ced23a870b1811b5ad338acec1606ce19214"
+    },
+    {
+      "path": "models/part1/exploration/structure_geometry/summary.json",
+      "sha256": "11391a3c9cb9666f59ffbae0981049aa05dca9c480f544639fdbed266087672f"
+    },
+    {
+      "path": "models/experiment_log.csv",
+      "sha256": "79beb68d26e34bf0a7842a7d1c51bdcc27a1fbdc18c0b3ea2f9a40e1a189abc4"
+    },
+    {
+      "path": "models/part1/02_kmeans_lr/evidence/augmentation/validation_comparison.csv",
+      "sha256": "71f1f7dd35428e282d7f96437f8a09eea9c42f9bf2ad2cb9ebb7452c455ded88"
+    },
+    {
+      "path": "models/part1/exploration/other_views/comparison.csv",
+      "sha256": "f0be764ed4208e172a1d3fb80359c597967290d63382dd4e4aa89882e7713399"
+    },
+    {
+      "path": "models/part1/exploration/other_views/selection_locked_before_time_validation.json",
+      "sha256": "cc3876fb4f0e22860c5c23f5513edfe7b79c4fb6c08d666450c0290020fd12d9"
+    },
+    {
+      "path": "models/part1/exploration/other_views/plan.json",
+      "sha256": "178cd4affa32017a57a75aaa7dfbfa118592c303799e97dbf8b61a96c0c708c2"
+    },
+    {
+      "path": "tools/src/midterm_part1_finalization.py",
+      "sha256": "86c39636b704ec2555ea624409185fcee3d18868e1e2f60279175355e06fddf4"
+    }
+  ],
+  "metric_generation": {
+    "path": "report/scripts/report_analysis.py",
+    "sha256": "5d19b04101069df67c35123a1300b626be735129a9eda2e849bc3f0bc29e128c",
+    "fits_models": false,
+    "runs_inference": false
+  },
+  "table_generation": {
+    "path": "report/scripts/generate_tables.py",
+    "sha256": "68e1cc96dbec1ddeea957089dcd3b75943a1c42b5b3dc6283f03795a57e5df14",
+    "fits_models": false,
+    "runs_inference": false
+  },
+  "scope_notes": [
+    "Part 1 historical-validation table uses separate fits on the original 157 gold train rows. Fixed ridge probabilities come from the historical local_followup fit, not the final 235-label model.",
+    "The Part 1 final public artifact fits 235 visible labels. Its geometry fits eligible gold and unlabeled embeddings; regression and calibration use gold only.",
+    "Local-selection procedure OOF and later fixed-ridge recipe OOF are reported separately. They are not independent confirmations after earlier validation and public feedback.",
+    "Part 2 before/after reason error rates use the same historical K-Means/LR reason lookup for both outcome models, with observed, predicted, training-resubstitution and unmatched rows distinguished.",
+    "Public scores are user-provided Kaggle observations. Hidden labels and private scores are unavailable.",
+    "Model-family and labeled-sample-count changes are confounded in the Part 1 public improvement."
+  ],
+  "frozen_previous_report": {
+    "sha256": "ff89aaf4d130614986b1dfa618c2ca47ce2e861a441d4450162642696f10dd97",
+    "preservation": "Original November 1 report remains in verified snapshot/frozen delivery; it is not the current report."
+  },
+  "reorganization_verification": {
+    "report_csv_files_compared": 12,
+    "all_report_csv_bytes_unchanged": true,
+    "model_training_performed": false,
+    "model_inference_performed": false,
+    "changes": "Relative evidence paths, selection registry location, reproducibility prose, and package layout only; saved experiment predictions and metrics unchanged.",
+    "old_verification": "Pre-reorganization verification is preserved in the full snapshot; this record verifies the current layout."
+  },
+  "final_submission_audit": {
+    "changes": [
+      "Added pooled Part 2 F1/ROC-AUC/AP from saved predictions",
+      "Explicit validation/public log-loss gap and cautious interpretation",
+      "Added Saerens EM and Lipton BBSE citations",
+      "Reported historical sources now supplied alongside notebooks; full local backups excluded"
+    ],
+    "new_experiments_performed": false,
+    "model_training_performed": false,
+    "template_page_verified": "https://www.overleaf.com/latex/templates/cvpr-2018-template/qgmrfntfbqns",
+    "template_page_title_on_audit_date": "CVPR 2026 Submission Template"
+  },
+  "authors": [
+    {
+      "name": "Pei-Chen Chung",
+      "netid": "pc786"
+    },
+    {
+      "name": "Yu-Jye Hu",
+      "netid": "yh2444"
+    }
+  ],
+  "contribution_statement": "Both team members contributed equally to data preprocessing, exploratory data analysis, feature engineering, model development, performance evaluation, and report preparation. They shared responsibilities, jointly discussed key modeling decisions, and contributed equally to the final deliverables.",
+  "authorship_source": "Author spelling follows the live report main.tex at the start of this edit. The user-provided two-member equal-contribution statement is retained.",
+  "part1_feature_selection": {
+    "predictors_selected": "All 150 supplied stopping-reason embedding coordinates; final kernel ridge uses global scaling.",
+    "controlled_pathway_ablation": {
+      "n_validation": 78,
+      "gold_labels": 157,
+      "pseudo_labels": 1014,
+      "LR_C": 1.0,
+      "threshold": 0.5,
+      "embedding_feature_count": 150,
+      "expanded_feature_count": 179,
+      "added_level0_pathways": 27,
+      "added_availability_flags": 2,
+      "min_training_document_frequency": 5,
+      "sample_F1_before": 0.8205128205128205,
+      "sample_F1_after": 0.811965811965812,
+      "macro_F1_before": 0.6331674208144797,
+      "macro_F1_after": 0.567982,
+      "decision_policy": "Original thresholding permits empty sets. Not directly comparable with main-table argmax fallback scores.",
+      "macro_F1_after_precision": "Six decimals, as preserved in the experiment log; report rounds to four."
+    },
+    "text_view": "Conservative add-Other correction using criteria/disease/drug TF-IDF; OOF-selected threshold 0.45 changed no validation or late-56 decisions.",
+    "claim_limits": "Mechanisms are hypotheses. No exhaustive all-feature, molecular-fingerprint, or text/embedding-concatenation study is claimed.",
+    "report_locations": [
+      "Methods: Part 1 feature choice",
+      "Results 2.4: Feature ablation",
+      "Discussion 5.1: Why more features need not help Part 1"
+    ]
+  }
+}

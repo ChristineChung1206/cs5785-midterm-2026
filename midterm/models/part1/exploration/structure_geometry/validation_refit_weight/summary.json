@@ -1,0 +1,9 @@
+{
+  "baseline_oof_157_f1": 0.8895966029723991,
+  "baseline_time_56_f1": 0.869047619047619,
+  "selected": null,
+  "all_labels_235_used_in_final_fit": false,
+  "original_final_replaced": false,
+  "kaggle_uploaded": false,
+  "caveat": "Exploratory after earlier validation inspection; no post-refit independent validation score."
+}

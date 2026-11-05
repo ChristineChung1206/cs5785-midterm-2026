@@ -1,0 +1,5 @@
+{
+  "baseline": "part2_tfidf_lr_by_phase_seed42_v1",
+  "previous_final": "part2_equal_probability_blend_seed42_v1",
+  "final_submission": "part2_word_character_blend_seed42_v1"
+}

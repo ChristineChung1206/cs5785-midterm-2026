@@ -1,0 +1,37 @@
+{
+  "policy_id": "threshold_then_argmax_if_empty_v1",
+  "empty_set_policy": "argmax",
+  "thresholds": {
+    "Safety": 0.35,
+    "Funding": 0.35,
+    "Efficacy": 0.35,
+    "Recruitment": 0.35,
+    "Other": 0.35
+  },
+  "tie_order": [
+    "Safety",
+    "Funding",
+    "Efficacy",
+    "Recruitment",
+    "Other"
+  ],
+  "source_model_run_id": "part1_s5_kmeans_threshold035_seed42_v1",
+  "source_model_sha256": "cadf3559c0e6c0069ec1f58f8f99aea4660684cb021b1727cb53914e7a054fdf",
+  "model_retrained": false,
+  "historical_runs_modified": false,
+  "reason": "User-requested nonempty predictions after Kaggle rejected blank Predicted cells as null",
+  "scope": "Final model predictions on train, validation and test; observed labels and clustering pseudo-targets unchanged",
+  "fallback_counts_by_split": {
+    "train": 13,
+    "val": 0,
+    "test": 4
+  },
+  "lookup_fallback_rows": 17,
+  "part2_failed_trial_phase_rows_using_fallback": 3,
+  "final_validation_metrics": {
+    "n_rows": 78,
+    "f1_samples": 0.8782051282051282,
+    "f1_macro": 0.7648422333984687,
+    "n_empty_set_fallbacks": 0
+  }
+}

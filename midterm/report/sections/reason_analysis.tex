@@ -1,0 +1,31 @@
+\twocolumn[{
+\section{Failure Errors by Phase and Reason}
+\begin{center}\small
+\input{tables/reason_errors}
+\captionof{table}{True outcome failures predicted successful at threshold 0.5: $k/n$ and percentage.
+Both models use the same historical Part 1 reason lookup. ``Obs./Pred.'' counts observed versus
+estimated reason memberships; groups overlap. Unmatched trials form the no-recorded-reason
+group. A dash indicates no eligible trials or no applicable reason source.}
+\label{tab:errors}
+\end{center}
+}]
+\subsection{Definition and provenance}
+For each phase/reason group $g$ containing only true failures,
+\begin{equation}
+ \mathrm{FSR}_{g}=\frac{\sum_{i\in g}\mathbb{I}[p_i\geq0.5]}{|g|}.
+\end{equation}
+A trial counts once within each phase/group, but may belong to several groups.
+An absent Part 1 record is not a negative reason label.
+
+Freezing the historical K-Means/LR reason lookup isolates changes in outcome predictions.
+This is not an analysis of the newer 235-label ridge reason model. We distinguish observed,
+estimated, and training-resubstitution reasons.
+
+\input{tables/reason_provenance_text}
+
+\subsection{Interpretation}
+\input{tables/reason_interpretation_text}
+
+Small groups make one-trial changes look large; Phase III has no Funding failures.
+Estimated reasons add uncertainty beyond sampling variability. These descriptive associations
+do not establish causes of errors. Stopping reasons never enter the outcome model as features.

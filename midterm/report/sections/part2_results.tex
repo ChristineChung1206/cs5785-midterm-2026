@@ -1,0 +1,67 @@
+\twocolumn[{
+\section{Results: Outcome Prediction}
+\begin{center}\small
+\begin{tabular}{lrr}
+\toprule
+Model / feature representation & Validation equal-phase log loss & Reported public log loss\\
+\midrule
+Phase-specific word TF-IDF LR baseline & 0.58377 & 0.60149\\
+50/50 concatenated-word / separate-field blend & 0.58227 & 0.59962\\
+25/25/50 word / field / character blend & 0.58090 & 0.59696\\
+50/50 historical blend / phase-shared text model & \textbf{0.56839} & \textbf{0.59011}\\
+\bottomrule
+\end{tabular}
+\captionof{table}{The final outcome model retains the historical text blend as one component.
+Lower loss is better. Public values come from user-provided Kaggle screenshots; private results
+are unknown. Historical delivery files remain separately reproducible.}
+\label{tab:p2models}
+\end{center}
+\begin{center}\small
+\input{tables/part2_phase}
+\captionof{table}{Required validation metrics by phase for the original baseline and current
+public-best outcome model. Success is the positive class; F1 uses 0.5, ROC-AUC and average
+precision (AP) use probabilities. Validation has 149/501/363 phase-I/II/III rows.}
+\label{tab:p2phase}
+\end{center}
+}]
+\subsection{Models and feature choices}
+Part 2 has 8,037 training and 1,013 validation trial-phase rows. All phase copies of a trial stay
+together in model-selection splits. Test has 1,500 rows, 500 per phase, so equal-phase mean
+log loss is the selection objective. Observed test start years are 2014--2021, later than the
+training/validation population through 2013.
+
+The baseline fits one TF-IDF LR per phase on concatenated eligibility criteria, disease, and
+drug text~\cite{tfidf,sklearn}. Word unigrams/bigrams use minimum document frequency 3,
+at most 20,000 features, lowercase Unicode accent normalization, sublinear TF, smoothed IDF,
+and L2 normalization. Missing text is empty. LR uses $C=1$, liblinear, 500 iterations, and
+tolerance $10^{-4}$. Reason labels and reason embeddings are excluded from outcome predictors.
+
+Separate-field models use criteria/disease/drug vocabulary limits 20,000/5,000/5,000 and block
+scaling $1/\sqrt{3}$. Character models use word-boundary 3--5 grams, minimum document frequency 3,
+and at most 30,000 features per phase. The historical blend weights concatenated word,
+separate-field word, and character probabilities 0.25/0.25/0.50. Text plus metadata and pathway
+features did not improve validation loss: the $C=1$ metadata model scored 0.59460, compared with
+0.58377 for text alone. Exact drug matching and sparse pathway coverage can limit added signal;
+these are plausible explanations rather than isolated causal effects.
+
+\subsection{Phase sharing and later cohorts}
+The new text LR component shares coefficients across phases, adds phase-specific interactions
+scaled by 0.35 and phase intercepts, and uses training recency weights with a six-year half-life.
+Start year changes training weights, not inference features. This permits common text effects
+while retaining phase differences. Its final probability receives weight 0.5 alongside the
+historical blend.
+
+A historical screen trains through 2009 and evaluates 2010--2013; equal-phase loss improves
+from 0.58425 to 0.57288 for the selected blend. Five trial-grouped training folds select the
+mixture; OOF loss improves from 0.59649 to 0.59155. The supplied validation check then improves
+from 0.58090 to 0.56839. These comparisons motivated the public submission, which scores
+0.59011. Outcome training does not add the supplied validation labels.
+
+\subsection{Overall performance and generalization}
+Across all 1,013 validation trial-phase rows, pooled F1/ROC-AUC/AP improve from
+0.7354/0.7569/0.7982 to 0.7387/0.7737/0.8144. These pooled metrics differ from the
+equal-phase mean log loss used for selection. Lower loss need not improve every phase's F1.
+
+Public log loss is 0.59011 versus validation 0.56839, a gap of 0.02172.
+Later trial cohorts, repeated validation selection, and public-subset sampling variability
+may contribute; this comparison does not isolate any one cause. Private performance is unknown.

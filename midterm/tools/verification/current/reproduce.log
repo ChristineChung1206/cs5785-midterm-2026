@@ -1,0 +1,33 @@
+{
+  "part1": {
+    "rows": 312,
+    "model": "models/part1/02_kmeans_lr/model.joblib",
+    "submission": "models/part1/02_kmeans_lr/submission.csv",
+    "submission_sha256": "88e5a1d700e7167b04d7add58164227dafaf2cb59a5ebb156cf06323a6b520e6"
+  },
+  "part1_best_public": {
+    "rows": 312,
+    "model": "models/part1/03_kernel_ridge/model.joblib",
+    "submission": "models/part1/03_kernel_ridge/submission.csv",
+    "submission_sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c"
+  },
+  "part2": {
+    "submitted_original": {
+      "rows": 1500,
+      "submission": "models/part2/02_text_blend/submission.csv",
+      "submission_sha256": "3a5bfa9d8011a3bb674ba4ab228838ca170014173daca1e508c669c4418a7c52",
+      "max_absolute_probability_gap": 0.0
+    },
+    "best_public": {
+      "rows": 1500,
+      "submission": "models/part2/03_phase_shared/submission.csv",
+      "submission_sha256": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990",
+      "max_absolute_probability_gap": 0.0
+    }
+  },
+  "registry": {
+    "status": "PASS",
+    "recorded_submissions": 6
+  },
+  "status": "PASS"
+}

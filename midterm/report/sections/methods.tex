@@ -1,0 +1,58 @@
+\begin{abstract}
+We study scarce-label clinical-trial stopping reasons and phase-specific outcomes.
+K-Means and GMM recover masked reason labels, but gains depend on the classifier and decision policy.
+Calibrated RBF kernel ridge raises reported public sample F1 from 0.85405 to 0.88568;
+a phase-aware text blend lowers public log loss from 0.60149 to 0.59011.
+Grouped and temporal diagnostics, feature ablations, and reason-specific errors qualify these gains.
+\end{abstract}
+\section{Methods}
+\subsection{Data and evaluation}
+The supplied data define both tasks~\cite{handout}. Part 1 has 1,171 training trials:
+157 observed five-label vectors and 1,014 masked as $-100$; validation/test have 78/312 trials.
+Gold seeds oversample early trials and rare reasons. Validation spans 1999--2009;
+test spans 2010--2016. IDs only identify/join records, never predict labels.
+
+Sample F1 averages across trials; per-reason and macro F1 are also reported, with undefined values zero.
+We distinguish validation selection from later label reuse. Final decisions threshold all reasons,
+then use argmax if empty; ties follow Safety, Funding, Efficacy, Recruitment, Other.
+
+\paragraph{Part 1 feature choice.}
+Part 1 retains all 150 reason-embedding coordinates, summarizing stopping-reason text.
+PCA/random rotation remove coordinate interpretation, so we compare feature blocks and scaling.
+Final ridge uses embeddings alone; year defines temporal diagnostics.
+Pathway and text additions are evaluated in Section~\ref{sec:p1features}.
+
+\subsection{Label recovery and supervised controls}
+Five observed-label logistic regressions (LR) form the supervised baseline, with $C=1$ and threshold 0.5.
+StandardScaler fits available training embeddings. K-Means uses 10 clusters, k-means++, 20 starts,
+Lloyd updates, 500 maximum iterations, and tolerance $10^{-4}$; the recorded fit takes 19 iterations.
+GMM uses 10 diagonal components, five K-Means initializations, 500 maximum EM iterations,
+tolerance $10^{-3}$, and covariance regularization $10^{-4}$; it converges in 23 iterations.
+For cluster memberships/responsibilities $w_{ik}$ and labeled rows $L$,
+\begin{equation}
+ q_{kr}=\frac{\sum_{i\in L}w_{ik}y_{ir}+2\pi_r}{\sum_{i\in L}w_{ik}+2},\qquad
+ \pi_r=|L|^{-1}\sum_{i\in L}y_{ir}.
+\end{equation}
+Masked labels are $\mathbb{I}[\sum_k w_{ik}q_{kr}\geq0.5]$; empty clusters use the prior.
+Gold targets stay unchanged. Gold/pseudo weights are 1/0.1~\cite{lectures}.
+LR uses liblinear, 500 iterations, tolerance $10^{-4}$, and no class weights~\cite{sklearn}.
+We compare $C=0.1,1,10$, thresholds 0.35/0.5/0.65, and broad pathway indicators.
+The historical choice is K-Means plus LR with $C=0.1$, threshold 0.35.
+
+\subsection{Local models and final Part 1 fit}
+The later study compares 24 configurations: column standardization, global scaling, or row L2 normalization~\cite{normalizer};
+RBF SVM~\cite{svm} or kernel ridge; two bandwidths and two regularization settings.
+The winning full-data recipe preserves Euclidean geometry through global scaling and uses
+\begin{equation}
+ \begin{aligned}
+ K_{ij}&=\exp\!\left(-0.5\frac{\|x_i-x_j\|^2}{m}\right),\\
+ A&=(K+0.1I)^{-1}Y,
+ \end{aligned}
+\end{equation}
+where $m$ is the median nonzero squared distance among fitting gold rows.
+Geometry uses eligible gold and unlabeled embeddings (235+1,014 in the final fit);
+regression and calibration use gold targets only.
+Five sigmoid calibrators use gold-only, three-fold grouped OOF scores, standardized
+before LR calibration ($C=1$). Predictions use threshold 0.5 plus the declared fallback.
+After selection, this supervised model fits all 235 visible labels. Its original validation labels
+are then training data; no independent validation score is claimed for that final fit.

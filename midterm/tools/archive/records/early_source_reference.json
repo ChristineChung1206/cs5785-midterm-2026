@@ -1,0 +1,89 @@
+{
+  "purpose": "Exact sources embedded in notebook 05; original paths retained for provenance, not current executable entries.",
+  "source_files": [
+    {
+      "member": "midterm/midterm_closeout.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "ffc313e38fa735763e080f37dfa80c201b897f5db8f377c2b963c882e69fdc30",
+      "bytes": 17068,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_delivery.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "8afc2e162200a9f0221281706aaf8fd53a0ea24534b38a62897e13db67074c9d",
+      "bytes": 588,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_delivery_final.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "14ce26b200cfeec0c9f62ffacf6055d7effae4ddac749992c0eb4238c6e65290",
+      "bytes": 5224,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_l2_geometry.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "048602a431134e88af078f43f8a50cfb77d200229def221bf6091d22af3caa32",
+      "bytes": 24848,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_part1_diagnosis.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "8a1ac57b638e17f008ab7ca8a726358fcade4117e7d0040793633bedf60a9d58",
+      "bytes": 28803,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_rbf_svm.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "52234022ba10fcc30f5e0f32d9e8ff7110b692e8a0068e0147d2609f108289de",
+      "bytes": 25729,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_refinement_review.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "2bde49877661ea3fb12c96a0d1b0f7c07da3666e3a9b9f02ae37a9ce038c63e0",
+      "bytes": 9906,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_report.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "da35380e100e869b0e5acd7cd0a4c148e580574af24ea40341918a21f0376e7a",
+      "bytes": 371,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_report_final.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "44ebe44e694814d9aa8625d19c38543f6d13e9578e96150ca2552b3c0bbad7f8",
+      "bytes": 22654,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/midterm_threshold_blend.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "9625a292b6e0ee5803a7c1f2921ec7e1e907f8a54b02867b809a749a6db1972a",
+      "bytes": 21007,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/reproduce_part1_diagnosis.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "486cf3c65700bcba035efde8ad49d4442550cb22db4c24fa72f329fc220f00c4",
+      "bytes": 1241,
+      "status": "frozen_source_reference_only"
+    },
+    {
+      "member": "midterm/reproduce_refinement.py",
+      "nested_archive": "archive/midterm_before_cleanup_2026-11-02.zip",
+      "sha256": "8373b7ead3d618826e8478abe0763b1093012e35e63d06d68e61c1d71db5bf27",
+      "bytes": 1608,
+      "status": "frozen_source_reference_only"
+    }
+  ]
+}

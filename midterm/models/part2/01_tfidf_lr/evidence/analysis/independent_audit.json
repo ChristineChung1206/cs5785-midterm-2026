@@ -1,0 +1,449 @@
+{
+  "independent_checks_passed": 84,
+  "manual_metrics": [
+    {
+      "phase": "I",
+      "f1": 0.7794871794871795,
+      "roc_auc": 0.7819852941176471,
+      "average_precision": 0.8284627708911858,
+      "log_loss": 0.5966348434055078
+    },
+    {
+      "phase": "II",
+      "f1": 0.623608017817372,
+      "roc_auc": 0.7235849056603774,
+      "average_precision": 0.7087809897678199,
+      "log_loss": 0.6082466658143841
+    },
+    {
+      "phase": "III",
+      "f1": 0.8126159554730983,
+      "roc_auc": 0.7663279132791327,
+      "average_precision": 0.8684804384114141,
+      "log_loss": 0.5464388890627071
+    }
+  ],
+  "manual_equal_phase_log_loss": 0.5837734660941997,
+  "checks": [
+    {
+      "check": "Phase I: independent f1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I: independent roc_auc",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I: independent average_precision",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I: independent log_loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I: coefficient-based success probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I: IDF uses only this training phase",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I: every vocabulary term meets training min_df",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II: independent f1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II: independent roc_auc",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II: independent average_precision",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II: independent log_loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II: coefficient-based success probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II: IDF uses only this training phase",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II: every vocabulary term meets training min_df",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III: independent f1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III: independent roc_auc",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III: independent average_precision",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III: independent log_loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III: coefficient-based success probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III: IDF uses only this training phase",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III: every vocabulary term meets training min_df",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Safety: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Safety: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Safety: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Funding: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Funding: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Funding: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Efficacy: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Efficacy: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Efficacy: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Recruitment: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Recruitment: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Recruitment: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Other: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Other: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, Other: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, no_recorded_stopping_reason: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, no_recorded_stopping_reason: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, no_recorded_stopping_reason: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, matched_no_predicted_reason: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, matched_no_predicted_reason: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase I, matched_no_predicted_reason: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Safety: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Safety: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Safety: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Funding: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Funding: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Funding: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Efficacy: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Efficacy: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Efficacy: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Recruitment: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Recruitment: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Recruitment: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Other: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Other: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, Other: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, no_recorded_stopping_reason: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, no_recorded_stopping_reason: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, no_recorded_stopping_reason: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, matched_no_predicted_reason: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, matched_no_predicted_reason: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase II, matched_no_predicted_reason: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Safety: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Safety: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Safety: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Funding: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Funding: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Funding: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Efficacy: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Efficacy: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Efficacy: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Recruitment: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Recruitment: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Recruitment: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Other: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Other: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, Other: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, no_recorded_stopping_reason: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, no_recorded_stopping_reason: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, no_recorded_stopping_reason: independent rate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, matched_no_predicted_reason: independent denominator and errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, matched_no_predicted_reason: independent provenance counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Phase III, matched_no_predicted_reason: independent rate",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

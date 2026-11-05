@@ -1,0 +1,20 @@
+{
+  "winner": 4,
+  "setting": {
+    "alpha": 0.35,
+    "half_life": 6
+  },
+  "current_final_control_loss": 0.58425087205792,
+  "winner_loss": 0.5694314219026171,
+  "split": {
+    "fit_rows": 6001,
+    "held_rows": 2015,
+    "fit_trials": 5606,
+    "held_trials": 1910,
+    "cutoff": 2009,
+    "missing_year_rows_excluded": 21,
+    "trial_overlap": 0
+  },
+  "validation_labels_used": false,
+  "test_labels_used": false
+}

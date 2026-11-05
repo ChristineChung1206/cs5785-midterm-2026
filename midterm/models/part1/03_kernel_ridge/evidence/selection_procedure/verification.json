@@ -1,0 +1,42 @@
+{
+  "protected_hashes_unchanged": true,
+  "protected_hashes": {
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/current_selection.json": "24bfcc45cf4f42d521ca0ae1bfc726f57dbf1fa2611fcb63e6359709bf8c843d",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/final_selection.json": "f40d9efbace9234446ac456dd9771fe478e913130d38a80a8a0f527ad8096901",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/part1_final/selected_model.joblib": "cadf3559c0e6c0069ec1f58f8f99aea4660684cb021b1727cb53914e7a054fdf",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/part2_final/selected_model.joblib": "13a209483a7b2a4f2917f896f81a1e8044cfc7f359ccfc2ef25afec8ed52ff51",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/submissions/part2_best_public.csv": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/submissions/part1_submission.csv": "88e5a1d700e7167b04d7add58164227dafaf2cb59a5ebb156cf06323a6b520e6",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/midterm/submissions/part2_submission.csv": "3a5bfa9d8011a3bb674ba4ab228838ca170014173daca1e508c669c4418a7c52",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/deliverables/part1_submission.csv": "88e5a1d700e7167b04d7add58164227dafaf2cb59a5ebb156cf06323a6b520e6",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/deliverables/midterm_report.pdf": "ff89aaf4d130614986b1dfa618c2ca47ce2e861a441d4450162642696f10dd97",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/deliverables/part2_submission.csv": "3a5bfa9d8011a3bb674ba4ab228838ca170014173daca1e508c669c4418a7c52",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/deliverables/midterm_code.zip": "4992800e420b377a71f16b16edb670796b07419ef1393e85d8a99794031513da",
+    "/Users/peichenchung/AML_Fall 2026/Midterm Project/deliverables/delivery_checks.json": "fa0171a6e652b02450a412843f2fd50030b9cd46ca47292c2f3c0603bcf2465c"
+  },
+  "oof_rows": 705,
+  "unique_gold_ids": 235,
+  "gold_groups": 166,
+  "outer_fold_count": 12,
+  "output_hashes": {
+    "groups.csv": "1694c47f226358f757ab5aec05c312bda74bb12dea66fccd2248d40b75bb5a13",
+    "experiment_plan.json": "7f5b9200bb6fbd534b9e47e87bf84ce32841826eaeb924033cac6f014ff32243",
+    "summary.json": "fc25b10ea916146a7755313790ad8e696ee3c84116a58af40197729f24aba4ff",
+    "protected_before.json": "5202390ff27007cf5388bbba15fcaa61800211734306e2bcaca4443c4346177b",
+    "metrics_by_reason.csv": "4d5d2c10e4a5d7b445b7ab9bef76e9635faed177c3551ab26778940baed50b28",
+    "late_combined_56_predictions.csv": "ded52db7b823a29b6890b1e7f259c824d52d356d70dd0ecde081b8f5bfbfb94d",
+    "metrics_by_year.csv": "97130f03a21bdeebe445b748a2d7cec433dabb1eceb6b5011a21a411f37a5b80",
+    "fold_selections.json": "b3cfbefbc3d03187558fb0ef831c023649e5e700bb8273ad489266eb9403cb84",
+    "oof_pseudo_targets.csv": "cdd42e0a4d390c681b2296c17f6a3e2592d0abbc1c8f568334ee82e7cee661e2",
+    "oof_predictions.csv": "d672eaf1b1881d66faeefa733c69220c4b0029e059f6d8f326f1e8265ec81189",
+    "metadata.json": "c8a5a80372df50b1005aae9a89b2dc98160474964ba82eb57d5e27916f24f4fa",
+    "diagnostics.json": "2d58d95aeaf20feb97bf4c07f5c7b7b792ff5e52561e094af170b856c91e1d6f",
+    "late_train_20_predictions.csv": "5a5f96c1e4685e46736d5ab2ff861d68592a7956f4d558a849879453d3d9ee56",
+    "part1_local_consensus_6a6949390a85.csv": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+    "historical_validation_predictions.csv": "8ffc9c2d1c88d225db91c421f17a7831ef929de27e637ac842ed054d444d9d97",
+    "changed_trials.csv": "175873818950b9dfccd75220a05b709549152f9c33649cb87e3cf892a9ecaaf7",
+    "final_pseudo_targets.csv": "111416d430f49788c90533b05a50c86d3ad8469d6df6811a1269acb8ed362146",
+    "candidate_model.joblib": "ac7e9071da7a309ded2fa32c14eb7bf9010bafffb9773d7383b88d767cb82a46",
+    "final_selection.json": "04597ea921cddb8ebe25f12ef0ac3b222173bda94652f92c1f63dfd99bf1f1e1"
+  }
+}

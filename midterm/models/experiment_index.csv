@@ -1,0 +1,7 @@
+id,method,evidence_directory,model,role
+P1-01,supervised LR,models/part1/01_supervised_lr/evidence/original_run,models/part1/01_supervised_lr/model.joblib,baseline
+P1-02,K-Means + LR,models/part1/02_kmeans_lr/evidence/selected,models/part1/02_kmeans_lr/model.joblib,historical best; augmentation required
+P1-03,calibrated RBF kernel ridge,models/part1/03_kernel_ridge/evidence/selection_procedure,models/part1/03_kernel_ridge/model.joblib,current best
+P2-01,phase-specific word TF-IDF LR,models/part2/01_tfidf_lr/evidence/analysis,models/part2/01_tfidf_lr/model.joblib,baseline
+P2-02,word/field/character blend,models/part2/02_text_blend/evidence/selection,models/part2/02_text_blend/model.joblib,final component
+P2-03,50/50 text blend + phase-shared LR,models/part2/03_phase_shared/evidence/selection,models/part2/03_phase_shared/component.joblib,"current best ensemble; model column is shared component, combined with P2-02"

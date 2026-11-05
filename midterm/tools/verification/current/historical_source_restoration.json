@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "source_check": {
+    "status": "PASS",
+    "ported_runners": 10,
+    "replay_studies": 11,
+    "training_performed": false,
+    "check_scope": "compile/import, source hashes, required saved inputs; no experimental refits"
+  },
+  "ported_python_sources": 10,
+  "replay_support_sources": 2,
+  "notebook_code_cells_compiled": 4,
+  "notebook_defaults": {
+    "RUN_TRAINING": false,
+    "RUN_HISTORICAL_TRAINING": false
+  },
+  "run_all_registered_notebooks": 5,
+  "run_all_tracks_both_training_flags": true,
+  "new_output_safeguards": "existing/protected curated destinations rejected; new experiments or external new directories accepted",
+  "external_imports_installed_and_pinned": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "restored_evidence_files": 6,
+  "definition_comparison": {
+    "midterm_graph_refinement": {
+      "unchanged_definitions": 4,
+      "changed_or_renamed_definitions": [
+        "run_geometry"
+      ]
+    },
+    "midterm_rank_part1": {
+      "unchanged_definitions": 5,
+      "changed_or_renamed_definitions": [
+        "load_gold_oof",
+        "threshold_study",
+        "pseudo_study",
+        "main"
+      ]
+    },
+    "midterm_part1_round2": {
+      "unchanged_definitions": 16,
+      "changed_or_renamed_definitions": [
+        "run"
+      ]
+    },
+    "midterm_part1_label_shift": {
+      "unchanged_definitions": 6,
+      "changed_or_renamed_definitions": [
+        "run"
+      ]
+    },
+    "midterm_part1_other_views": {
+      "unchanged_definitions": 16,
+      "changed_or_renamed_definitions": [
+        "audit_labels",
+        "run"
+      ]
+    },
+    "midterm_part1_mixture_followup": {
+      "unchanged_definitions": 2,
+      "changed_or_renamed_definitions": [
+        "run"
+      ]
+    },
+    "midterm_part1_val_refit_weight": {
+      "unchanged_definitions": 2,
+      "changed_or_renamed_definitions": [
+        "run"
+      ]
+    },
+    "midterm_part1_parity": {
+      "unchanged_definitions": 10,
+      "changed_or_renamed_definitions": [
+        "verify_saved_predictions",
+        "main"
+      ]
+    },
+    "midterm_part1_local_followup": {
+      "unchanged_definitions": 14,
+      "changed_or_renamed_definitions": [
+        "main"
+      ]
+    },
+    "midterm_part1_ridge_boundary": {
+      "unchanged_definitions": 7,
+      "changed_or_renamed_definitions": [
+        "main"
+      ]
+    }
+  },
+  "training_performed": false,
+  "numerical_refit_revalidated": false,
+  "validation_scope": "compile/import, archive/ported hashes, necessary saved input presence, pure output safety checks; no old or new model fit"
+}

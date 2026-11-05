@@ -1,0 +1,72 @@
+check,status,detail
+part1_train: unique nonmissing ID,PASS,"duplicate ID rows=0, missing IDs=0"
+part1_train: no duplicate full rows,PASS,duplicates=0
+part1_val: unique nonmissing ID,PASS,"duplicate ID rows=0, missing IDs=0"
+part1_val: no duplicate full rows,PASS,duplicates=0
+part1_test: unique nonmissing ID,PASS,"duplicate ID rows=0, missing IDs=0"
+part1_test: no duplicate full rows,PASS,duplicates=0
+outcome_train: unique nonmissing ID,PASS,"duplicate ID rows=0, missing IDs=0"
+outcome_train: no duplicate full rows,PASS,duplicates=0
+outcome_val: unique nonmissing ID,PASS,"duplicate ID rows=0, missing IDs=0"
+outcome_val: no duplicate full rows,PASS,duplicates=0
+outcome_test: unique nonmissing ID,PASS,"duplicate ID rows=0, missing IDs=0"
+outcome_test: no duplicate full rows,PASS,duplicates=0
+part1_train: documented row count,PASS,"actual=1171, expected=1171"
+part1_val: documented row count,PASS,"actual=78, expected=78"
+part1_test: documented row count,PASS,"actual=312, expected=312"
+outcome_train: documented row count,PASS,"actual=8037, expected=8037"
+outcome_val: documented row count,PASS,"actual=1013, expected=1013"
+outcome_test: documented row count,PASS,"actual=1500, expected=1500"
+part1_train: expected schema,PASS,"missing=[], unexpected=[]"
+part1_val: expected schema,PASS,"missing=[], unexpected=[]"
+part1_test: expected schema,PASS,"missing=[], unexpected=[]"
+outcome_train: expected schema,PASS,"missing=[], unexpected=[]"
+outcome_val: expected schema,PASS,"missing=[], unexpected=[]"
+outcome_test: expected schema,PASS,"missing=[], unexpected=[]"
+Part1 train: 157 visible / 1014 masked,PASS,"visible=157, masked=1014"
+Part1 train: no partial/invalid label rows,PASS,invalid rows=0
+Part1 val: all labels visible and binary,PASS,values must be 0 or 1
+outcome_train: unique trial-phase pairs,PASS,duplicate pairs=0
+outcome_train: ID matches trial_id and phase,PASS,ID must equal trial_id + '_' + phase
+outcome_train: known phase values,PASS,"observed=['I', 'II', 'III']"
+outcome_train: binary outcome labels,PASS,label values must be 0 or 1
+outcome_train: outcome consistent across phases,PASS,inconsistent trials=0
+outcome_val: unique trial-phase pairs,PASS,duplicate pairs=0
+outcome_val: ID matches trial_id and phase,PASS,ID must equal trial_id + '_' + phase
+outcome_val: known phase values,PASS,"observed=['I', 'II', 'III']"
+outcome_val: binary outcome labels,PASS,label values must be 0 or 1
+outcome_val: outcome consistent across phases,PASS,inconsistent trials=0
+outcome_test: unique trial-phase pairs,PASS,duplicate pairs=0
+outcome_test: ID matches trial_id and phase,PASS,ID must equal trial_id + '_' + phase
+outcome_test: known phase values,PASS,"observed=['I', 'II', 'III']"
+Part2 test: 500 rows per phase,PASS,expected=500 per phase
+Part1: train/val trial IDs disjoint,PASS,shared trials=0
+Part1: train/test trial IDs disjoint,PASS,shared trials=0
+Part1: val/test trial IDs disjoint,PASS,shared trials=0
+Part2: train/val trial IDs disjoint,PASS,shared trials=0
+Part2: train/test trial IDs disjoint,PASS,shared trials=0
+Part2: val/test trial IDs disjoint,PASS,shared trials=0
+part1_train: 150 finite numeric embedding columns,PASS,"dimensions=150, nonfinite=0"
+part1_val: 150 finite numeric embedding columns,PASS,"dimensions=150, nonfinite=0"
+part1_test: 150 finite numeric embedding columns,PASS,"dimensions=150, nonfinite=0"
+Pathway catalogs identical,PASS,"rows=2501, identical=True"
+Pathway catalog: unique nonmissing Reactome IDs,PASS,"unique=2501, rows=2501"
+Pathway catalog: ordinal levels 0..9,PASS,"levels=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]"
+part1_train: pathway IDs in catalog,PASS,missing IDs=[]
+part1_val: pathway IDs in catalog,PASS,missing IDs=[]
+part1_test: pathway IDs in catalog,PASS,missing IDs=[]
+outcome_train: pathway IDs in catalog,PASS,missing IDs=[]
+outcome_val: pathway IDs in catalog,PASS,missing IDs=[]
+outcome_test: pathway IDs in catalog,PASS,missing IDs=[]
+part1_sample: columns,PASS,"columns=['ID', 'Predicted']"
+part1_sample: test IDs in matching order,PASS,"sample rows=312, test rows=312"
+part1_sample: unique IDs,PASS,duplicate rows=0
+Part1 sample: allowed reason names,PASS,tokens=['Recruitment']
+part2_sample: columns,PASS,"columns=['ID', 'label']"
+part2_sample: test IDs in matching order,PASS,"sample rows=1500, test rows=1500"
+part2_sample: unique IDs,PASS,duplicate rows=0
+Part2 sample: probability format,PASS,"sample probabilities must be in [0,1]"
+Part2 validation join preserves rows,PASS,"before=1013, after=1013"
+Part2 validation: every row has exactly one provenance group,PASS,"sources=['needs_prediction_test', 'needs_prediction_train', 'not_in_part1', 'observed_train', 'observed_val']"
+Part2 test: no Part1 trial overlap,PASS,Part2 test trials must not appear in any Part1 split
+Source files and starter notebook unchanged,PASS,changed files=[]

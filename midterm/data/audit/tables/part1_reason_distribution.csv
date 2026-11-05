@@ -1,0 +1,11 @@
+group,reason,visible_trials,positive_trials,negative_trials,positive_rate
+train_visible,Safety,157,16,141,0.10191082802547771
+train_visible,Funding,157,8,149,0.050955414012738856
+train_visible,Efficacy,157,17,140,0.10828025477707007
+train_visible,Recruitment,157,101,56,0.643312101910828
+train_visible,Other,157,25,132,0.1592356687898089
+validation,Safety,78,9,69,0.11538461538461539
+validation,Funding,78,4,74,0.05128205128205128
+validation,Efficacy,78,14,64,0.1794871794871795
+validation,Recruitment,78,50,28,0.6410256410256411
+validation,Other,78,10,68,0.1282051282051282

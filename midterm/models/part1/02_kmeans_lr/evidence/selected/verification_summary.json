@@ -1,0 +1,42 @@
+{
+  "behavioral_tests_passed": 55,
+  "new_policy_tests_passed": 6,
+  "fresh_process_notebooks_passed": 7,
+  "protected_raw_data_models_runs_and_part2_submission_unchanged": 171,
+  "historical_run_count": 14,
+  "model_retrained": false,
+  "test_rows": 312,
+  "test_null_or_empty_predictions": 0,
+  "changed_test_rows": 4,
+  "test_probabilities_unchanged": true,
+  "observed_labels_unchanged": true,
+  "changed_test_predictions": [
+    {
+      "ID": "TR03479",
+      "Predicted": "Safety"
+    },
+    {
+      "ID": "TR09690",
+      "Predicted": "Other"
+    },
+    {
+      "ID": "TR09036",
+      "Predicted": "Efficacy"
+    },
+    {
+      "ID": "TR00275",
+      "Predicted": "Safety"
+    }
+  ],
+  "independent_part2_checks_passed": 84,
+  "report_body_pages": 4,
+  "report_reference_pages": 1,
+  "report_visual_review": "All five pages inspected",
+  "uploads_performed_by_agent": false,
+  "canonical_directory": "part1_final",
+  "selected_run_id": "part1_s5_kmeans_threshold035_seed42_v1",
+  "decision_policy_id": "threshold_then_argmax_if_empty_v1",
+  "f1_samples": 0.8782051282051282,
+  "f1_macro": 0.7648422333984687,
+  "notebook_checks_passed": 46
+}

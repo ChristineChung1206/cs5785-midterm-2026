@@ -1,0 +1,8 @@
+{
+  "tests_run": 14,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "evaluation_module_sha256": "61b6e9df106d79cce0340c9bdba8735051b08c9837b5d9d88503d89ec8744385",
+  "scikit_learn_version": "1.9.1"
+}

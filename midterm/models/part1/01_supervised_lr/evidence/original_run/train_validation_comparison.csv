@@ -1,0 +1,3 @@
+split,n_rows,f1_samples,f1_macro
+labeled_training (resubstitution),157,1.0,1.0
+validation,78,0.8653846153846155,0.7066737039643443

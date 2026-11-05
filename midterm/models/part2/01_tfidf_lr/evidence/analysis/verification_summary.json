@@ -1,0 +1,37 @@
+{
+  "run_id": "part2_tfidf_lr_by_phase_seed42_v1",
+  "behavioral_tests_passed": 55,
+  "new_behavioral_tests_passed": 9,
+  "notebook_checks_passed": 23,
+  "independent_checks_passed": 84,
+  "notebook_validated": true,
+  "notebook_execution_errors": 0,
+  "training_disabled_rerun_passed": true,
+  "immutable_run_and_registry_files_unchanged": 13,
+  "protected_prior_files_unchanged": 145,
+  "source_language": "English",
+  "failure_linkage": {
+    "failed_trial_phase_rows": 452,
+    "lookup_rows": 1561,
+    "matched_empty_reason_trial_phase_rows": 0,
+    "matched_trial_phase_rows": 198,
+    "observed_reason_trial_phase_rows": 27,
+    "outcome_model_run_id": "part2_tfidf_lr_by_phase_seed42_v1",
+    "part1_model_run_id": "part1_s5_kmeans_threshold035_seed42_v1",
+    "predicted_reason_trial_phase_rows": 171,
+    "predicted_training_resubstitution_rows": 131,
+    "reason_lookup_sha256": "170b9feafeb4118405911c116c226af9b2b7272085d462d695e7610f755aca0a",
+    "reasons_used_as_predictors": false,
+    "unique_failed_trials": 398,
+    "unmatched_trial_phase_rows": 254
+  },
+  "validation_summary": {
+    "log_loss_equal_phase": 0.5837734660941997,
+    "log_loss_pooled": 0.5843904126063079,
+    "n_rows": 1013,
+    "n_unique_trials": 901
+  },
+  "registry_part1_runs": 8,
+  "registry_part2_runs": 6,
+  "part1_final_decision_policy_id": "threshold_then_argmax_if_empty_v1"
+}

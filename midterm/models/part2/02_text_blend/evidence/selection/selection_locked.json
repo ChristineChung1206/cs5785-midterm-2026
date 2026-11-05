@@ -1,0 +1,32 @@
+{
+  "selected_run_id": "part2_word_character_blend_seed42_v1",
+  "selection_metric": "log_loss_equal_phase",
+  "selection_score": 0.5808998112673002,
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "flat_weights": {
+    "concatenated_word": 0.25,
+    "separate_field_word": 0.25,
+    "character": 0.5
+  },
+  "threshold": 0.5,
+  "refit_performed": false,
+  "validation_refit": false,
+  "blend_weight_tuned_on_public": false,
+  "candidate_selected_on_training_OOF_and_validation_before_public_submission": true,
+  "selected_model_sha256": "13a209483a7b2a4f2917f896f81a1e8044cfc7f359ccfc2ef25afec8ed52ff51",
+  "components": {
+    "word_blend": {
+      "run_id": "part2_equal_probability_blend_seed42_v1",
+      "model_sha256": "37ecbed9986a2cc75e9c7c9fa52fb86bf4c36c2ebfbaf19cfd1b4c3beefab6b7"
+    },
+    "character": {
+      "study": "refinement/oof_weight_char",
+      "candidate_sha256": "95423c00978cb689a336aa376d98ae40075248f9ea532a5a9033435936635817"
+    }
+  },
+  "user_reported_public_score": 0.59696,
+  "public_score_source": "User-provided submission screenshot"
+}

@@ -1,0 +1,13 @@
+{
+  "findings": [
+    "**Baseline:** equal-phase mean validation log loss=0.583773; pooled log loss=0.584390.",
+    "**Phase I:** F1=0.7795, ROC-AUC=0.7820, AP=0.8285; 34/64 true failures predicted successful (53.1%).",
+    "Phase I's highest measured rate among reason groups with n>=5 is **Efficacy**, 5/5 (100.0%); observed reasons=0, predicted reasons=5. This is a descriptive comparison.",
+    "**Phase II:** F1=0.6236, ROC-AUC=0.7236, AP=0.7088; 73/265 true failures predicted successful (27.5%).",
+    "Phase II's highest measured rate among reason groups with n>=5 is **Safety**, 5/12 (41.7%); observed reasons=1, predicted reasons=11. This is a descriptive comparison.",
+    "**Phase III:** F1=0.8126, ROC-AUC=0.7663, AP=0.8685; 80/123 true failures predicted successful (65.0%).",
+    "Phase III's highest measured rate among reason groups with n>=5 is **Efficacy**, 10/10 (100.0%); observed reasons=0, predicted reasons=10. This is a descriptive comparison.",
+    "**Label coverage:** 452 failed trial-phase rows; 27 with observed reasons, 171 with predicted reasons, 254 unmatched; 0 matched rows have empty predicted reason sets.",
+    "**Limits:** small and overlapping reason groups, nonrandom observed reasons, estimated reason-label errors, and later test years. Group error rates are not causal or test-performance estimates."
+  ]
+}

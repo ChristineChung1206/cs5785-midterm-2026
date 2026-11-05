@@ -1,0 +1,12 @@
+{
+  "setting_id": 4,
+  "setting": {
+    "alpha": 0.35,
+    "half_life": 6
+  },
+  "blend_weight": 0.5,
+  "selection_metric": "equal-phase grouped OOF log loss",
+  "validation_labels_used": false,
+  "test_labels_used": false,
+  "fit_preprocessing_inside_each_fold": true
+}

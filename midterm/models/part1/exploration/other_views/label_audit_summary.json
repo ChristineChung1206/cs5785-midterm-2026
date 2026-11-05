@@ -1,0 +1,11 @@
+{
+  "gold_rows": 235,
+  "discordant_pairs_saved": 30,
+  "pairwise_distance_2pct": 0.24131079283483572,
+  "high_confidence_flags": 20,
+  "all_pairs_within_2pct": 552,
+  "discordant_pairs_within_2pct": 0,
+  "exact_duplicate_pairs": 30,
+  "discordant_exact_duplicate_pairs": 0,
+  "labels_modified": 0
+}

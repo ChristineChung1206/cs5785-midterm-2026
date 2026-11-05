@@ -1,0 +1,76 @@
+\twocolumn[{
+\section{Results: Stopping Reasons}
+\begin{center}\small
+\input{tables/part1_validation}
+\captionof{table}{Historical validation on 78 trials, fitted using 157 original gold training rows.
+All rows use thresholding followed by argmax if empty. These are pre-refit diagnostic comparisons;
+the final public ridge model subsequently uses all 235 visible labels. Positive support is
+9 Safety, 4 Funding, 14 Efficacy, 50 Recruitment, and 10 Other.}
+\label{tab:p1val}
+\end{center}
+\begin{center}\small
+\begin{tabular}{lrrr}
+\toprule
+Evaluation & Fixed K-Means + LR & Local selection procedure & Fixed ridge recipe\\
+\midrule
+Repeated near-group OOF, 235 labels & 0.8877 & 0.8983 & 0.9026\\
+Historical validation, 78 trials & 0.8782 & 0.8803 & 0.8932\\
+Late train, 20 trials & 0.8417 & 0.8833 & 0.9000\\
+Late combined, 56 trials & 0.8393 & 0.8869 & 0.8512\\
+\bottomrule
+\end{tabular}
+\captionof{table}{Sample F1 under explicitly different procedures. The middle column evaluates
+nested selection among local models, consensus students, and blends. The right column was
+measured later for the already-selected public-winning ridge recipe; it is not an independent
+estimate obtained before choosing that recipe. Temporal fits use 134 early train labels or
+176 early train/validation labels respectively. The same labeled and unlabeled held groups
+are excluded in OOF; temporal diagnostics retain earlier matching groups.}
+\label{tab:p1eval}
+\end{center}
+}]
+\subsection{What changed the conclusion}
+Baseline F1 0.8654 omitted four empty predictions; the submission fallback raises it to 0.8782,
+tying retained K-Means LR. Validation alone establishes no semi-supervised F1 gain.
+Exact validation sets are 61/78 versus 64/78; test sets differ on 96/312 trials.
+Earlier 157-label grouped OOF favored K-Means (0.8875 versus 0.8399), under different
+grouping and populations from Table~\ref{tab:p1eval}.
+
+Under the original empty-set policy, K-Means/GMM with LR $C=1$ score 0.8205/0.6667.
+GMM produces no Safety, Funding, or Efficacy pseudo positives; K-Means produces no Funding
+positives and only 39 Other positives among 1,014 masked rows. This label-quality limitation
+motivates local models without inherited cluster targets.
+
+\subsection{Grouped selection and calibration}
+The 235 visible labels form 166 near-duplicate groups: connected components at raw Euclidean
+distance $\leq10^{-4}$ across gold and masked rows. Held groups leave all fitting pools.
+Four outer folds repeat with seeds 42, 137, and 2026; three inner group folds select models
+and decisions, with further grouped calibration inside each fit. The 705 OOF predictions
+repeat 235 trials, rather than represent independent observations.
+
+When the local model and K-Means/LR control have complementary inner errors, local and
+gold-only linear teachers can
+supply label-wise soft pseudo targets. All six member scores must be at least 0.8 or at most
+0.1; otherwise that label remains unknown. Gold weights remain one, pseudo weights are 0.1
+with separate class-support caps, and only one student round is fitted. No outer fold selected
+this student. Three of 12 folds selected blends; nine selected local models alone.
+
+\subsection{Observed improvement and remaining errors}
+Full-data selection chose ridge; 11 outer folds selected SVMs. Its public F1 is 0.88568,
+up 0.03163 from K-Means LR. This aggregate feedback reveals no individual hidden labels.
+The procedure's paired group-bootstrap 95\% gain interval over the inner-retuned control,
+$[-0.00690,0.03494]$, includes zero.
+
+The procedure improves Safety OOF F1 from 0.8228 to 0.9103, while Other declines from 0.5865
+to 0.5761. Nine distinct Recruitment+Other trials are predicted as Recruitment alone in all
+three repeats. The main improvement therefore does not resolve this rare co-occurrence.
+
+\subsection{Feature ablation}
+\label{sec:p1features}
+With K-Means pseudo labels, gold/pseudo weights, LR $C=1$, and threshold 0.5 fixed,
+we append 27 level-0 Reactome pathway indicators (training frequency $\geq5$) and two
+availability flags to the 150 embeddings. Validation sample/macro F1 falls from
+0.8205/0.6332 to 0.8120/0.5680. This controlled feature comparison uses the original
+empty-set-allowing policy, unlike Table~\ref{tab:p1val}.
+A separate TF-IDF view of criteria, diseases, and drugs supplies conservative Other additions;
+it changes no decisions at its OOF-selected threshold: validation F1 remains 0.8782 and
+late-56 F1 0.8393. This tests a targeted correction, not all text/embedding combinations.

@@ -1,0 +1,12 @@
+{
+  "part1": {
+    "filename": "part1.csv",
+    "sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+    "matches_registered_submission": true
+  },
+  "part2": {
+    "filename": "part2.csv",
+    "sha256": "af33e3cc5f102a0e4c1a2c8e17a2908417dcc4132e383702a807c81b4c666990",
+    "matches_registered_submission": true
+  }
+}

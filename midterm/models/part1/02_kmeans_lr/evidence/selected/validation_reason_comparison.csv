@@ -1,0 +1,41 @@
+reason,n_positive,n_negative,f1,precision,recall,run_id,model
+Safety,9,69,0.8571428571428571,0.75,1.0,part1_supervised_lr_embeddings_seed42_v1,Supervised baseline
+Funding,4,74,0.2857142857142857,0.3333333333333333,0.25,part1_supervised_lr_embeddings_seed42_v1,Supervised baseline
+Efficacy,14,64,0.8275862068965517,0.8,0.8571428571428571,part1_supervised_lr_embeddings_seed42_v1,Supervised baseline
+Recruitment,50,28,0.9795918367346939,1.0,0.96,part1_supervised_lr_embeddings_seed42_v1,Supervised baseline
+Other,10,68,0.5833333333333334,0.5,0.7,part1_supervised_lr_embeddings_seed42_v1,Supervised baseline
+Safety,9,69,0.8235294117647058,0.875,0.7777777777777778,part1_kmeans_k10_lr_pseudo010_seed42_v1,K-Means + LR
+Funding,4,74,0.4,1.0,0.25,part1_kmeans_k10_lr_pseudo010_seed42_v1,K-Means + LR
+Efficacy,14,64,0.6923076923076923,0.75,0.6428571428571429,part1_kmeans_k10_lr_pseudo010_seed42_v1,K-Means + LR
+Recruitment,50,28,0.9423076923076923,0.9074074074074074,0.98,part1_kmeans_k10_lr_pseudo010_seed42_v1,K-Means + LR
+Other,10,68,0.3076923076923077,0.6666666666666666,0.2,part1_kmeans_k10_lr_pseudo010_seed42_v1,K-Means + LR
+Safety,9,69,0.2,1.0,0.1111111111111111,part1_gmm_k10_lr_pseudo010_seed42_v1,GMM + LR
+Funding,4,74,0.4,1.0,0.25,part1_gmm_k10_lr_pseudo010_seed42_v1,GMM + LR
+Efficacy,14,64,0.35294117647058826,1.0,0.21428571428571427,part1_gmm_k10_lr_pseudo010_seed42_v1,GMM + LR
+Recruitment,50,28,0.9583333333333334,1.0,0.92,part1_gmm_k10_lr_pseudo010_seed42_v1,GMM + LR
+Other,10,68,0.3333333333333333,1.0,0.2,part1_gmm_k10_lr_pseudo010_seed42_v1,GMM + LR
+Safety,9,69,0.8235294117647058,0.875,0.7777777777777778,part1_s5_kmeans_broadpath_c1_t050_seed42_v1,"K-Means + broad pathways, C=1"
+Funding,4,74,0.0,0.0,0.0,part1_s5_kmeans_broadpath_c1_t050_seed42_v1,"K-Means + broad pathways, C=1"
+Efficacy,14,64,0.7407407407407407,0.7692307692307693,0.7142857142857143,part1_s5_kmeans_broadpath_c1_t050_seed42_v1,"K-Means + broad pathways, C=1"
+Recruitment,50,28,0.9423076923076923,0.9074074074074074,0.98,part1_s5_kmeans_broadpath_c1_t050_seed42_v1,"K-Means + broad pathways, C=1"
+Other,10,68,0.3333333333333333,1.0,0.2,part1_s5_kmeans_broadpath_c1_t050_seed42_v1,"K-Means + broad pathways, C=1"
+Safety,9,69,0.8235294117647058,0.875,0.7777777777777778,part1_s5_kmeans_reg_c01_t050_seed42_v1,"K-Means + LR, C=0.1"
+Funding,4,74,0.4,1.0,0.25,part1_s5_kmeans_reg_c01_t050_seed42_v1,"K-Means + LR, C=0.1"
+Efficacy,14,64,0.7142857142857143,0.7142857142857143,0.7142857142857143,part1_s5_kmeans_reg_c01_t050_seed42_v1,"K-Means + LR, C=0.1"
+Recruitment,50,28,0.9607843137254902,0.9423076923076923,0.98,part1_s5_kmeans_reg_c01_t050_seed42_v1,"K-Means + LR, C=0.1"
+Other,10,68,0.46153846153846156,1.0,0.3,part1_s5_kmeans_reg_c01_t050_seed42_v1,"K-Means + LR, C=0.1"
+Safety,9,69,0.5714285714285714,0.8,0.4444444444444444,part1_s5_kmeans_reg_c10_t050_seed42_v1,"K-Means + LR, C=10"
+Funding,4,74,0.3333333333333333,0.5,0.25,part1_s5_kmeans_reg_c10_t050_seed42_v1,"K-Means + LR, C=10"
+Efficacy,14,64,0.6666666666666666,0.6923076923076923,0.6428571428571429,part1_s5_kmeans_reg_c10_t050_seed42_v1,"K-Means + LR, C=10"
+Recruitment,50,28,0.9333333333333333,0.8909090909090909,0.98,part1_s5_kmeans_reg_c10_t050_seed42_v1,"K-Means + LR, C=10"
+Other,10,68,0.16666666666666666,0.5,0.1,part1_s5_kmeans_reg_c10_t050_seed42_v1,"K-Means + LR, C=10"
+Safety,9,69,0.8421052631578947,0.8,0.8888888888888888,part1_s5_kmeans_threshold035_seed42_v1,"K-Means + LR, threshold=0.35"
+Funding,4,74,0.6666666666666666,1.0,0.5,part1_s5_kmeans_threshold035_seed42_v1,"K-Means + LR, threshold=0.35"
+Efficacy,14,64,0.8387096774193549,0.7647058823529411,0.9285714285714286,part1_s5_kmeans_threshold035_seed42_v1,"K-Means + LR, threshold=0.35"
+Recruitment,50,28,0.9433962264150944,0.8928571428571429,1.0,part1_s5_kmeans_threshold035_seed42_v1,"K-Means + LR, threshold=0.35"
+Other,10,68,0.5333333333333333,0.8,0.4,part1_s5_kmeans_threshold035_seed42_v1,"K-Means + LR, threshold=0.35"
+Safety,9,69,0.875,1.0,0.7777777777777778,part1_s5_kmeans_threshold065_seed42_v1,"K-Means + LR, threshold=0.65"
+Funding,4,74,0.0,0.0,0.0,part1_s5_kmeans_threshold065_seed42_v1,"K-Means + LR, threshold=0.65"
+Efficacy,14,64,0.6923076923076923,0.75,0.6428571428571429,part1_s5_kmeans_threshold065_seed42_v1,"K-Means + LR, threshold=0.65"
+Recruitment,50,28,0.9702970297029703,0.9607843137254902,0.98,part1_s5_kmeans_threshold065_seed42_v1,"K-Means + LR, threshold=0.65"
+Other,10,68,0.46153846153846156,1.0,0.3,part1_s5_kmeans_threshold065_seed42_v1,"K-Means + LR, threshold=0.65"

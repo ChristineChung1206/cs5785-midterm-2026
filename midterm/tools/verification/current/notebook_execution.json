@@ -1,0 +1,62 @@
+{
+  "python": "3.12.16",
+  "no_training": true,
+  "all_successful": true,
+  "notebooks": [
+    {
+      "notebook": "tools/notebooks/01_data_protocol.ipynb",
+      "sha256": "4ef21cd06a7fcfbfe6466e8381fe99457946b941a59a76a1630437cb4934bf3f",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 5,
+      "errors": 0,
+      "training_enabled": false,
+      "historical_training_enabled": false,
+      "elapsed_seconds": 0.9,
+      "success": true
+    },
+    {
+      "notebook": "tools/notebooks/02_part1.ipynb",
+      "sha256": "95c3bb30a0b1d8acfe9f5c7118d996d8254902a1636411b969efe467b2c4ab5d",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 9,
+      "errors": 0,
+      "training_enabled": false,
+      "historical_training_enabled": false,
+      "elapsed_seconds": 1.104,
+      "success": true
+    },
+    {
+      "notebook": "tools/notebooks/03_part2.ipynb",
+      "sha256": "b0dcf19e25eecb7cce656bfd1e89e06af9f80365b73cc487c2835f70630ec17e",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 6,
+      "errors": 0,
+      "training_enabled": false,
+      "historical_training_enabled": false,
+      "elapsed_seconds": 1.478,
+      "success": true
+    },
+    {
+      "notebook": "tools/notebooks/04_error_analysis.ipynb",
+      "sha256": "a4271110b2d4423944c9bc67d1065f23f3e53efefcdf9519e9cd401027f121e2",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 6,
+      "errors": 0,
+      "training_enabled": false,
+      "historical_training_enabled": false,
+      "elapsed_seconds": 0.979,
+      "success": true
+    },
+    {
+      "notebook": "tools/notebooks/05_historical_experiments.ipynb",
+      "sha256": "acff92afcedc683462a00092af10da27020a1704b03e5fedea94db85da445261",
+      "runner": "ipykernel InProcessKernelManager; real Jupyter messages, no network sockets",
+      "code_cells_executed": 5,
+      "errors": 0,
+      "training_enabled": false,
+      "historical_training_enabled": false,
+      "elapsed_seconds": 0.683,
+      "success": true
+    }
+  ]
+}

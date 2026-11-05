@@ -1,0 +1,4 @@
+phase,training_rows,unique_training_trials,training_successes,training_failures,missing_criteria_rows,vocabulary_size,training_nonzero_values,zero_training_vectors,classifier_iterations,converged
+I,1012,1012,573,439,0,20000,398858,0,4,True
+II,3950,3950,1884,2066,0,20000,1391960,0,4,True
+III,3075,3075,2009,1066,2,20000,843548,0,5,True

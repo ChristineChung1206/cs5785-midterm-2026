@@ -1,0 +1,57 @@
+{
+  "task": "part1",
+  "summary": {
+    "n_rows": 78,
+    "f1_samples": 0.8205128205128205,
+    "f1_macro": 0.6331674208144797
+  },
+  "thresholds": {
+    "Safety": 0.5,
+    "Funding": 0.5,
+    "Efficacy": 0.5,
+    "Recruitment": 0.5,
+    "Other": 0.5
+  },
+  "by_group": [
+    {
+      "reason": "Safety",
+      "n_positive": 9,
+      "n_negative": 69,
+      "f1": 0.8235294117647058,
+      "precision": 0.875,
+      "recall": 0.7777777777777778
+    },
+    {
+      "reason": "Funding",
+      "n_positive": 4,
+      "n_negative": 74,
+      "f1": 0.4,
+      "precision": 1.0,
+      "recall": 0.25
+    },
+    {
+      "reason": "Efficacy",
+      "n_positive": 14,
+      "n_negative": 64,
+      "f1": 0.6923076923076923,
+      "precision": 0.75,
+      "recall": 0.6428571428571429
+    },
+    {
+      "reason": "Recruitment",
+      "n_positive": 50,
+      "n_negative": 28,
+      "f1": 0.9423076923076923,
+      "precision": 0.9074074074074074,
+      "recall": 0.98
+    },
+    {
+      "reason": "Other",
+      "n_positive": 10,
+      "n_negative": 68,
+      "f1": 0.3076923076923077,
+      "precision": 0.6666666666666666,
+      "recall": 0.2
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+part,split_a,split_b,shared_unique_trials
+Part1,train,val,0
+Part1,train,test,0
+Part1,val,test,0
+Part2,train,val,0
+Part2,train,test,0
+Part2,val,test,0

@@ -1,0 +1,71 @@
+\twocolumn[{
+\section{Discussion and Reproducibility}
+\begin{center}\small
+\begin{tabular}{p{.25\textwidth}p{.42\textwidth}p{.24\textwidth}}
+\toprule
+Additional experiment family & Main evidence & Decision\\
+\midrule
+Graph~\cite{graph} / soft or selective pseudo labels & Graph validation F1 0.8932; public F1 0.84081 versus incumbent 0.85405. & Negative generalization example.\\
+Primary/secondary reasons and whitening & Primary/secondary OOF 0.8960, validation 0.8590; shrinkage whitening did not pass checks. & Retain summary.\\
+Label shift~\cite{saerens,bbse}; residual Other/text & Prior correction gains one late trial; residual Other worsens late-year F1. & No promotion.\\
+Local ensemble, Other kernel, F1 decoder & Fixed-ridge OOF 0.9026; sequential procedure 0.9002. & Retain public 0.88568.\\
+Ridge grid and group weighting & Grid-selected OOF 0.8983; weighting changes no final OOF decisions. & Retain public 0.88568.\\
+\bottomrule
+\end{tabular}
+\captionof{table}{Later unsuccessful hypotheses. Earlier 157-label OOF protocols differ from
+the newer 235-label near-group protocol and cannot be ranked directly. Fixed-recipe studies
+followed recipe selection. Sources and recorded evidence are included in the code ZIP.}
+\label{tab:negative}
+\end{center}
+}]
+\subsection{Why more features need not help Part 1}
+The embedding-only choice matches the target: stopping-reason text can express recruitment,
+funding, or administrative problems that a drug's biology does not describe.
+The pathway decline in Section~\ref{sec:p1features} supports excluding that tested block.
+Possible explanations are incomplete exact-name drug matching (about 56\% coverage in Part 1~\cite{handout}),
+coarse or redundant pathways, and extra coefficients estimated from only 157 gold labels;
+pseudo targets add uncertain supervision, not 1,014 independent gold labels.
+Missing drug matches also do not imply biological absence. These are plausible mechanisms,
+not separately established causes of the observed decline.
+
+Criteria, disease, drug, ICD, target/action, and molecular representations can increase variance
+or dilute reason similarity. No exhaustive all-feature or fingerprint ablation was run;
+their usefulness is unresolved.
+For the chosen kernel, global scaling preserves Euclidean geometry while column-wise scaling
+alters it. The public improvement also changes model family and gold count (157 to 235),
+so it cannot isolate geometry. Local models avoid inheriting uncertain cluster targets;
+rare-label suppression is a limitation of the tested K-Means/GMM fits, not all semi-supervised methods.
+
+Follow-ups did not improve the pipeline. The sample-F1 decoder assumes independent Bernoulli
+marginals, potentially violated by correlated reasons. A 16-setting ridge grid and inverse-group
+weighting also failed: 82/235 labels occupy 13 repeated groups, mostly Recruitment,
+but downweighting did not improve held-group decisions.
+
+\subsection{Selection and temporal limitations}
+Validation labels and public feedback were inspected repeatedly. Later nested resampling
+controls leakage within each fit but cannot erase that search history. The final Part 1 fit
+uses all 157+78 labels after recipe selection. Historical validation scores come from separate
+157-label fits; they are not independent scores of the final 235-label artifact.
+
+The late-20 and late-56 diagnostics have different training populations and reason mixtures:
+late train contains one Recruitment-positive trial, versus 21 in late validation. Neither
+small subset determines future performance. Temporal fits retain earlier duplicates available at that date; saved diagnostics
+isolate novel groups. Test data never enter fitting or selection. Private performance is unknown.
+
+\subsection{Reproduction and preserved evidence}
+The report uses CVPR style~\cite{template}. \path{models/selection.json} fixes final hashes.
+Run \texttt{python reproduce.py} from the project root to verify saved predictions and IDs.
+The ZIP includes data/audits, models/evidence, source/tests/notebooks, and report/LaTeX in
+\texttt{data/}, \texttt{models/}, \texttt{tools/}, and \texttt{report/}, respectively.
+Run \path{report/scripts/report_analysis.py} then \path{report/scripts/generate_tables.py}
+with Python to regenerate metrics, figures, and tables. Five notebooks in \path{tools/notebooks/}
+replay saved evidence with training disabled. Historical runners/manifests are included;
+full backups and the frozen November 1 delivery remain local.
+
+\paragraph{Team contributions and assistance.}
+Pei-Chen Chung (pc786) and Yu-Jye Hu (yh2444) contributed equally to data preprocessing,
+exploratory data analysis, feature engineering, model development, performance evaluation,
+and preparation of the final report. Both members shared responsibilities, jointly discussed
+key modeling decisions, and contributed equally to the final deliverables. OpenAI Codex
+assisted with implementation, verification, organization, and drafting. Both authors are
+responsible for the submitted work.

@@ -1,0 +1,10 @@
+{
+  "reason_model_source": "part1_s5_kmeans_threshold035_seed42_v1",
+  "reason_lookup_sha256": "170b9feafeb4118405911c116c226af9b2b7272085d462d695e7610f755aca0a",
+  "reason_features_used": false,
+  "failure_trial_phase_rows": 452,
+  "observed_reason_rows": 27,
+  "predicted_reason_rows": 171,
+  "unmatched_rows": 254,
+  "training_resubstitution_reason_rows": 131
+}

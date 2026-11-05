@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "reference_public_score": 0.88568,
+  "reference_submission_sha256": "6a6949390a85a5d4e767672fc718b2727b9633094574f4c1fcd90c5fee55487c",
+  "fixed_reference": {
+    "bandwidth": 0.5,
+    "strength": 0.1,
+    "beta": 0.0
+  },
+  "geometry": "raw Euclidean, single global scale",
+  "kernel": "exp(-b * squared_distance / median_nonzero_training_gold_squared_distance)",
+  "boundary_grid": [
+    {
+      "bandwidth": 0.5,
+      "strength": 0.1,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.125,
+      "strength": 0.01,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.125,
+      "strength": 0.03,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.125,
+      "strength": 0.1,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.125,
+      "strength": 0.3,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.25,
+      "strength": 0.01,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.25,
+      "strength": 0.03,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.25,
+      "strength": 0.1,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.25,
+      "strength": 0.3,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.5,
+      "strength": 0.01,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.5,
+      "strength": 0.03,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 0.5,
+      "strength": 0.3,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 1.0,
+      "strength": 0.01,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 1.0,
+      "strength": 0.03,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 1.0,
+      "strength": 0.1,
+      "beta": 0.0
+    },
+    {
+      "bandwidth": 1.0,
+      "strength": 0.3,
+      "beta": 0.0
+    }
+  ],
+  "weight_exponents": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "weight_formula": "n_gold_in_current_fitting_group ** (-beta), normalized to mean 1; unlabeled and held rows do not count",
+  "weighted_objective": "sum_i w_i * ||y_i-f(x_i)||^2 + alpha*||f||_H^2",
+  "weighting_scope": "ridge loss only; gamma normalization and sigmoid calibration remain unweighted",
+  "outer_folds": 4,
+  "repeat_seeds": [
+    42,
+    137,
+    2026
+  ],
+  "inner_folds": 3,
+  "grouping": "same <=1e-4 raw Euclidean connected components; held groups removed from gold and feature pools",
+  "calibration": "three grouped raw-score cross-fits; unweighted sigmoid C=1; same folds and seeds for all candidates",
+  "selection": "stage1 best of16 inner OOF sample-F1; stage2 best beta for retained stage1 config; each stage needs gain >.002 over incoming stage",
+  "tie_break": "reference first, then listed b/alpha order; beta0 first, then .5, then1",
+  "decision": "fixed threshold .5 plus argmax for empty set; all evaluation is unweighted per trial",
+  "candidate_gate": {
+    "mean_oof_gain_minimum": 0.005,
+    "positive_repeats_minimum": 2,
+    "worst_repeat_gain_minimum": -0.005,
+    "source_gain_minimum": -0.01,
+    "late56_gain_minimum": -0.01,
+    "historical_validation_gain_minimum": -0.01
+  },
+  "export": "only final sequential procedure may be exported if all gates pass and final test decisions differ; no outer-selected stage fallback",
+  "caveat": "All 235 labels and prior experiment/public results informed this study. OOF is resampling evidence, not a fresh holdout."
+}
